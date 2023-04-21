@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR" # 기본 언어 설정
-title                    : "An easy notebook" # 제목에 표시 되는 부분
+title                    : "An Easy Notebook" # 제목에 표시 되는 부분
 title_separator          : "-"
 subtitle                 : "Let's do our best!" # site tagline that appears below site title in masthead 제목 아래에 표시되는 부분
 name                     : "Byeong hwi"
@@ -293,3 +293,5 @@ defaults:
       comments: # true
       share: true
       related: true
+      sidebar:                  # 추가한 부분
+        nav: "sidebar-category" # 추가한 부분
