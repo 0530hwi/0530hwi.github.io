@@ -6,20 +6,24 @@
 
 html {
   /* apply a natural box layout model to all elements */
+  /* 글씨 크기 조정하기 */
   box-sizing: border-box;
   background-color: $background-color;
-  font-size: 16px;
+  font-size: 15px;
 
+  /* 본문 사이즈 */
   @include breakpoint($medium) {
-    font-size: 18px;
+    font-size: 13px;
   }
 
+  /* 헤더 사이즈 */
   @include breakpoint($large) {
-    font-size: 20px;
+    font-size: 14px;
   }
 
+  /* 제목 사이즈 */
   @include breakpoint($x-large) {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   -webkit-text-size-adjust: 100%;
