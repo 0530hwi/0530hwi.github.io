@@ -1,6 +1,6 @@
 var store = [{
         "title": "깃허브 블로그 커스텀 PART 1. 구조 파악",
-        "excerpt":" ","categories": ["Custom Blog"],
+        "excerpt":"print(\"Hello world!\")  ","categories": ["Custom Blog"],
         "tags": ["Blog","Git","Github","Jekyll","Brew","Ruby","rbenv"],
         "url": "/custom%20blog/Custom_GitBlog/",
         "teaser": null
