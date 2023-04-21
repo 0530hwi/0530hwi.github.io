@@ -10,3 +10,14 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+sidebar-category:
+  - title: "Github Blog"
+    children:
+      - title: "블로그 만들기"
+        url: "/making-blog"
+        category: "Making Blog"
+
+      - title: "블로그 커스텀"
+        url: "/custom-blog"
+        category: "Custom Blog"
