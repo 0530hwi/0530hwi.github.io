@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR" # 기본 언어 설정
-title                    : "An Easy Notebook" # 제목에 표시 되는 부분
+title                    : "쉽게 정리한 블로그: An Easy Notebook" # 제목에 표시 되는 부분
 title_separator          : "-"
 subtitle                 : "Let's do our best!" # site tagline that appears below site title in masthead 제목 아래에 표시되는 부분
 name                     : "Byeong hwi"
@@ -86,7 +86,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/images/bear.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "Byeong hwi"
-  avatar           : "/assets/images/증명사진.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "어려운 내용, 쉽게 정리합니다."
+  avatar           : "/assets/images/bear.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "어려운 내용, 쉽게 정리해보겠습니다 :)"
   location         : "Republic of Korea"
   email            :
   links:
@@ -289,7 +289,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: true
       related: true

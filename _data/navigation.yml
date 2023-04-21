@@ -21,3 +21,9 @@ sidebar-category:
       - title: "블로그 커스텀"
         url: "/custom-blog"
         category: "Custom Blog"
+
+  - title: "Marchine Learning"
+    children:
+      - title: "회귀 분석"
+        url: "/regression"
+        category: "Regression"

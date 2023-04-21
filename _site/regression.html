@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>  쉽게 정리한 블로그: An Easy Notebook</title>
+<!-- begin _includes/seo.html --><title>회귀분석 정복하기 - 쉽게 정리한 블로그: An Easy Notebook</title>
 <meta name="description" content="">
 
 
@@ -20,8 +20,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="쉽게 정리한 블로그: An Easy Notebook">
-<meta property="og:title" content="쉽게 정리한 블로그: An Easy Notebook">
-<meta property="og:url" content="http://localhost:4000/introduce/">
+<meta property="og:title" content="회귀분석 정복하기">
+<meta property="og:url" content="http://localhost:4000/regression">
 
 
   <meta property="og:description" content="">
@@ -43,7 +43,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/introduce/">
+<link rel="canonical" href="http://localhost:4000/regression">
 
 
 
@@ -94,7 +94,7 @@
 
   </head>
 
-  <body class="layout--single">
+  <body class="layout--archive">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -138,59 +138,188 @@
 
 
 
-
-
 <div id="main" role="main">
   
+  <div class="sidebar sticky">
+  
 
 
-  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="">
-    
-    
-    
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
 
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/introduce/" class="u-url" itemprop="url">
-</a>
-          </h1>
-          
-
-
-        </header>
-      
-
-      <section class="page__content e-content" itemprop="text">
-        
-        <center><img src="/assets/images/photo2.jpeg" width="300" height="400" /></center>
-
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
-
-
-        
-
-      </footer>
-
-      
-
-      
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/bear.png" alt="Byeong hwi" itemprop="image" class="u-photo">
+      </a>
     </div>
+  
 
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Byeong hwi</a>
+    </h3>
     
-  </article>
+      <div class="author__bio p-note" itemprop="description">
+        <p>어려운 내용, 쉽게 정리해보겠습니다 :)</p>
 
-  
-  
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:0530hwi@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/0530hwi" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/hwiping_" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
 </div>
 
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">토글 메뉴</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Github Blog</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/making-blog">블로그 만들기</a></li>
+          
+            <li><a href="/custom-blog">블로그 커스텀</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Marchine Learning</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/regression" class="active">회귀 분석</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">회귀분석 정복하기</h1>
+    
+    <!-- 공백이 포함되어 있는 카테고리 이름의 경우 site.categories.['a b c'] 이런식으로! -->
+
+
+  </div>
+</div>
     </div>
 
     
