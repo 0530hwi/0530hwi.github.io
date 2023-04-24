@@ -1,2 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-21T20:52:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그: An Easy Notebook</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">깃허브 블로그 커스텀 PART 1. 구조 파악</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀 PART 1. 구조 파악" /><published>2023-04-21T00:00:00+09:00</published><updated>2023-04-21T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog/"><![CDATA[<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">)</span>
-</code></pre></div></div>]]></content><author><name>Byeong hwi</name></author><category term="Custom Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[minimal-mistake의 구조를 파악하고 하나씩 정리했습니다.]]></summary></entry><entry><title type="html">깃허브 블로그 만들기 PART 1. 사전 준비</title><link href="http://localhost:4000/making%20blog/Make_GitBlog/" rel="alternate" type="text/html" title="깃허브 블로그 만들기 PART 1. 사전 준비" /><published>2023-04-21T00:00:00+09:00</published><updated>2023-04-21T00:00:00+09:00</updated><id>http://localhost:4000/making%20blog/Make_GitBlog</id><content type="html" xml:base="http://localhost:4000/making%20blog/Make_GitBlog/"><![CDATA[]]></content><author><name>Byeong hwi</name></author><category term="Making Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)]]></summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-24T21:15:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그: An Easy Notebook</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">깃허브 블로그 만들기 PART 1. Homebrew 설치</title><link href="http://localhost:4000/making%20blog/Making_GitBlog1/" rel="alternate" type="text/html" title="깃허브 블로그 만들기 PART 1. Homebrew 설치" /><published>2023-04-23T00:00:00+09:00</published><updated>2023-04-23T00:00:00+09:00</updated><id>http://localhost:4000/making%20blog/Making_GitBlog1</id><content type="html" xml:base="http://localhost:4000/making%20blog/Making_GitBlog1/"><![CDATA[<p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
+<h1 id="homebrew-설치하기">HomeBrew 설치하기</h1>
+<ul>
+  <li>HomeBrew란?
+    <ul>
+      <li>HomeBrew는 MacOS의 패키지 관리자에요</li>
+      <li>Apple, Linux에서 제공하지 않는 패키지를 관리할 수 있어요.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="1단계">1단계</h2>
+<p>자, 그럼 이제 설치해봅시다.</p>
+<ul>
+  <li><a href="https://brew.sh/index_ko">HomeBrew 바로가기</a> <br />
+홈페이지의 안내에 따라 설치하셔도 되고, 터미널에 다음 명령어를 입력해도 돼요.</li>
+</ul>
+
+<p>✅ <strong>참고</strong>: 터미널은 <strong>Command + Spacebar</strong> 실행 후, Terminal 입력 후에 바로 실행할 수 있어요!</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<h2 id="2단계">2단계</h2>
+<p>설치가 완료되었다면, <code class="language-plaintext highlighter-rouge">brew help</code>, <code class="language-plaintext highlighter-rouge">brew -v</code> 같은 명령어를 통해 HomeBrew가 잘 작동되는지 확인해봐요.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">brew help</code>를 입력했을 때 <br />
+<img width="356" alt="스크린샷 2023-04-24 오후 8 30 41" src="https://user-images.githubusercontent.com/86516594/233985857-b61ebefc-9fb3-4c00-9cdc-52198d213c69.png" /></li>
+</ul>
+
+<p>정상적으로 작동됩니다!</p>
+
+<p>자, 이제 터미널을 끄고 재실행해봅시다.</p>
+
+<h1 id="에러-발생-zsh-command-not-found-brew">에러 발생 zsh: command not found: brew</h1>
+<ul>
+  <li>터미널을 재시작한 후 <code class="language-plaintext highlighter-rouge">brew help</code>를 입력했지만 다음과 같은 에러가 발생했습니다! <br />
+<img width="208" alt="image" src="https://user-images.githubusercontent.com/86516594/233987600-5a7a3959-3e01-4242-ab7d-c7583e8c7e1b.png" /></li>
+</ul>
+
+<h2 id="해결-1단계">해결 1단계</h2>
+<p>이럴 때는 터미널에 다음과 같이 입력해주면 돼요<br /></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">eval</span> <span class="si">$(</span>/opt/homebrew/bin/brew shellenv<span class="si">)</span>
+</code></pre></div></div>
+<p>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">eval</code> 명령어는 “<code class="language-plaintext highlighter-rouge">$</code>뒤 경로에 대한 인자를 받아 현재 터미널에서 실행하라” 라는 의미에요.</p>
+
+<p>그런데, 터미널을 재시작할 때마다 저런 명령어를 입력하는 것은 너무 귀찮아요<br />
+그래서 우리는 다음과 같은 작업을 해줘야 돼요.</p>
+
+<h2 id="해결-2단계">해결 2단계</h2>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">vi</code> 편집기 진입
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi ~/.zshrc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>알파벳 “i”를 눌러 <strong>insert</strong> 모드에 진입합니다.<br />
+<strong>insert</strong>는 터미널 하단에서 확인할 수 있어요</p>
+  </li>
+  <li>다음 명령어를 그대로 추가해줍니다.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">eval</span> <span class="si">$(</span>/opt/homebrew/bin/brew shellenv<span class="si">)</span>
+</code></pre></div>    </div>
+    <p><img width="294" alt="image" src="https://user-images.githubusercontent.com/86516594/233991199-545d0b97-db40-4b17-8679-73c44afbc6e8.png" /></p>
+  </li>
+  <li>ESC를 누르고 <code class="language-plaintext highlighter-rouge">:wq</code>를 입력한 후에 빠져나오면 돼요
+    <ul>
+      <li>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">:wq</code>는 저장 후 종료 입니다. 이외에 <code class="language-plaintext highlighter-rouge">:q</code>는 종료, <code class="language-plaintext highlighter-rouge">:!q</code>는 강제 종료 등 여러가지 명령어가 있어요</li>
+    </ul>
+  </li>
+  <li>터미널을 재부팅 후 <code class="language-plaintext highlighter-rouge">brew help</code>를 입력하면 brew가 정상적으로 실행됩니다!</li>
+</ol>]]></content><author><name>Byeong hwi</name></author><category term="Making Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀 PART 1. 구조 파악</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀 PART 1. 구조 파악" /><published>2023-04-21T00:00:00+09:00</published><updated>2023-04-21T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog/"><![CDATA[<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="s">"서윤 병휘"</span><span class="p">)</span>
+</code></pre></div></div>]]></content><author><name>Byeong hwi</name></author><category term="Custom Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[minimal-mistake의 구조를 파악하고 하나씩 정리했습니다.]]></summary></entry></feed>
