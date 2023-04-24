@@ -14,9 +14,9 @@ $indent-var: 1.3em !default;
 
 /* system typefaces 폰트 적용하기 */
 $serif: Georgia, Times, serif !default;
-$sans-serif: "GowunDodum-Regular", "GowunDodum-Regular",-apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+$sans-serif: "NanumSquareNeo-Variable", "NanumSquareNeo-Variable",-apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace: "RobotoMono-Regular", Monaco, Consolas, "Lucida Console", monospace !default;
+$monospace: "RobotoMono-Regular", "RobotoMono-Regular", -apple-system, Monaco, Consolas, "Lucida Console", monospace !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
