@@ -14,8 +14,12 @@ date: 2023-04-23
 last_modified_at: 
 comments: true
 ---
+<br>
 
 ❗️모든 설치과정은 **MacOS Ventura(M1 Mac)** 환경에서 진행됩니다 ❗️
+
+<br>
+
 # HomeBrew 설치하기
 - HomeBrew란?
     * HomeBrew는 MacOS의 패키지 관리자예요
@@ -42,6 +46,7 @@ comments: true
 
 자, 이제 터미널을 끄고 재실행해 봅시다. 
 
+<BR>
 
 # 에러 발생 zsh: command not found: brew
 * 터미널을 재시작한 후 `brew help`를 입력했지만 다음과 같은 에러가 발생했습니다! <br>
