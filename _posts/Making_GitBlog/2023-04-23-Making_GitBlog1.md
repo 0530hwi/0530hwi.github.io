@@ -15,7 +15,6 @@ last_modified_at:
 comments: true
 ---
 
-
 ❗️모든 설치과정은 **MacOS Ventura(M1 Mac)** 환경에서 진행됩니다 ❗️
 # HomeBrew 설치하기
 - HomeBrew란?
@@ -42,6 +41,7 @@ comments: true
 정상적으로 작동됩니다!
 
 자, 이제 터미널을 끄고 재실행해 봅시다. 
+
 
 # 에러 발생 zsh: command not found: brew
 * 터미널을 재시작한 후 `brew help`를 입력했지만 다음과 같은 에러가 발생했습니다! <br>
@@ -77,6 +77,7 @@ eval $(/opt/homebrew/bin/brew shellenv)
 * ✅ **참고**: `:wq`는 저장 후 종료입니다. 이외에 `:q`는 종료, `:!q`는 강제 종료 등 여러 가지 명령어가 있어요
 
 5. 터미널을 재부팅 후 `brew help`를 입력하면 brew가 정상적으로 실행됩니다!
+
 
 # Homebrew 삭제하기
 혹시라도 에러가 발생한다면, **Homebrew**를 삭제한 후 다시 설치하는 것을 권장합니다.
