@@ -68,6 +68,8 @@ eval $(/opt/homebrew/bin/brew shellenv)
 ```bash
 vi ~/.zshrc
 ```
+✅ **참고**: `echo $SHELL`을 통해 현재 사용되는 편집기가 무엇인지 알아야 해요.
+저는 `zsh`를 사용하고 있지만, `bash`의 경우에는 `vi ~/.bashrc`가 됩니다.
 
 2. 알파벳 "i"를 눌러 **insert** 모드에 진입합니다.<br>
 모드가 바뀐 것은 터미널 하단에서 확인할 수 있어요.

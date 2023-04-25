@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-25T03:09:45+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그: An Easy Notebook</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치</title><link href="http://localhost:4000/making%20blog/Making_GitBlog1/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치" /><published>2023-04-23T00:00:00+09:00</published><updated>2023-04-23T00:00:00+09:00</updated><id>http://localhost:4000/making%20blog/Making_GitBlog1</id><content type="html" xml:base="http://localhost:4000/making%20blog/Making_GitBlog1/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-25T12:32:28+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그: An Easy Notebook</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치</title><link href="http://localhost:4000/making%20blog/Making_GitBlog1/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치" /><published>2023-04-23T00:00:00+09:00</published><updated>2023-04-23T00:00:00+09:00</updated><id>http://localhost:4000/making%20blog/Making_GitBlog1</id><content type="html" xml:base="http://localhost:4000/making%20blog/Making_GitBlog1/"><![CDATA[<p><br /></p>
 
 <p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
 
@@ -61,6 +61,8 @@
   <li><code class="language-plaintext highlighter-rouge">vi</code> 편집기 진입
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi ~/.zshrc
 </code></pre></div>    </div>
+    <p>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">echo $SHELL</code>을 통해 현재 사용되는 편집기가 무엇인지 알아야 해요.
+저는 <code class="language-plaintext highlighter-rouge">zsh</code>를 사용하고 있지만, <code class="language-plaintext highlighter-rouge">bash</code>의 경우에는 <code class="language-plaintext highlighter-rouge">vi ~/.bashrc</code>가 됩니다.</p>
   </li>
   <li>
     <p>알파벳 “i”를 눌러 <strong>insert</strong> 모드에 진입합니다.<br />
