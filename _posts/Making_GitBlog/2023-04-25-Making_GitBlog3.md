@@ -14,8 +14,11 @@ date: 2023-04-25
 last_modified_at: 
 comments: true
 ---
+<br>
 
 ❗️모든 설치과정은 **MacOS Ventura(M1 Mac)** 환경에서 진행됩니다 ❗️
+
+<br>
 
 **정말 거의 다 왔어요! 이제는 본격적으로 git을 만져봅시다!**
 
@@ -109,7 +112,7 @@ source ~/.zshrc
 ## 토큰 발급 받기
 
 1. setting 누르기<br>
-<img width="248" alt="스크린샷 2023-04-25 오후 3 43 04" src="https://user-images.githubusercontent.com/131740570/234195172-ee3a83b3-e79e-45dc-b23e-90f51e86e4ff.png">
+<img width="248" height="350" alt="스크린샷 2023-04-25 오후 3 43 04" src="https://user-images.githubusercontent.com/131740570/234195172-ee3a83b3-e79e-45dc-b23e-90f51e86e4ff.png">
 
 2. **가장 아래에 있는** Developer setting을 눌러주세요<Br>
 <img width="248" alt="스크린샷 2023-04-25 오후 3 45 18" src="https://user-images.githubusercontent.com/131740570/234195758-a93ea1c1-bf5f-4c33-9a42-379b1e8a0fd5.png">

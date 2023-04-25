@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-25T19:59:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그: An Easy Notebook</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치</title><link href="http://localhost:4000/making%20blog/Making_GitBlog2/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T00:00:00+09:00</updated><id>http://localhost:4000/making%20blog/Making_GitBlog2</id><content type="html" xml:base="http://localhost:4000/making%20blog/Making_GitBlog2/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-25T20:16:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그: An Easy Notebook</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치</title><link href="http://localhost:4000/making%20blog/Making_GitBlog2/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T00:00:00+09:00</updated><id>http://localhost:4000/making%20blog/Making_GitBlog2</id><content type="html" xml:base="http://localhost:4000/making%20blog/Making_GitBlog2/"><![CDATA[<p><br /></p>
 
 <p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
 
@@ -95,7 +95,11 @@ brew <span class="nb">install </span>libyaml
   </li>
 </ol>
 
-<p>저는 <code class="language-plaintext highlighter-rouge">BUILD FAILED</code> 에러 해결해 보겠다고 4~5시간 구글링했는데, <br />여러분은 꼭 이 글을 통해 쉽게 해결했으면 좋겠어요! 다음 파트에서 뵙겠습니다😅</p>]]></content><author><name>Byeong hwi</name></author><category term="Making Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)]]></summary></entry><entry><title type="html">초보를 위한 깃허브 블로그 만들기(3). github.io 만들기</title><link href="http://localhost:4000/making%20blog/Making_GitBlog3/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(3). github.io 만들기" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T00:00:00+09:00</updated><id>http://localhost:4000/making%20blog/Making_GitBlog3</id><content type="html" xml:base="http://localhost:4000/making%20blog/Making_GitBlog3/"><![CDATA[<p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
+<p>저는 <code class="language-plaintext highlighter-rouge">BUILD FAILED</code> 에러 해결해 보겠다고 4~5시간 구글링했는데, <br />여러분은 꼭 이 글을 통해 쉽게 해결했으면 좋겠어요! 다음 파트에서 뵙겠습니다😅</p>]]></content><author><name>Byeong hwi</name></author><category term="Making Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)]]></summary></entry><entry><title type="html">초보를 위한 깃허브 블로그 만들기(3). github.io 만들기</title><link href="http://localhost:4000/making%20blog/Making_GitBlog3/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(3). github.io 만들기" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T00:00:00+09:00</updated><id>http://localhost:4000/making%20blog/Making_GitBlog3</id><content type="html" xml:base="http://localhost:4000/making%20blog/Making_GitBlog3/"><![CDATA[<p><br /></p>
+
+<p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
+
+<p><br /></p>
 
 <p><strong>정말 거의 다 왔어요! 이제는 본격적으로 git을 만져봅시다!</strong></p>
 
@@ -213,7 +217,7 @@ git push origin main
 <ol>
   <li>
     <p>setting 누르기<br />
-<img width="248" alt="스크린샷 2023-04-25 오후 3 43 04" src="https://user-images.githubusercontent.com/131740570/234195172-ee3a83b3-e79e-45dc-b23e-90f51e86e4ff.png" /></p>
+<img width="248" height="350" alt="스크린샷 2023-04-25 오후 3 43 04" src="https://user-images.githubusercontent.com/131740570/234195172-ee3a83b3-e79e-45dc-b23e-90f51e86e4ff.png" /></p>
   </li>
   <li>
     <p><strong>가장 아래에 있는</strong> Developer setting을 눌러주세요<br />
