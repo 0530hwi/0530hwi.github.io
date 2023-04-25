@@ -81,8 +81,22 @@ git clone https://github.com/mmistakes/minimal-mistakes.git
 * 저같은 경우 모든 파일을 **command + a**로 전채 선택 후에, **option + command + x**로 옮겨줍니다!
     - 윈도우에서 **잘라내기**라고 생각하면 편해요!
 
-## 4️⃣ 4단계: 
-
+## 4️⃣ 4단계: 로컬 서버 열어보기!
+```bash
+# 다음 코드는 로컬에서 작업한 파일을 깃에 푸쉬하는 과정이에요!
+# 로컬 -> 깃허브로 파일을 옮기는 작업입니다.
+git add * 
+git commit -m "Making Blog" # 커밋 메시지 작성
+git push origin main 
+```
+* 마지막 단계입니다!
+```bash
+# 입력해보기 
+gem install jekyll bundler
+bundle exec jekyll serve #로컬 서버를 열어주는 명령어
+```
+이제 터미널에 뜨는 **Server Address**를 인터넷 주소창에 입력해 보세요! <br>
+여러분의 멋진 블로그가 완성이 되었을 거예요!😄
 
 
 # ❗️중요❗️: 비밀번호에 토큰을 입력해야 해요
@@ -107,12 +121,3 @@ git clone https://github.com/mmistakes/minimal-mistakes.git
 <img width="791" alt="스크린샷 2023-04-25 오후 4 31 10" src="https://user-images.githubusercontent.com/131740570/234205978-8c822f8e-3088-4084-8df1-019b4cfcf58a.png">
 
 * **앞으로 터미널에 깃 작업 관련 비밀번호를 입력할 때는 토큰을 입력하면 됩니다.**
-
-
-<!-- # minimal-mistakes fork 하기
-- minimal-mistakes 테마는 Michael Rose라는 천재가 만들었어요!
-- 위 테마는 2004년에 만들어져 아직까지도 업데이트가 활발히 이루어지고 있어요!
-- 테마의 장점으로는 **커스터마이징**이 정말 쉽다는 것이에요!
-
-## 1️⃣ 1단계
-1. [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes)로 이동해 봅시다! -->
