@@ -29,12 +29,12 @@ comments: true
 2. **Mac**을 선택해주세요!
     * 설치하는 과정에서 특별한 건 없습니다. 쭉쭉 넘어가주세요!
 
-3. 설치가 완료되었다면 아래와 같은 화면이 뜹니다.<br>
-<img width="600" alt="스크린샷 2023-04-27 오후 6 00 49" src="https://user-images.githubusercontent.com/86516594/234813734-fad5187e-4266-4f8b-a3a8-d4cba8f680e6.png">
+3. 설치가 완료되었다면 아래와 같은 화면이 뜹니다.
+<img width="600" alt="스크린샷 2023-04-27 오후 6 00 49" src="https://user-images.githubusercontent.com/86516594/234813734-fad5187e-4266-4f8b-a3a8-d4cba8f680e6.png">{: .align-center} 
 
 ## 한국어 패키지 설정하기
-* 저는 한국어 패키지가 설치가 되어있습니다. 영어 버전을 원하시는 분들은 건너뛰셔도 돼요!<br>
-<img width="600" alt="스크린샷 2023-04-27 오후 6 05 54" src="https://user-images.githubusercontent.com/86516594/234815186-0a20346b-fe28-4787-bdd1-e83e61bc9d17.png"> <br>
+* 저는 한국어 패키지가 설치가 되어있습니다. 영어 버전을 원하시는 분들은 건너뛰셔도 돼요!
+<img width="600" alt="스크린샷 2023-04-27 오후 6 05 54" src="https://user-images.githubusercontent.com/86516594/234815186-0a20346b-fe28-4787-bdd1-e83e61bc9d17.png">{: .align-center}
 
 1. 왼쪽 **확장(Shift + Command + X)**을 눌러 줍니다.
 2. **Korean Language Pack**을 검색 후 설치해 줍니다.
@@ -45,14 +45,14 @@ comments: true
 
 1. VScode를 실행합니다.
 
-2. **열기**를 눌러 줍니다.<br>
-<img width="400" alt="스크린샷 2023-04-27 오후 6 56 25" src="https://user-images.githubusercontent.com/86516594/234828505-d2464273-629d-4133-8309-e3a9fd814355.png">
+2. **열기**를 눌러 줍니다.
+<img width="400" alt="스크린샷 2023-04-27 오후 6 56 25" src="https://user-images.githubusercontent.com/86516594/234828505-d2464273-629d-4133-8309-e3a9fd814355.png">{: .align-center}
 
 3. 전에 만들어 두었던 깃허브 폴더를 선택해 주세요!
-<img width="400" alt="스크린샷 2023-04-27 오후 6 58 18" src="https://user-images.githubusercontent.com/86516594/234828987-a6b4e271-0447-46cb-8a04-754ce14dfc25.png">
+<img width="400" alt="스크린샷 2023-04-27 오후 6 58 18" src="https://user-images.githubusercontent.com/86516594/234828987-a6b4e271-0447-46cb-8a04-754ce14dfc25.png">{: .align-center}
 
 4. `control + shift + ₩`를 눌러 터미널을 열어 주세요!
-<img width="400" alt="스크린샷 2023-04-27 오후 6 27 56" src="https://user-images.githubusercontent.com/86516594/234829475-0ecdb1ee-b8a8-426d-b436-37866c5558a2.png">
+<img width="400" alt="스크린샷 2023-04-27 오후 6 27 56" src="https://user-images.githubusercontent.com/86516594/234829475-0ecdb1ee-b8a8-426d-b436-37866c5558a2.png">{: .align-center}
 
 5. github에 push가 잘 되는지 확인해 볼까요?
     ```bash
