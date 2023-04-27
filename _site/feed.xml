@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-27T19:09:12+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그: An Easy Notebook</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기</title><link href="http://localhost:4000/making%20blog/Making_GitBlog4/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기" /><published>2023-04-27T00:00:00+09:00</published><updated>2023-04-27T00:00:00+09:00</updated><id>http://localhost:4000/making%20blog/Making_GitBlog4</id><content type="html" xml:base="http://localhost:4000/making%20blog/Making_GitBlog4/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-27T19:21:47+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그: An Easy Notebook</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기</title><link href="http://localhost:4000/making%20blog/Making_GitBlog4/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기" /><published>2023-04-27T00:00:00+09:00</published><updated>2023-04-27T00:00:00+09:00</updated><id>http://localhost:4000/making%20blog/Making_GitBlog4</id><content type="html" xml:base="http://localhost:4000/making%20blog/Making_GitBlog4/"><![CDATA[<p><br /></p>
 
 <p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
 
@@ -22,8 +22,10 @@
 </ol>
 
 <h2 id="한국어-패키지-설정하기">한국어 패키지 설정하기</h2>
-<p>저는 한국어 패키지가 설치가 되어있습니다. 영어 버전을 원하시는 분들은 건너뛰셔도 돼요!<br />
-<img width="600" alt="스크린샷 2023-04-27 오후 6 05 54" src="https://user-images.githubusercontent.com/86516594/234815186-0a20346b-fe28-4787-bdd1-e83e61bc9d17.png" /> <br /></p>
+<ul>
+  <li>저는 한국어 패키지가 설치가 되어있습니다. 영어 버전을 원하시는 분들은 건너뛰셔도 돼요!<br />
+<img width="600" alt="스크린샷 2023-04-27 오후 6 05 54" src="https://user-images.githubusercontent.com/86516594/234815186-0a20346b-fe28-4787-bdd1-e83e61bc9d17.png" /> <br /></li>
+</ul>
 
 <ol>
   <li>왼쪽 <strong>확장(Shift + Command + X)</strong>을 눌러 줍니다.</li>
@@ -50,8 +52,7 @@
     <p><code class="language-plaintext highlighter-rouge">control + shift + ₩</code>를 눌러 터미널을 열어 주세요!
 <img width="400" alt="스크린샷 2023-04-27 오후 6 27 56" src="https://user-images.githubusercontent.com/86516594/234829475-0ecdb1ee-b8a8-426d-b436-37866c5558a2.png" /></p>
   </li>
-  <li>
-    <p>github에 push가 잘 되는지 확인해 볼까요?</p>
+  <li>github에 push가 잘 되는지 확인해 볼까요?
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git add <span class="k">*</span>
  git commit <span class="nt">-m</span> <span class="s2">"Update Blog"</span> <span class="c">#원하는 커밋 메세지 작성</span>
  git push origin main
@@ -61,6 +62,8 @@
 <a href="https://0530hwi.github.io/making%20blog/Making_GitBlog3/#%EF%B8%8F중요%EF%B8%8F-비밀번호에-토큰을-입력해야-해요">토큰 발급 바로가기</a></li>
     </ul>
   </li>
+  <li>이제 vscode 터미널로도 로컬 서버를 열 수 있습니다!<br />
+<code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>를 vscode 터미널에 입력 후, 여러분의 멋진 블로그를 확인해 보세요!</li>
 </ol>
 
 <h2 id="️주의-계정-일치-확인하기">❗️주의: 계정 일치 확인하기</h2>

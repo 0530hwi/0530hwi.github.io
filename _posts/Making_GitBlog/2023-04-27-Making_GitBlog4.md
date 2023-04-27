@@ -33,7 +33,7 @@ comments: true
 <img width="600" alt="스크린샷 2023-04-27 오후 6 00 49" src="https://user-images.githubusercontent.com/86516594/234813734-fad5187e-4266-4f8b-a3a8-d4cba8f680e6.png">
 
 ## 한국어 패키지 설정하기
-저는 한국어 패키지가 설치가 되어있습니다. 영어 버전을 원하시는 분들은 건너뛰셔도 돼요!<br>
+* 저는 한국어 패키지가 설치가 되어있습니다. 영어 버전을 원하시는 분들은 건너뛰셔도 돼요!<br>
 <img width="600" alt="스크린샷 2023-04-27 오후 6 05 54" src="https://user-images.githubusercontent.com/86516594/234815186-0a20346b-fe28-4787-bdd1-e83e61bc9d17.png"> <br>
 
 1. 왼쪽 **확장(Shift + Command + X)**을 눌러 줍니다.
@@ -62,6 +62,9 @@ comments: true
     ```
 * ❗️이 과정에서 계정과 비밀번호가 필요할 수 있습니다. 비밀번호에는 반드시 **토큰**을 입력해주셔야 합니다. <br>
 [토큰 발급 바로가기](https://0530hwi.github.io/making%20blog/Making_GitBlog3/#%EF%B8%8F중요%EF%B8%8F-비밀번호에-토큰을-입력해야-해요)
+
+6. 이제 vscode 터미널로도 로컬 서버를 열 수 있습니다!<br>
+`bundle exec jekyll serve`를 vscode 터미널에 입력 후, 여러분의 멋진 블로그를 확인해 보세요!
 
 ## ❗️주의: 계정 일치 확인하기
 * `git remote -v` 명령어를 통해 여러분의 계정과 일치하는지 확인해 주세요!
