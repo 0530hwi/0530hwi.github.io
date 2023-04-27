@@ -1,5 +1,5 @@
 ---
-title: "깃허브 블로그 커스터마이징"
+title: "깃허브 블로그 커스텀"
 layout: archive
 permalink: /custom-blog
 author_profile: true
