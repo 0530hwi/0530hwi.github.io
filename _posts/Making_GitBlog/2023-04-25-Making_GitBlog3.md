@@ -95,6 +95,7 @@ git push origin main
 ```
 이제 마지막 단계입니다!
 ```bash
+bundle install
 gem install jekyll bundler
 
 # 에러 시에 입력해보세요 
@@ -104,7 +105,7 @@ source ~/.zshrc
 `bundle exec jekyll serve`로 서버를 열어줍니다!
 
 이제 터미널에 표시된 **Server Address**를 인터넷 주소창에 입력해 보세요! <br>
-여러분의 멋진 블로그가 완성이 되었을 거예요!😄<br><br>
+여러분의 멋진 블로그가 만들어졌을 거예요!😄<br><br>
 
 ---
 # ❗️중요❗️: 비밀번호에 토큰을 입력해야 해요
@@ -122,9 +123,9 @@ source ~/.zshrc
 
 4. Note와,Expiration(만료 기간), Select scopes를 선택해주세요!<br>
 <img width="600" alt="스크린샷 2023-04-25 오후 4 28 30" src="https://user-images.githubusercontent.com/131740570/234205304-f59e0250-96a7-4eb7-9198-09c04787ab24.png">
-* 저 같은 경우, git push, clone 등의 작업만 하기 위해 `repo`만 선택했어요!
 
-* 하단에 Generate token을 눌러 주세요
+    저 같은 경우, git push, clone 등의 작업만 하기 위해 `repo`만 선택했어요!<Br>
+    하단에 Generate token을 눌러 주세요
 
 5. 토큰을 복사해 안전한 곳에 백업해놓으면 끝!<br>
 <img width="600" alt="스크린샷 2023-04-25 오후 4 31 10" src="https://user-images.githubusercontent.com/131740570/234205978-8c822f8e-3088-4084-8df1-019b4cfcf58a.png">
