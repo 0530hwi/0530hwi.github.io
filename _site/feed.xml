@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-27T18:12:43+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그: An Easy Notebook</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">Visual Studio code로 간편하게 깃허브 블로그 관리하기</title><link href="http://localhost:4000/making%20blog/Making_GitBlog4/" rel="alternate" type="text/html" title="Visual Studio code로 간편하게 깃허브 블로그 관리하기" /><published>2023-04-27T00:00:00+09:00</published><updated>2023-04-27T00:00:00+09:00</updated><id>http://localhost:4000/making%20blog/Making_GitBlog4</id><content type="html" xml:base="http://localhost:4000/making%20blog/Making_GitBlog4/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-27T19:09:12+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그: An Easy Notebook</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기</title><link href="http://localhost:4000/making%20blog/Making_GitBlog4/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기" /><published>2023-04-27T00:00:00+09:00</published><updated>2023-04-27T00:00:00+09:00</updated><id>http://localhost:4000/making%20blog/Making_GitBlog4</id><content type="html" xml:base="http://localhost:4000/making%20blog/Making_GitBlog4/"><![CDATA[<p><br /></p>
 
 <p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
 
@@ -21,16 +21,57 @@
 <img width="600" alt="스크린샷 2023-04-27 오후 6 00 49" src="https://user-images.githubusercontent.com/86516594/234813734-fad5187e-4266-4f8b-a3a8-d4cba8f680e6.png" /></li>
 </ol>
 
-<h3 id="한국어-패키지-설정하기">한국어 패키지 설정하기</h3>
+<h2 id="한국어-패키지-설정하기">한국어 패키지 설정하기</h2>
 <p>저는 한국어 패키지가 설치가 되어있습니다. 영어 버전을 원하시는 분들은 건너뛰셔도 돼요!<br />
-<img width="764" alt="스크린샷 2023-04-27 오후 6 05 54" src="https://user-images.githubusercontent.com/86516594/234815186-0a20346b-fe28-4787-bdd1-e83e61bc9d17.png" /> <br /></p>
+<img width="600" alt="스크린샷 2023-04-27 오후 6 05 54" src="https://user-images.githubusercontent.com/86516594/234815186-0a20346b-fe28-4787-bdd1-e83e61bc9d17.png" /> <br /></p>
 
 <ol>
   <li>왼쪽 <strong>확장(Shift + Command + X)</strong>을 눌러 줍니다.</li>
   <li><strong>Korean Language Pack</strong>을 검색 후 설치해 줍니다.</li>
 </ol>
 
-<h1 id="2️⃣-github와-vscode-연결하기">2️⃣ Github와 VScode 연결하기</h1>]]></content><author><name>Byeong hwi</name></author><category term="Making Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 관리하는 방법을 쉽게 정리했습니다]]></summary></entry><entry><title type="html">초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치</title><link href="http://localhost:4000/making%20blog/Making_GitBlog2/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T00:00:00+09:00</updated><id>http://localhost:4000/making%20blog/Making_GitBlog2</id><content type="html" xml:base="http://localhost:4000/making%20blog/Making_GitBlog2/"><![CDATA[<p><br /></p>
+<p><br /><br /></p>
+
+<h1 id="2️⃣-github와-vscode-연결하기">2️⃣ Github와 VScode 연결하기</h1>
+
+<ol>
+  <li>
+    <p>VScode를 실행합니다.</p>
+  </li>
+  <li>
+    <p><strong>열기</strong>를 눌러 줍니다.<br />
+<img width="400" alt="스크린샷 2023-04-27 오후 6 56 25" src="https://user-images.githubusercontent.com/86516594/234828505-d2464273-629d-4133-8309-e3a9fd814355.png" /></p>
+  </li>
+  <li>
+    <p>전에 만들어 두었던 깃허브 폴더를 선택해 주세요!
+<img width="400" alt="스크린샷 2023-04-27 오후 6 58 18" src="https://user-images.githubusercontent.com/86516594/234828987-a6b4e271-0447-46cb-8a04-754ce14dfc25.png" /></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">control + shift + ₩</code>를 눌러 터미널을 열어 주세요!
+<img width="400" alt="스크린샷 2023-04-27 오후 6 27 56" src="https://user-images.githubusercontent.com/86516594/234829475-0ecdb1ee-b8a8-426d-b436-37866c5558a2.png" /></p>
+  </li>
+  <li>
+    <p>github에 push가 잘 되는지 확인해 볼까요?</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git add <span class="k">*</span>
+ git commit <span class="nt">-m</span> <span class="s2">"Update Blog"</span> <span class="c">#원하는 커밋 메세지 작성</span>
+ git push origin main
+</code></pre></div>    </div>
+    <ul>
+      <li>❗️이 과정에서 계정과 비밀번호가 필요할 수 있습니다. 비밀번호에는 반드시 <strong>토큰</strong>을 입력해주셔야 합니다. <br />
+<a href="https://0530hwi.github.io/making%20blog/Making_GitBlog3/#%EF%B8%8F중요%EF%B8%8F-비밀번호에-토큰을-입력해야-해요">토큰 발급 바로가기</a></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="️주의-계정-일치-확인하기">❗️주의: 계정 일치 확인하기</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git remote -v</code> 명령어를 통해 여러분의 계정과 일치하는지 확인해 주세요!</li>
+  <li>만약 일치하지 않는다면 다음 과정을 진행하면 됩니다.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  git remote add origin <span class="o">(</span>저장소 주소<span class="o">)</span> <span class="c">#깃허브 블로그 저장소</span>
+  git remote <span class="nt">-v</span>
+</code></pre></div>    </div>
+  </li>
+</ul>]]></content><author><name>Byeong hwi</name></author><category term="Making Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 관리하는 방법을 쉽게 정리했습니다]]></summary></entry><entry><title type="html">초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치</title><link href="http://localhost:4000/making%20blog/Making_GitBlog2/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T00:00:00+09:00</updated><id>http://localhost:4000/making%20blog/Making_GitBlog2</id><content type="html" xml:base="http://localhost:4000/making%20blog/Making_GitBlog2/"><![CDATA[<p><br /></p>
 
 <p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
 
