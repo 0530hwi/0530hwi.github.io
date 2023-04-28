@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://0530hwi.github.io/sitemap.xml
