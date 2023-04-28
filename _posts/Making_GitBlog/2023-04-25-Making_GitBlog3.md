@@ -90,9 +90,9 @@ git clone https://github.com/mmistakes/minimal-mistakes.git
 bundle install
 gem install jekyll bundler
 
-# you don't have to write permission 에러 시에 입력 후
-# 다시 gem install jekyll bundler를 입력해주세요
+# you don't have to write permission 에러가 난다면 다음 코드를 입력해주세요
 source ~/.zshrc
+gem install jekyll bundler # 에러 시에 다시 입력하는 거예요!
 ```
 
 ```bash
@@ -110,7 +110,7 @@ git push origin main
 
 
 `bundle exec jekyll serve`로 서버를 열어줍니다!<br>
-**✅ **참고**: 위의 코드를 입력 후에 `.jekyll-cache`, `Gemfile.lock`파일이 생성이 되어야 합니다.**
+✅ **참고**: 위의 코드를 입력 후에 `.jekyll-cache`, `Gemfile.lock`파일이 생성이 되어야 합니다.
 
 이제 터미널에 표시된 **Server Address**를 인터넷 주소창에 입력해 보세요! <br>
 여러분의 멋진 블로그가 만들어졌을 거예요!😄<br><br>

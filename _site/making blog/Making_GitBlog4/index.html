@@ -1,0 +1,617 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기 - 쉽게 정리한 블로그</title>
+<meta name="description" content="깃허브 블로그 관리하는 방법을 쉽게 정리했습니다">
+
+
+  <meta name="author" content="Byeong hwi">
+  
+  <meta property="article:author" content="Byeong hwi">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="쉽게 정리한 블로그">
+<meta property="og:title" content="초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기">
+<meta property="og:url" content="http://localhost:4000/making%20blog/Making_GitBlog4/">
+
+
+  <meta property="og:description" content="깃허브 블로그 관리하는 방법을 쉽게 정리했습니다">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/bear.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2023-04-27T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/making%20blog/Making_GitBlog4/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Byeong hwi",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="쉽게 정리한 블로그 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/notebook.png" alt="쉽게 정리한 블로그: An easy Notebook"></a>
+        
+        <a class="site-title" href="/">
+          쉽게 정리한 블로그: An easy Notebook
+          <span class="site-subtitle">Let's do our best!</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/introduce/">Introduce</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/bear.png" alt="Byeong hwi" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Byeong hwi</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>어려운 내용, 쉽게 정리해보겠습니다 :)</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:0530hwi@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/0530hwi" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/hwiping_" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">토글 메뉴</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Github Blog</span>
+        
+
+        
+        <ul>
+          
+          
+          
+          
+          
+
+            <li><a href="/making-blog">블로그 만들기(4)</a></li>
+          
+          
+          
+          
+          
+
+            <li><a href="/custom-blog">블로그 커스텀(1)</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Marchine Learning</span>
+        
+
+        
+        <ul>
+          
+          
+          
+          
+          
+
+            <li><a href="/regression">회귀 분석(0)</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기">
+    <meta itemprop="description" content="깃허브 블로그 관리하는 방법을 쉽게 정리했습니다">
+    <meta itemprop="datePublished" content="2023-04-27T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/making%20blog/Making_GitBlog4/" class="u-url" itemprop="url">초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#1️⃣-visual-studio-code-설치하기">1️⃣ Visual Studio Code 설치하기</a><ul><li><a href="#한국어-패키지-설정하기">한국어 패키지 설정하기</a></li></ul></li><li><a href="#2️⃣-github와-vscode-연결하기">2️⃣ Github와 VScode 연결하기</a><ul><li><a href="#️주의-계정-일치-확인하기">❗️주의: 계정 일치 확인하기</a></li></ul></li><li><a href="#지금까지의-과정-총정리">지금까지의 과정 총정리</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p><br /></p>
+
+<p>❗️모든 설치 과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
+
+<p><br /></p>
+
+<p>안녕하세요! 깃허브 블로그는 잘 설치되었나요? <br />
+이번에는 Visual Studio Code로 깃허브 블로그를 아주 간편하게 관리하는 방법을 공유합니다.<br /></p>
+
+<h1 id="1️⃣-visual-studio-code-설치하기">1️⃣ Visual Studio Code 설치하기</h1>
+<ol>
+  <li>
+    <p><a href="https://code.visualstudio.com/Download">Visual Sutdio Code Download Link</a>로 이동해 주세요!</p>
+  </li>
+  <li><strong>Mac</strong>을 선택해 주세요!
+    <ul>
+      <li>설치하는 과정에서 특별한 건 없습니다. 쭉쭉 넘어가 주세요!</li>
+    </ul>
+  </li>
+  <li>설치가 완료되었다면 아래와 같은 화면이 뜹니다.
+<img width="600" alt="스크린샷 2023-04-27 오후 6 00 49" src="https://user-images.githubusercontent.com/86516594/234813734-fad5187e-4266-4f8b-a3a8-d4cba8f680e6.png" class="align-center" /></li>
+</ol>
+
+<h2 id="한국어-패키지-설정하기">한국어 패키지 설정하기</h2>
+<ul>
+  <li>저는 한국어 패키지가 설치가 되어있습니다. 영어 버전을 원하시는 분들은 건너뛰셔도 돼요!
+<img width="600" alt="스크린샷 2023-04-27 오후 6 05 54" src="https://user-images.githubusercontent.com/86516594/234815186-0a20346b-fe28-4787-bdd1-e83e61bc9d17.png" class="align-center" /></li>
+</ul>
+
+<ol>
+  <li>왼쪽 <strong>확장(Shift + Command + X)</strong>을 눌러 줍니다.</li>
+  <li><strong>Korean Language Pack</strong>을 검색 후 설치해 줍니다.</li>
+</ol>
+
+<p><br /><br /></p>
+
+<h1 id="2️⃣-github와-vscode-연결하기">2️⃣ Github와 VScode 연결하기</h1>
+
+<ol>
+  <li>
+    <p>VScode를 실행합니다.</p>
+  </li>
+  <li>
+    <p><strong>열기</strong>를 눌러 줍니다.
+<img width="400" alt="스크린샷 2023-04-27 오후 6 56 25" src="https://user-images.githubusercontent.com/86516594/234828505-d2464273-629d-4133-8309-e3a9fd814355.png" class="align-center" /></p>
+  </li>
+  <li>
+    <p>전에 만들어 두었던 깃허브 폴더를 선택해 주세요!
+<img width="400" alt="스크린샷 2023-04-27 오후 6 58 18" src="https://user-images.githubusercontent.com/86516594/234828987-a6b4e271-0447-46cb-8a04-754ce14dfc25.png" class="align-center" /></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">control + shift + ₩</code>를 눌러 터미널을 열어 주세요!
+<img width="400" alt="스크린샷 2023-04-27 오후 6 27 56" src="https://user-images.githubusercontent.com/86516594/234829475-0ecdb1ee-b8a8-426d-b436-37866c5558a2.png" class="align-center" /></p>
+  </li>
+  <li>github에 push가 잘 되는지 확인해 볼까요?
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git add <span class="k">*</span>
+ git commit <span class="nt">-m</span> <span class="s2">"Update Blog"</span> <span class="c">#원하는 커밋 메세지 작성</span>
+ git push origin main
+</code></pre></div>    </div>
+    <ul>
+      <li>❗️이 과정에서 계정과 비밀번호가 필요할 수 있습니다. 비밀번호에는 반드시 <strong>토큰</strong>을 입력해 주셔야 합니다. <br />
+<a href="https://0530hwi.github.io/making%20blog/Making_GitBlog3/#%EF%B8%8F중요%EF%B8%8F-비밀번호에-토큰을-입력해야-해요">토큰 발급 바로가기</a></li>
+    </ul>
+  </li>
+  <li>이제 vscode 터미널로도 로컬 서버를 열 수 있습니다!<br />
+<code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>를 vscode 터미널에 입력 후, 여러분의 멋진 블로그를 확인해 보세요!</li>
+</ol>
+
+<hr />
+<p>✅ <strong>참고</strong>:<br /> 저는 127.0.0.1:4000 이라는 주소로 로컬 서버를 들어갈 수 있는데요. <br />이 서버는 깃에 푸시하기 전에 최종적으로 검토해보는 단계입니다. <br />따라서, <strong>여러분의 변경사항을 로컬 서버를 통해 먼저 확인할 수 있는 장점</strong>이 있습니다. <br />
+또 깃에 업로드 후 블로그가 업데이트 되는 딜레이 시간(약 3분)이 있습니다. <br />로컬 서버를 이용하면 이러한 딜레이를 상쇄할 수 있기 때문에 로컬 서버를 이용하는 것이 블로그 작업에 매우 효율적입니다.</p>
+
+<hr />
+
+<h2 id="️주의-계정-일치-확인하기">❗️주의: 계정 일치 확인하기</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git remote -v</code> 명령어를 통해 여러분의 계정과 일치하는지 확인해 주세요!</li>
+  <li>만약 일치하지 않는다면 다음 과정을 진행하면 됩니다.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  git remote add origin <span class="o">(</span>저장소 주소<span class="o">)</span> <span class="c">#깃허브 블로그 저장소</span>
+  git remote <span class="nt">-v</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h1 id="지금까지의-과정-총정리">지금까지의 과정 총정리</h1>
+<ol>
+  <li>Mac에서 여러가지 패키지를 편하게 관리하기 위해 <code class="language-plaintext highlighter-rouge">Homebrew</code>를 설치했다</li>
+  <li><code class="language-plaintext highlighter-rouge">ruby</code>를 독립적으로 이용하기 위해 <code class="language-plaintext highlighter-rouge">rbenv</code>패키지를 설치했다</li>
+  <li>로컬에서 깃허브 레파지토리를 관리하기 위해 <code class="language-plaintext highlighter-rouge">git</code>을 설치했다</li>
+  <li>루비 개발 환경을 갖추기 위해 <code class="language-plaintext highlighter-rouge">gem install jekyll bundler</code>를 통해 설치했다.</li>
+  <li>서버를 구동하기 위해 <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>를 입력했다. <br /></li>
+</ol>
+
+<p><strong>🎉이상으로 깃허브 블로그 만들기 과정을 종료합니다! 깃허브 블로그 커스텀에서 뵙겠습니다!</strong></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#blog" class="page__taxonomy-item p-category" rel="tag">Blog</a><span class="sep">, </span>
+    
+      <a href="/tags/#brew" class="page__taxonomy-item p-category" rel="tag">Brew</a><span class="sep">, </span>
+    
+      <a href="/tags/#git" class="page__taxonomy-item p-category" rel="tag">Git</a><span class="sep">, </span>
+    
+      <a href="/tags/#github" class="page__taxonomy-item p-category" rel="tag">Github</a><span class="sep">, </span>
+    
+      <a href="/tags/#jekyll" class="page__taxonomy-item p-category" rel="tag">Jekyll</a><span class="sep">, </span>
+    
+      <a href="/tags/#rbenv" class="page__taxonomy-item p-category" rel="tag">rbenv</a><span class="sep">, </span>
+    
+      <a href="/tags/#ruby" class="page__taxonomy-item p-category" rel="tag">Ruby</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#making-blog" class="page__taxonomy-item p-category" rel="tag">Making Blog</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-27T00:00:00+09:00">April 27, 2023</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/custom%20blog/Custom_GitBlog1/" class="pagination--pager" title="깃허브 블로그 커스텀하기 - 테마 설정, 기본적인 설정 등
+">이전</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <!-- <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div> -->
+
+<div class="page__footer-copyright">&copy; 2023 Byeong hwi. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    <script>
+  'use strict';
+
+  (function() {
+    var commentContainer = document.querySelector('#utterances-comments');
+
+    if (!commentContainer) {
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.setAttribute('src', 'https://utteranc.es/client.js');
+    script.setAttribute('repo', '0530hwi/0530hwi.github.io');
+    script.setAttribute('issue-term', 'pathname');
+    script.setAttribute('theme', 'github-dark');
+    script.setAttribute('crossorigin', 'anonymous');
+
+    commentContainer.appendChild(script);
+  })();
+</script>
+  
+
+
+
+
+
+  </body>
+</html>

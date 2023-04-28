@@ -90,3 +90,21 @@ author:
 * 다음은 `Site Footer` 영역입니다.
 * 이 영역은 블로그 하단 부분에 해당됩니다.
 * 이 부분은 블로그 프로필(왼쪽 영역)과 동일한 부분이 많아서 저같은 경우 **모두 주석 처리**했습니다.
+
+<img width="425" alt="스크린샷 2023-04-28 오후 6 36 28" src="https://user-images.githubusercontent.com/86516594/235113455-312006d5-09a1-47c3-ad90-53eb48d49f26.png">{: .align-center}
+
+* 개인적으로 저는 빨간 영역의 부분을 지우고 싶더라구요! <br> 저와 같이 하시려면 다음을 참고해주세요!
+### FOLLOW: FEED 지우기
+1. 먼저 폴더 `_includes`로 이동합니다.
+2. `footer_html`
+3. 아래의 코드 부분을 **제외한 나머지 부분을 모두 주석 처리**
+<img width="610" alt="스크린샷 2023-04-28 오후 6 57 03" src="https://user-images.githubusercontent.com/86516594/235117681-bed715d0-6f85-48bc-9711-15431c86de61.png">{: .align-center}
+
+
+
+```bash
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+```
+
+
+✅ **참고**: html 블록 주석처리는 vscode에서 `shift + option + a` 간편하게 할 수 있습니다. <br> 위의 코드는 Powered by ~ 부분입니다. 이 부분을 주석 처리하면 저작권 문제가 발생할 수 있습니다.
