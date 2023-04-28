@@ -13,12 +13,12 @@ html {
 
   /* 본문 사이즈 */
   @include breakpoint($medium) {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   /* 헤더 사이즈 */
   @include breakpoint($large) {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   /* 제목 사이즈 */
