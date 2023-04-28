@@ -1,1 +1,1 @@
-Welcome to my github blog's repository!😁
+Welcome to my repository of gitblog!😁
