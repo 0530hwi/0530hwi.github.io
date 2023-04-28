@@ -1,0 +1,622 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치 - 쉽게 정리한 블로그</title>
+<meta name="description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
+
+
+  <meta name="author" content="Byeong hwi">
+  
+  <meta property="article:author" content="Byeong hwi">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="쉽게 정리한 블로그">
+<meta property="og:title" content="초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치">
+<meta property="og:url" content="http://localhost:4000/making%20blog/Making_GitBlog1/">
+
+
+  <meta property="og:description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/bear.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2023-04-23T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/making%20blog/Making_GitBlog1/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Byeong hwi",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="쉽게 정리한 블로그 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/notebook.png" alt="쉽게 정리한 블로그: An easy Notebook"></a>
+        
+        <a class="site-title" href="/">
+          쉽게 정리한 블로그: An easy Notebook
+          <span class="site-subtitle">Let's do our best!</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/introduce/">Introduce</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/bear.png" alt="Byeong hwi" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Byeong hwi</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>어려운 내용, 쉽게 정리해보겠습니다 :)</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:0530hwi@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/0530hwi" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/hwiping_" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">토글 메뉴</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Github Blog</span>
+        
+
+        
+        <ul>
+          
+          
+          
+          
+          
+
+            <li><a href="/making-blog">블로그 만들기(4)</a></li>
+          
+          
+          
+          
+          
+
+            <li><a href="/custom-blog">블로그 커스텀(1)</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Marchine Learning</span>
+        
+
+        
+        <ul>
+          
+          
+          
+          
+          
+
+            <li><a href="/regression">회귀 분석(0)</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치">
+    <meta itemprop="description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
+    <meta itemprop="datePublished" content="2023-04-23T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/making%20blog/Making_GitBlog1/" class="u-url" itemprop="url">초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#homebrew-설치하기">HomeBrew 설치하기</a><ul><li><a href="#1️⃣-1단계">1️⃣ 1단계</a></li><li><a href="#2️⃣-2단계">2️⃣ 2단계</a></li></ul></li><li><a href="#에러-발생-zsh-command-not-found-brew">에러 발생 zsh: command not found: brew</a><ul><li><a href="#1️⃣-해결-1단계">1️⃣ 해결 1단계</a></li><li><a href="#2️⃣-해결-2단계">2️⃣ 해결 2단계</a></li></ul></li><li><a href="#homebrew-삭제하기">Homebrew 삭제하기</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p><br /></p>
+
+<p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
+
+<p><br /></p>
+
+<h1 id="homebrew-설치하기">HomeBrew 설치하기</h1>
+<ul>
+  <li>HomeBrew란?
+    <ul>
+      <li>HomeBrew는 MacOS의 패키지 관리자예요</li>
+      <li>Apple, Linux에서 제공하지 않는 패키지를 관리할 수 있어요.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="1️⃣-1단계">1️⃣ 1단계</h2>
+<p>자, 그럼 이제 설치해봅시다.</p>
+<ul>
+  <li><a href="https://brew.sh/index_ko">HomeBrew 바로가기</a> <br />
+홈페이지의 안내에 따라 설치해도 되고, 터미널에 다음 명령어를 입력해도 돼요.</li>
+</ul>
+
+<p>✅ <strong>참고</strong>: 터미널은 <strong>Command + Spacebar</strong> 실행 후, Terminal 입력 후에 바로 실행할 수 있어요!</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<h2 id="2️⃣-2단계">2️⃣ 2단계</h2>
+<p>설치가 완료되었다면, <code class="language-plaintext highlighter-rouge">brew help</code>, <code class="language-plaintext highlighter-rouge">brew -v</code> 같은 명령어를 통해 HomeBrew가 잘 작동되는지 확인해 봐요.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">brew help</code>를 입력했을 때 <br />
+<img width="356" alt="스크린샷 2023-04-24 오후 8 30 41" src="https://user-images.githubusercontent.com/86516594/233985857-b61ebefc-9fb3-4c00-9cdc-52198d213c69.png" /></li>
+</ul>
+
+<p>정상적으로 작동됩니다!</p>
+
+<p>자, 이제 터미널을 끄고 재실행해 봅시다.</p>
+
+<p><br /></p>
+
+<h1 id="에러-발생-zsh-command-not-found-brew">에러 발생 zsh: command not found: brew</h1>
+<ul>
+  <li>터미널을 재시작한 후 <code class="language-plaintext highlighter-rouge">brew help</code>를 입력했지만 다음과 같은 에러가 발생했습니다! <br />
+<img width="208" alt="image" src="https://user-images.githubusercontent.com/86516594/233987600-5a7a3959-3e01-4242-ab7d-c7583e8c7e1b.png" /></li>
+</ul>
+
+<h2 id="1️⃣-해결-1단계">1️⃣ 해결 1단계</h2>
+<p>이럴 때는 터미널에 다음과 같이 입력해 주면 돼요<br /></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">eval</span> <span class="si">$(</span>/opt/homebrew/bin/brew shellenv<span class="si">)</span>
+</code></pre></div></div>
+<p>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">eval</code> 명령어는 “<code class="language-plaintext highlighter-rouge">$</code>뒤 경로에 대한 인자를 받아 현재 터미널에서 실행하라”라는 의미예요.</p>
+
+<p>그런데, 터미널을 재시작할 때마다 저런 명령어를 입력하는 것은 너무 귀찮아요<br />
+그래서 우리는 다음과 같은 작업을 해줘야 돼요.</p>
+
+<h2 id="2️⃣-해결-2단계">2️⃣ 해결 2단계</h2>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">vi</code> 편집기 진입
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi ~/.zshrc
+</code></pre></div>    </div>
+    <p>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">echo $SHELL</code>을 통해 현재 사용되는 편집기가 무엇인지 알아야 해요.
+저는 <code class="language-plaintext highlighter-rouge">zsh</code>를 사용하고 있지만, <code class="language-plaintext highlighter-rouge">bash</code>의 경우에는 <code class="language-plaintext highlighter-rouge">vi ~/.bashrc</code>가 됩니다.</p>
+  </li>
+  <li>
+    <p>알파벳 “i”를 눌러 <strong>insert</strong> 모드에 진입합니다.<br />
+모드가 바뀐 것은 터미널 하단에서 확인할 수 있어요.</p>
+  </li>
+  <li>다음 명령어를 그대로 추가해 줍니다.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">eval</span> <span class="si">$(</span>/opt/homebrew/bin/brew shellenv<span class="si">)</span>
+</code></pre></div>    </div>
+    <p><img width="294" alt="image" src="https://user-images.githubusercontent.com/86516594/233991199-545d0b97-db40-4b17-8679-73c44afbc6e8.png" /></p>
+  </li>
+  <li>ESC를 누르고 <code class="language-plaintext highlighter-rouge">:wq</code>를 입력한 후에 빠져나오면 돼요
+    <ul>
+      <li>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">:wq</code>는 저장 후 종료입니다. 이외에 <code class="language-plaintext highlighter-rouge">:q</code>는 종료, <code class="language-plaintext highlighter-rouge">:!q</code>는 강제 종료 등 여러 가지 명령어가 있어요</li>
+    </ul>
+  </li>
+  <li>터미널을 재부팅 후 <code class="language-plaintext highlighter-rouge">brew help</code>를 입력하면 brew가 정상적으로 실행됩니다!</li>
+</ol>
+
+<h1 id="homebrew-삭제하기">Homebrew 삭제하기</h1>
+<p>혹시라도 에러가 발생한다면, <strong>Homebrew</strong>를 삭제한 후 다시 설치하는 것을 권장합니다.</p>
+
+<ol>
+  <li>터미널에 입력해 주세요.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh<span class="si">)</span><span class="s2">"</span>
+</code></pre></div>    </div>
+    <p>입력 후에 <strong>Y</strong>를 입력해 삭제해 주세요!</p>
+  </li>
+  <li>다음 <code class="language-plaintext highlighter-rouge">/usr/local</code> 폴더에서 HomeBrew 폴더를 삭제해 줍니다.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm</span> <span class="nt">-rf</span> Homebrew/
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Homebrew를 설치했다면 절반은 성공입니다. 다음 파트에서 뵙겠습니다😄</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#blog" class="page__taxonomy-item p-category" rel="tag">Blog</a><span class="sep">, </span>
+    
+      <a href="/tags/#brew" class="page__taxonomy-item p-category" rel="tag">Brew</a><span class="sep">, </span>
+    
+      <a href="/tags/#git" class="page__taxonomy-item p-category" rel="tag">Git</a><span class="sep">, </span>
+    
+      <a href="/tags/#github" class="page__taxonomy-item p-category" rel="tag">Github</a><span class="sep">, </span>
+    
+      <a href="/tags/#jekyll" class="page__taxonomy-item p-category" rel="tag">Jekyll</a><span class="sep">, </span>
+    
+      <a href="/tags/#rbenv" class="page__taxonomy-item p-category" rel="tag">rbenv</a><span class="sep">, </span>
+    
+      <a href="/tags/#ruby" class="page__taxonomy-item p-category" rel="tag">Ruby</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#making-blog" class="page__taxonomy-item p-category" rel="tag">Making Blog</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-23T00:00:00+09:00">April 23, 2023</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">이전</a>
+    
+    
+      <a href="/making%20blog/Making_GitBlog2/" class="pagination--pager" title="초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <!-- <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div> -->
+
+<div class="page__footer-copyright">&copy; 2023 Byeong hwi. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    <script>
+  'use strict';
+
+  (function() {
+    var commentContainer = document.querySelector('#utterances-comments');
+
+    if (!commentContainer) {
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.setAttribute('src', 'https://utteranc.es/client.js');
+    script.setAttribute('repo', '0530hwi/0530hwi.github.io');
+    script.setAttribute('issue-term', 'pathname');
+    script.setAttribute('theme', 'github-dark');
+    script.setAttribute('crossorigin', 'anonymous');
+
+    commentContainer.appendChild(script);
+  })();
+</script>
+  
+
+
+
+
+
+  </body>
+</html>
