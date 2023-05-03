@@ -17,7 +17,7 @@ search: false
 
 @font-face {
     font-family: 'noto-sans';
-    src: url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+    src: url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
 }
 
 
@@ -38,13 +38,6 @@ search: false
 @font-face {
     font-family: 'CourierPrime-Regular';
     src: url('/assets/font/CourierPrime-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SF-Mono-Regular';
-    src: url('/assets/font/SF-Mono-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
