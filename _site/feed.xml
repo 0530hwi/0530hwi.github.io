@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-29T22:56:55+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">깃허브 블로그 커스텀하기 - 테마 설정, 기본적인 설정 등</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog1/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 테마 설정, 기본적인 설정 등" /><published>2023-04-28T00:00:00+09:00</published><updated>2023-04-28T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog1</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog1/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-03T13:05:47+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">깃허브 블로그 커스텀하기 - 블로그 폰트 변경하기</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog2/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 블로그 폰트 변경하기" /><published>2023-05-03T00:00:00+09:00</published><updated>2023-05-03T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog2</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog2/"><![CDATA[<p><br /></p>
+
+<div align="center">
+
+
+❗️커스텀 포스팅은 필자의 시행착오와 독학을 통해 작성되었습니다.❗️<br /> 틀린 부분이나 좀 더 쉬운 방법이 있다면 댓글 부탁드려요. 다양한 피드백 환영입니다😃
+
+
+</div>
+
+<p><br /><br /></p>
+
+<h1 id="폰트-변경하는-방법">폰트 변경하는 방법</h1>
+<p>✅<strong>참고</strong>: 블로그의 폰트를 변경하는 방법은 여러가지가 있습니다.</p>]]></content><author><name>Byeong hwi</name></author><category term="Custom Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 커스텀, 쉽게 정리했습니다. '깃허브 블로그 폰트 변경하기]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀하기 - 테마 설정, 기본적인 설정 등</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog1/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 테마 설정, 기본적인 설정 등" /><published>2023-04-28T00:00:00+09:00</published><updated>2023-04-28T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog1</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog1/"><![CDATA[<p><br /></p>
 
 <div align="center">
 
