@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-03T17:41:05+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">깃허브 블로그 커스텀하기 - 블로그 폰트 변경하기</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog2/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 블로그 폰트 변경하기" /><published>2023-05-03T00:00:00+09:00</published><updated>2023-05-03T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog2</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog2/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-03T17:49:27+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">깃허브 블로그 커스텀하기 - 블로그 폰트 변경하기</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog2/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 블로그 폰트 변경하기" /><published>2023-05-03T00:00:00+09:00</published><updated>2023-05-03T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog2</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog2/"><![CDATA[<p><br /></p>
 
 <div align="center">
 
@@ -97,19 +97,20 @@
   </li>
 </ul>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
 6
 </pre></td><td class="rouge-code"><pre><span class="k">@font-face</span> <span class="p">{</span>
-    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'RobotoMono-Regular'</span><span class="p">;</span>
-    <span class="nl">src</span><span class="p">:</span> <span class="sx">url('/assets/font/RobotoMono-Regular.ttf')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'truetype'</span><span class="p">);</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s1">'RobotoMono-Regular'</span><span class="p">;</span>
+    <span class="nl">src</span><span class="p">:</span> <span class="sx">url('/assets/font/RobotoMono-Regular.ttf')</span> <span class="nf">format</span><span class="p">(</span><span class="s1">'truetype'</span><span class="p">);</span>
     <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
     <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
+
 <p>❗️<strong>주의</strong></p>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">font-family</code>는 임의적으로 설정할 수 있습니다.</li>

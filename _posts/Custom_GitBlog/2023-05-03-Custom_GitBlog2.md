@@ -89,7 +89,7 @@ comments: true
 * 이 폴더 안에는 **폰트 파일**을 넣어주시면 됩니다.
 1. `assets`폴더에 있는 `main.scss`파일에 추가해주시면 됩니다.
 
-```css
+```scss
 @font-face {
     font-family: 'RobotoMono-Regular';
     src: url('/assets/font/RobotoMono-Regular.ttf') format('truetype');
@@ -97,6 +97,7 @@ comments: true
     font-style: normal;
 }
 ```
+
 ❗️**주의**
 * `font-family`는 임의적으로 설정할 수 있습니다.
 * `url`부분은 폰트 파일의 경로(저의 경우 `assets`폴더에 `font`폴더를 새로 생성)를 입력해주시면 됩니다.
