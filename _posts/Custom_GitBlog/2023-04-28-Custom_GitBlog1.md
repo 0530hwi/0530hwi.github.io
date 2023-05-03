@@ -3,7 +3,7 @@ title: "깃허브 블로그 커스텀하기 - 테마 설정, 기본적인 설정
 excerpt: "깃허브 블로그 커스텀, 쉽게 정리했습니다. '_config_yml'파일 정복하기"
 
 categories:
-    -  Custom Blog
+    - Custom Blog
 tags:
     - [Blog, Git, Github, Jekyll, Brew, Ruby, rbenv]
 
