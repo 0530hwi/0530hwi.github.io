@@ -301,7 +301,7 @@
           
           
 
-            <li><a href="/custom-blog">블로그 커스텀(2)</a></li>
+            <li><a href="/custom-blog">블로그 커스텀(3)</a></li>
           
         </ul>
         
@@ -376,10 +376,13 @@
   <li>우리는 앞서 Homebrew를 설치했기 때문에<br />정말 간단하게 MacOS에 <code class="language-plaintext highlighter-rouge">git</code>을 설치할 수 있어요.</li>
 </ul>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>git
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>git
 
 git <span class="nt">-v</span> <span class="c"># 설치된 버전 확인하기</span>
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 <p><br /><br /><br /></p>
 <h1 id="github-블로그-만들기">Github 블로그 만들기</h1>
 <p>자, 이제 본격적으로 블로그를 만들어 봐요!</p>
@@ -417,9 +420,11 @@ git <span class="nt">-v</span> <span class="c"># 설치된 버전 확인하기</
     </ul>
   </li>
   <li>터미널로 이동할게요. 코드 참고해 주세요!
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>Desktop/github_blog <span class="c">#github_blog 폴더로 이동하기.</span>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nb">cd </span>Desktop/github_blog <span class="c">#github_blog 폴더로 이동하기.</span>
 git clone 아까 복사했던 주소 <span class="c">#</span>
-</code></pre></div>    </div>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
     <ul>
       <li>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">cd desktop</code>을 하는 이유는 MacOS 바탕화면의 경로이기 때문이에요.</li>
     </ul>
@@ -432,14 +437,18 @@ git clone 아까 복사했던 주소 <span class="c">#</span>
     <p><a href="https://github.com/mmistakes/minimal-mistakes">minimal-mistakes</a>로 이동합니다!</p>
   </li>
   <li>경로 이동하기<br />
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>desktop
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nb">cd </span>desktop
 <span class="nb">cd </span>github_blog
 <span class="nb">cd </span>testerHWI.github.io <span class="c"># clone한 경로로 이동해야 해요!</span>
-</code></pre></div>    </div>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
   </li>
   <li>minimal-mistakes clone 하기<br />
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/mmistakes/minimal-mistakes.git
-</code></pre></div>    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git clone https://github.com/mmistakes/minimal-mistakes.git
+</pre></td></tr></tbody></table></code></pre></div>    </div>
   </li>
   <li>클론이 완료되면 폴더 옮겨주기
 <img width="600" alt="스크린샷 2023-04-25 오후 5 09 57" src="https://user-images.githubusercontent.com/131740570/234222143-db721a77-e04c-47c3-a106-adefa455ac70.png" class="align-center" /></li>
@@ -456,22 +465,35 @@ git clone 아까 복사했던 주소 <span class="c">#</span>
 <h2 id="4️⃣-4단계-로컬-서버-열어보기">4️⃣ 4단계: 로컬 서버 열어보기!</h2>
 <p>✅ <strong>참고</strong>: 현재 경로는 <code class="language-plaintext highlighter-rouge">testerHWI.github.io</code> 입니다!</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>bundle <span class="nb">install
 </span>gem <span class="nb">install </span>jekyll bundler
 
 <span class="c"># you don't have to write permission 에러가 난다면 다음 코드를 입력해주세요</span>
 <span class="nb">source</span> ~/.zshrc
 gem <span class="nb">install </span>jekyll bundler <span class="c"># 에러 시에 다시 입력하는 거예요!</span>
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 다음 코드는 로컬에서 작업한 파일을 깃에 푸시 하는 과정이에요!</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="c"># 다음 코드는 로컬에서 작업한 파일을 깃에 푸시 하는 과정이에요!</span>
 <span class="c"># 로컬 -&gt; 깃허브로 파일을 옮기는 작업입니다.</span>
 git add <span class="k">*</span> 
 git commit <span class="nt">-m</span> <span class="s2">"Making Blog"</span> <span class="c"># 커밋 메시지 작성</span>
 git push origin main 
 <span class="c"># 이 과정에서 아이디랑 비밀번호를 입력해야 해요.</span>
 <span class="c"># !중요! 챕터를 참고해 주세요.</span>
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>이제 마지막 단계입니다!</p>
 

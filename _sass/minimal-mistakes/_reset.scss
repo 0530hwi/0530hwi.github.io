@@ -13,7 +13,7 @@ html {
 
   /* 본문 사이즈 */
   @include breakpoint($medium) {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   /* 헤더 사이즈 */
@@ -23,10 +23,10 @@ html {
 
   /* 제목 사이즈 */
   @include breakpoint($x-large) {
-    font-size: 16px;
+    font-size: 16.5px;
   }
 
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; /* 모바일 폰트 사이즈 조정*/
   -ms-text-size-adjust: 100%;
 }
 

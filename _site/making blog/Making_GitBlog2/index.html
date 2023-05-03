@@ -301,7 +301,7 @@
           
           
 
-            <li><a href="/custom-blog">블로그 커스텀(2)</a></li>
+            <li><a href="/custom-blog">블로그 커스텀(3)</a></li>
           
         </ul>
         
@@ -390,20 +390,26 @@
 <p><strong>❗️못할 것 같다는 생각은 잊어버리고, 터미널을 켜줍니다!</strong>
 그리고 다음 명령어들을 쭉 입력해주세요</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>rbenv ruby-build 
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>rbenv ruby-build 
 rbenv verions <span class="c"># 설치가 완료되면 버전을 확인해보기</span>
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 <p><img src="https://user-images.githubusercontent.com/86516594/234170701-11947ad0-5317-4d74-a966-1cf3e1671092.png" alt="image" /></p>
 
 <p>위와 같은 이미지가 뜬다면 성공입니다. 
 아까 설명한 <strong>OS의 ruby</strong>를 사용하고 있다는 말이에요!</p>
 
 <h2 id="2️⃣-2단계">2️⃣ 2단계</h2>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby <span class="nb">install</span> <span class="nt">-l</span> <span class="c">#설치가 가능한 ruby 버전을 확인해보기</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>ruby <span class="nb">install</span> <span class="nt">-l</span> <span class="c">#설치가 가능한 ruby 버전을 확인해보기</span>
 ruby <span class="nb">install </span>3.2.2 <span class="c"># 3.2.2 버전 설치하기</span>
 rbenv global 3.2.2 <span class="c"># 3.2.2 버전으로 설정하기</span>
 rbenv versions 
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 <p><img width="320" alt="image" src="https://user-images.githubusercontent.com/86516594/234173522-003a0b86-b68b-425c-8f17-ed9d1dc4454e.png" /></p>
 
 <p>위와 같은 이미지가 뜬다면 성공입니다.</p>
@@ -414,10 +420,13 @@ rbenv versions
     <p><code class="language-plaintext highlighter-rouge">ruby install 3.2.2</code>를 입력하고 설치하는 과정에서 <br /> <code class="language-plaintext highlighter-rouge">BUILD FAILED (macOS 13.0.1 using ruby-build 20230330)</code> 이라는 에러가 발생할 수 있어요.</p>
   </li>
   <li>이럴 때는 다음과 같이 터미널에 입력해 주세요.<br />
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>readline openssl
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>readline openssl
 <span class="c"># 설치가 끝나면 차례대로 입력해 주세요</span>
 brew <span class="nb">install </span>libyaml
-</code></pre></div>    </div>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
   </li>
   <li>오류가 발생하는 이유를 여러가지 의심해 볼 수 있어요
     <ul>
@@ -436,17 +445,21 @@ brew <span class="nb">install </span>libyaml
 
 <ol>
   <li><code class="language-plaintext highlighter-rouge">vi</code> 편집기 진입
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi ~/.zshrc
-</code></pre></div>    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>vi ~/.zshrc
+</pre></td></tr></tbody></table></code></pre></div>    </div>
   </li>
   <li>
     <p>알파벳 “i”를 눌러 <strong>insert</strong> 모드에 진입합니다.<br /> 모드가 바뀐 것은 터미널 하단에서 확인할 수 있어요.</p>
   </li>
   <li>다음 명령어를 그대로 추가해 줍니다.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[[</span> <span class="nt">-d</span> ~/.rbenv  <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="o">[[</span> <span class="nt">-d</span> ~/.rbenv  <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
      <span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.rbenv/bin:</span><span class="nv">$PATH</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
      <span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>rbenv init -<span class="si">)</span><span class="s2">"</span>
-</code></pre></div>    </div>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
   </li>
   <li>ESC를 누르고 <code class="language-plaintext highlighter-rouge">:wq</code>를 입력한 후에 빠져나오면 돼요
     <ul>
@@ -454,8 +467,9 @@ brew <span class="nb">install </span>libyaml
     </ul>
   </li>
   <li>적용까지 해주기
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> ~/.zshrc
-</code></pre></div>    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">source</span> ~/.zshrc
+</pre></td></tr></tbody></table></code></pre></div>    </div>
     <p>터미널을 재실행해도 <code class="language-plaintext highlighter-rouge">system ruby</code>가 아닌 독립적인 <code class="language-plaintext highlighter-rouge">ruby 버전</code>을 적용합니다.</p>
   </li>
 </ol>

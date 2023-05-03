@@ -301,7 +301,7 @@
           
           
 
-            <li><a href="/custom-blog">블로그 커스텀(2)</a></li>
+            <li><a href="/custom-blog">블로그 커스텀(3)</a></li>
           
         </ul>
         
@@ -388,8 +388,9 @@
 
 <p>✅ <strong>참고</strong>: 터미널은 <strong>Command + Spacebar</strong> 실행 후, Terminal 입력 후에 바로 실행할 수 있어요!</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <h2 id="2️⃣-2단계">2️⃣ 2단계</h2>
 <p>설치가 완료되었다면, <code class="language-plaintext highlighter-rouge">brew help</code>, <code class="language-plaintext highlighter-rouge">brew -v</code> 같은 명령어를 통해 HomeBrew가 잘 작동되는지 확인해 봐요.</p>
@@ -413,8 +414,9 @@
 
 <h2 id="1️⃣-해결-1단계">1️⃣ 해결 1단계</h2>
 <p>이럴 때는 터미널에 다음과 같이 입력해 주면 돼요<br /></p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">eval</span> <span class="si">$(</span>/opt/homebrew/bin/brew shellenv<span class="si">)</span>
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">eval</span> <span class="si">$(</span>/opt/homebrew/bin/brew shellenv<span class="si">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 <p>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">eval</code> 명령어는 “<code class="language-plaintext highlighter-rouge">$</code>뒤 경로에 대한 인자를 받아 현재 터미널에서 실행하라”라는 의미예요.</p>
 
 <p>그런데, 터미널을 재시작할 때마다 저런 명령어를 입력하는 것은 너무 귀찮아요<br />
@@ -424,8 +426,9 @@
 
 <ol>
   <li><code class="language-plaintext highlighter-rouge">vi</code> 편집기 진입
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi ~/.zshrc
-</code></pre></div>    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>vi ~/.zshrc
+</pre></td></tr></tbody></table></code></pre></div>    </div>
     <p>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">echo $SHELL</code>을 통해 현재 사용되는 편집기가 무엇인지 알아야 해요.
 저는 <code class="language-plaintext highlighter-rouge">zsh</code>를 사용하고 있지만, <code class="language-plaintext highlighter-rouge">bash</code>의 경우에는 <code class="language-plaintext highlighter-rouge">vi ~/.bashrc</code>가 됩니다.</p>
   </li>
@@ -434,8 +437,9 @@
 모드가 바뀐 것은 터미널 하단에서 확인할 수 있어요.</p>
   </li>
   <li>다음 명령어를 그대로 추가해 줍니다.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">eval</span> <span class="si">$(</span>/opt/homebrew/bin/brew shellenv<span class="si">)</span>
-</code></pre></div>    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">eval</span> <span class="si">$(</span>/opt/homebrew/bin/brew shellenv<span class="si">)</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
     <p><img width="294" alt="image" src="https://user-images.githubusercontent.com/86516594/233991199-545d0b97-db40-4b17-8679-73c44afbc6e8.png" /></p>
   </li>
   <li>ESC를 누르고 <code class="language-plaintext highlighter-rouge">:wq</code>를 입력한 후에 빠져나오면 돼요
@@ -451,13 +455,15 @@
 
 <ol>
   <li>터미널에 입력해 주세요.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh<span class="si">)</span><span class="s2">"</span>
-</code></pre></div>    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh<span class="si">)</span><span class="s2">"</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
     <p>입력 후에 <strong>Y</strong>를 입력해 삭제해 주세요!</p>
   </li>
   <li>다음 <code class="language-plaintext highlighter-rouge">/usr/local</code> 폴더에서 HomeBrew 폴더를 삭제해 줍니다.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm</span> <span class="nt">-rf</span> Homebrew/
-</code></pre></div>    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">rm</span> <span class="nt">-rf</span> Homebrew/
+</pre></td></tr></tbody></table></code></pre></div>    </div>
   </li>
 </ol>
 
