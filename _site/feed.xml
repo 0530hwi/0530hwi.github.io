@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-03T15:52:54+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">깃허브 블로그 커스텀하기 - 블로그 폰트 변경하기</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog2/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 블로그 폰트 변경하기" /><published>2023-05-03T00:00:00+09:00</published><updated>2023-05-03T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog2</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog2/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-03T15:57:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">깃허브 블로그 커스텀하기 - 블로그 폰트 변경하기</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog2/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 블로그 폰트 변경하기" /><published>2023-05-03T00:00:00+09:00</published><updated>2023-05-03T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog2</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog2/"><![CDATA[<p><br /></p>
 
 <div align="center">
 
@@ -35,7 +35,7 @@
   <li><code class="language-plaintext highlighter-rouge">assets 폴더 -&gt; css 폴더 -&gt; main.scss 파일</code>로 이동해 줍니다.</li>
   <li><a href="https://noonnu.cc">눈누</a> 사이트로 이동해 원하는 폰트를 선택합니다.</li>
   <li>
-    <p>아래 사진의 내용을 복사(<code class="language-plaintext highlighter-rouge">command(ctrl) + c</code>)해 줍니다.
+    <p>“웹폰트로 사용” 부분을 복사(<code class="language-plaintext highlighter-rouge">command(ctrl) + c</code>)해 줍니다.
 <img width="350" alt="스크린샷 2023-05-03 오후 1 38 09" src="https://user-images.githubusercontent.com/86516594/235833784-ff521160-6276-4c57-9f12-4004dc2bcadb.png" class="align-center" /></p>
   </li>
   <li>
@@ -43,7 +43,7 @@
 <img width="500" alt="스크린샷 2023-05-03 오후 1 41 39" src="https://user-images.githubusercontent.com/86516594/235834055-b681e8e2-d503-439d-b8a7-1dc004b86be1.png" class="align-center" /></p>
   </li>
   <li><code class="language-plaintext highlighter-rouge">_sass 폴더 -&gt; minimal-mistakes 폴더 -&gt; _variables.scss 파일</code>로 이동해 줍니다.
-<img width="611" alt="스크린샷 2023-05-03 오후 1 45 40" src="https://user-images.githubusercontent.com/86516594/235834565-d6b4666b-ab57-4052-8f01-7413938c7d0c.png" class="align-center" /></li>
+<img width="500" alt="스크린샷 2023-05-03 오후 1 45 40" src="https://user-images.githubusercontent.com/86516594/235834565-d6b4666b-ab57-4052-8f01-7413938c7d0c.png" class="align-center" /></li>
 </ol>
 
 <ul>
@@ -56,22 +56,22 @@
 <ol>
   <li>
     <p>먼저 구글 폰트 사이트로 이동합니다.
-<img width="1003" alt="스크린샷 2023-05-03 오후 3 02 13" src="https://user-images.githubusercontent.com/86516594/235842801-db718a13-93b9-48ba-a44c-d5dfef144ebc.png" class="align-center" /></p>
+<img width="700" alt="스크린샷 2023-05-03 오후 3 02 13" src="https://user-images.githubusercontent.com/86516594/235842801-db718a13-93b9-48ba-a44c-d5dfef144ebc.png" class="align-center" /></p>
   </li>
   <li>
     <p>Show only variable fonts의 박스를 클릭하고 원하는 폰트를 클릭합니다.</p>
   </li>
   <li>
     <p>사진과 같이 보이는 버튼을 클릭합니다.
-<img width="185" alt="스크린샷 2023-05-03 오후 3 02 53" src="https://user-images.githubusercontent.com/86516594/235842952-fd575b8c-2e0a-451b-8de0-213cf4a61679.png" class="align-center" /></p>
+<img width="200" alt="스크린샷 2023-05-03 오후 3 02 53" src="https://user-images.githubusercontent.com/86516594/235842952-fd575b8c-2e0a-451b-8de0-213cf4a61679.png" class="align-center" /></p>
   </li>
   <li>
     <p>우측 상단의 버튼을 클릭합니다.
-<img width="293" alt="스크린샷 2023-05-03 오후 3 03 40" src="https://user-images.githubusercontent.com/86516594/235843094-02f4452c-6ccc-4246-b7b9-bba492e98edc.png" class="align-center" /></p>
+<img width="200" alt="스크린샷 2023-05-03 오후 3 03 40" src="https://user-images.githubusercontent.com/86516594/235843094-02f4452c-6ccc-4246-b7b9-bba492e98edc.png" class="align-center" /></p>
   </li>
   <li>
     <p><code class="language-plaintext highlighter-rouge">url</code>만 복사 후 아까 설명드렸던 과정을 진행하시면 돼요!
-<img width="287" alt="스크린샷 2023-05-03 오후 3 04 48" src="https://user-images.githubusercontent.com/86516594/235843158-e83f99f2-bf8a-4843-9d7c-950a88ce96a2.png" class="align-center" /></p>
+<img width="200" alt="스크린샷 2023-05-03 오후 3 04 48" src="https://user-images.githubusercontent.com/86516594/235843158-e83f99f2-bf8a-4843-9d7c-950a88ce96a2.png" class="align-center" /></p>
   </li>
   <li>
     <p>저는 다음과 같이 설정하였습니다. 예시로 보시면 편할 것 같아요!<br /></p>

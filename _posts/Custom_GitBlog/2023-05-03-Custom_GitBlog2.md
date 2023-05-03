@@ -45,14 +45,14 @@ comments: true
 
 1. `assets 폴더 -> css 폴더 -> main.scss 파일`로 이동해 줍니다. 
 2. [눈누](https://noonnu.cc) 사이트로 이동해 원하는 폰트를 선택합니다.
-3. 아래 사진의 내용을 복사(`command(ctrl) + c`)해 줍니다.
+3. "웹폰트로 사용" 부분을 복사(`command(ctrl) + c`)해 줍니다.
 <img width="350" alt="스크린샷 2023-05-03 오후 1 38 09" src="https://user-images.githubusercontent.com/86516594/235833784-ff521160-6276-4c57-9f12-4004dc2bcadb.png">{: .align-center}
 
 4. 그런 다음 `main.scss`에 붙여넣기!
 <img width="500" alt="스크린샷 2023-05-03 오후 1 41 39" src="https://user-images.githubusercontent.com/86516594/235834055-b681e8e2-d503-439d-b8a7-1dc004b86be1.png">{: .align-center}
 
 5. `_sass 폴더 -> minimal-mistakes 폴더 -> _variables.scss 파일`로 이동해 줍니다.
-<img width="611" alt="스크린샷 2023-05-03 오후 1 45 40" src="https://user-images.githubusercontent.com/86516594/235834565-d6b4666b-ab57-4052-8f01-7413938c7d0c.png">{: .align-center}
+<img width="500" alt="스크린샷 2023-05-03 오후 1 45 40" src="https://user-images.githubusercontent.com/86516594/235834565-d6b4666b-ab57-4052-8f01-7413938c7d0c.png">{: .align-center}
 
 * `sans-serif` 부분에 아까 복사했던 `font-family의 내용`을 적어주면 됩니다.
 
@@ -62,19 +62,19 @@ comments: true
 
 ### ▶️ 참고 사항: 구글 폰트 이용 시
 1. 먼저 구글 폰트 사이트로 이동합니다.
-<img width="1003" alt="스크린샷 2023-05-03 오후 3 02 13" src="https://user-images.githubusercontent.com/86516594/235842801-db718a13-93b9-48ba-a44c-d5dfef144ebc.png">{: .align-center}
+<img width="700" alt="스크린샷 2023-05-03 오후 3 02 13" src="https://user-images.githubusercontent.com/86516594/235842801-db718a13-93b9-48ba-a44c-d5dfef144ebc.png">{: .align-center}
 
 
 2. Show only variable fonts의 박스를 클릭하고 원하는 폰트를 클릭합니다.
 
 3. 사진과 같이 보이는 버튼을 클릭합니다.
-<img width="185" alt="스크린샷 2023-05-03 오후 3 02 53" src="https://user-images.githubusercontent.com/86516594/235842952-fd575b8c-2e0a-451b-8de0-213cf4a61679.png">{: .align-center}
+<img width="200" alt="스크린샷 2023-05-03 오후 3 02 53" src="https://user-images.githubusercontent.com/86516594/235842952-fd575b8c-2e0a-451b-8de0-213cf4a61679.png">{: .align-center}
 
 4. 우측 상단의 버튼을 클릭합니다.
-<img width="293" alt="스크린샷 2023-05-03 오후 3 03 40" src="https://user-images.githubusercontent.com/86516594/235843094-02f4452c-6ccc-4246-b7b9-bba492e98edc.png">{: .align-center}
+<img width="200" alt="스크린샷 2023-05-03 오후 3 03 40" src="https://user-images.githubusercontent.com/86516594/235843094-02f4452c-6ccc-4246-b7b9-bba492e98edc.png">{: .align-center}
 
 5. `url`만 복사 후 아까 설명드렸던 과정을 진행하시면 돼요!
-<img width="287" alt="스크린샷 2023-05-03 오후 3 04 48" src="https://user-images.githubusercontent.com/86516594/235843158-e83f99f2-bf8a-4843-9d7c-950a88ce96a2.png">{: .align-center}
+<img width="200" alt="스크린샷 2023-05-03 오후 3 04 48" src="https://user-images.githubusercontent.com/86516594/235843158-e83f99f2-bf8a-4843-9d7c-950a88ce96a2.png">{: .align-center}
 
 6. 저는 다음과 같이 설정하였습니다. 예시로 보시면 편할 것 같아요!<br>
 ```css
