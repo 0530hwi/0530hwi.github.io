@@ -1,7 +1,7 @@
 ---
 title: "초보를 위한 깃허브 블로그 만들기"
 layout: archive
-permalink: /making-blog
+permalink: /making_blog
 author_profile: true
 sidebar:
     nav: "sidebar-category"

@@ -3,7 +3,7 @@ title: "깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 
 excerpt: "깃허브 블로그 커스텀, 쉽게 정리했습니다. 블로그에 댓글 기능 추가하기"
 
 categories:
-    - Custom-Blog
+    - Custom_Blog
 tags:
     - [Blog, Utterances, Minimal-Mistakes]
 

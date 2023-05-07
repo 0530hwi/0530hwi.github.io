@@ -3,7 +3,7 @@ title: "깃허브 블로그 커스텀하기 - 블로그 폰트 변경하기"
 excerpt: "깃허브 블로그 커스텀, 쉽게 정리했습니다. 깃허브 블로그 폰트 변경하기"
 
 categories:
-    - Custom-Blog
+    - Custom_Blog
 tags:
     - [Blog, Git, Github, Jekyll, Brew, Ruby, rbenv]
 
