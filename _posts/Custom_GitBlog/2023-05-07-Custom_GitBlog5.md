@@ -5,7 +5,7 @@ excerpt: "깃허브 블로그 커스텀, 쉽게 정리했습니다. 블로그에
 categories:
     - Custom-Blog
 tags:
-    - [Blog, Git, Github, Jekyll]
+    - [Blog, Utterances, Minimal-Mistakes]
 
 toc: true
 toc_sticky: true
@@ -75,3 +75,14 @@ comments: true
 * 다음 코드를 추가해 주세요! (아무 곳에나 추가하시면 됩니다.)
 * 경로는 `_sass/minimal-mistakes/_page.scss`입니다.
 <script src="https://gist.github.com/0530hwi/96e883a36fcb467f6849b18173a47f97.js"></script>
+
+* 단 본인이 설정한 블로그 너비에 맞춰 조정되니 참고해 주세요! 원하는 값으로 조정 가능합니다.
+
+
+<br><br>
+
+---
+
+이 포스팅은 다음 블로그를 참고해서 작성되었습니다.
+* [ansohxxn님의 블로그 포스트](https://ansohxxn.github.io/blog/utterances/) 
+* [baek님의 블로그 포스트](https://baek.dev/post/4/)

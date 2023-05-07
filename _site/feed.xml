@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-07T21:51:20+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">깃허브 블로그 커스텀하기 - 깃허브 블로그 구글에 검색 되게 하기</title><link href="http://localhost:4000/custom-blog/Custom_GitBlog4/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 구글에 검색 되게 하기" /><published>2023-05-07T00:00:00+09:00</published><updated>2023-05-07T00:00:00+09:00</updated><id>http://localhost:4000/custom-blog/Custom_GitBlog4</id><content type="html" xml:base="http://localhost:4000/custom-blog/Custom_GitBlog4/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-07T21:56:51+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">깃허브 블로그 커스텀하기 - 깃허브 블로그 구글에 검색 되게 하기</title><link href="http://localhost:4000/custom-blog/Custom_GitBlog4/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 구글에 검색 되게 하기" /><published>2023-05-07T00:00:00+09:00</published><updated>2023-05-07T00:00:00+09:00</updated><id>http://localhost:4000/custom-blog/Custom_GitBlog4</id><content type="html" xml:base="http://localhost:4000/custom-blog/Custom_GitBlog4/"><![CDATA[<p><br /></p>
 
 <div align="center">
 
@@ -158,9 +158,22 @@
 <h2 id="2-크기-조정하기">2. 크기 조정하기</h2>
 <ul>
   <li>다음 코드를 추가해 주세요! (아무 곳에나 추가하시면 됩니다.)</li>
-  <li>경로는 <code class="language-plaintext highlighter-rouge">_sass/minimal-mistakes/_page.scss</code>입니다.
-<script src="https://gist.github.com/0530hwi/96e883a36fcb467f6849b18173a47f97.js"></script></li>
-</ul>]]></content><author><name>Byeong hwi</name></author><category term="Custom-Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><summary type="html"><![CDATA[깃허브 블로그 커스텀, 쉽게 정리했습니다. 블로그에 댓글 기능 추가하기]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀하기 - 블로그 폰트 크기, 페이지 너비 조절하기</title><link href="http://localhost:4000/custom-blog/Custom_GitBlog3/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 블로그 폰트 크기, 페이지 너비 조절하기" /><published>2023-05-03T00:00:00+09:00</published><updated>2023-05-03T00:00:00+09:00</updated><id>http://localhost:4000/custom-blog/Custom_GitBlog3</id><content type="html" xml:base="http://localhost:4000/custom-blog/Custom_GitBlog3/"><![CDATA[<p><br /></p>
+  <li>
+    <p>경로는 <code class="language-plaintext highlighter-rouge">_sass/minimal-mistakes/_page.scss</code>입니다.
+<script src="https://gist.github.com/0530hwi/96e883a36fcb467f6849b18173a47f97.js"></script></p>
+  </li>
+  <li>단 본인이 설정한 블로그 너비에 맞춰 조정되니 참고해 주세요! 원하는 값으로 조정 가능합니다.</li>
+</ul>
+
+<p><br /><br /></p>
+
+<hr />
+
+<p>이 포스팅은 다음 블로그를 참고해서 작성되었습니다.</p>
+<ul>
+  <li><a href="https://ansohxxn.github.io/blog/utterances/">ansohxxn님의 블로그 포스트</a></li>
+  <li><a href="https://baek.dev/post/4/">baek님의 블로그 포스트</a></li>
+</ul>]]></content><author><name>Byeong hwi</name></author><category term="Custom-Blog" /><category term="Blog" /><category term="Utterances" /><category term="Minimal-Mistakes" /><summary type="html"><![CDATA[깃허브 블로그 커스텀, 쉽게 정리했습니다. 블로그에 댓글 기능 추가하기]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀하기 - 블로그 폰트 크기, 페이지 너비 조절하기</title><link href="http://localhost:4000/custom-blog/Custom_GitBlog3/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 블로그 폰트 크기, 페이지 너비 조절하기" /><published>2023-05-03T00:00:00+09:00</published><updated>2023-05-03T00:00:00+09:00</updated><id>http://localhost:4000/custom-blog/Custom_GitBlog3</id><content type="html" xml:base="http://localhost:4000/custom-blog/Custom_GitBlog3/"><![CDATA[<p><br /></p>
 
 <div align="center">
 
