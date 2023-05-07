@@ -16,11 +16,11 @@ sidebar-category:
     children:
       - title: "블로그 만들기"
         url: "/making_blog"
-        category: "Making-Blog"
+        category: "Making_Blog"
 
       - title: "블로그 커스텀"
         url: "/custom_blog"
-        category: "Custom-Blog"
+        category: "Custom_Blog"
 
   - title: "Marchine Learning"
     children:
