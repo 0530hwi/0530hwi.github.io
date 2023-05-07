@@ -40,4 +40,10 @@ var store = [{
         "tags": ["Blog","Git","Github","Jekyll","Brew","Ruby","rbenv"],
         "url": "/custom-blog/Custom_GitBlog3/",
         "teaser": null
+      },{
+        "title": "깃허브 블로그 커스텀하기 - 깃허브 블로그 구글에 검색 되게 하기",
+        "excerpt":"       ❗️커스텀 포스팅은 필자의 시행착오와 독학을 통해 작성되었습니다.❗️  틀린 부분이나 좀 더 쉬운 방법이 있다면 댓글 부탁드려요. 다양한 피드백 환영입니다😃          안녕하세요! 이번 포스팅은 내 블로그를 구글에 검색이 되게끔 하는 방법입니다.  어렵지 않으니 차근차근 같이 해봐요! 참고로 구글 계정이 반드시 필요합니다.   1️⃣  sitemap.xml 파일 업로드     블로그 폴더에 직접 만들어 주셔야 합니다.   파일의 위치는 _config.yml이 있는 곳에 만들어 주세요!   다음 코드를 복붙해 주시면 됩니다!        파일을 업로드 한다음 깃허브에 push하는 작업이 필요합니다.   다음, 확인 작업으로 여러분의 링크를 주소창에 입력해 보세요!  Ex) 0530hwi.github.io/sitemap.xml   2️⃣ robots.txt 파일 업로드     블로그 폴더에 직접 만들어 주셔야 합니다.   마찬가지로 _config.yml이 있는 곳에 만들어 주세요!   다음 코드를 복붙해 주시면 됩니다.     3️⃣ Google Search Console          Google Search Console로 이동해 줍니다.            URL 접두어를 선택해 주세요.             여러분의 블로그 URL을 입력합니다.            다음 html 파일을 다운로드 받아 주세요.             이전에 했던 작업처럼 _config.yml에 있는 위치에 업로드를 해주세요!            그런 다음 깃허브에 push해주세요! (깃허브에 직접 업로드 하셨다면 건너 뛰셔도 됩니다.)            확인 버튼을 눌러주시면 다음과 같은 화면이 나옵니다.             다음 좌측에 있는 sitemap.xml을 클릭 후 https://testerhwi.github.io/sitemap.xml을 입력 후 제출을 눌러 주세요!             이렇게 되면 완성입니다🎉             반영 되기까지 시간이 소요되니 좀 기다려 주세요!      ","categories": ["Custom-Blog"],
+        "tags": ["Blog","Git","Github","Jekyll","Brew","Ruby","rbenv"],
+        "url": "/custom-blog/Custom_GitBlog4/",
+        "teaser": null
       }]

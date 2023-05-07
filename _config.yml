@@ -25,7 +25,7 @@ url                      : "https://0530hwi.github.io" # the base hostname & pro
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "0530hwi/0530hwi.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/notebook.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/notebook2.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "쉽게 정리한 블로그: An easy Notebook" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
