@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-07T19:23:55+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">깃허브 블로그 커스텀하기 - 깃허브 블로그 구글에 검색 되게 하기</title><link href="http://localhost:4000/custom-blog/Custom_GitBlog4/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 구글에 검색 되게 하기" /><published>2023-05-07T00:00:00+09:00</published><updated>2023-05-07T00:00:00+09:00</updated><id>http://localhost:4000/custom-blog/Custom_GitBlog4</id><content type="html" xml:base="http://localhost:4000/custom-blog/Custom_GitBlog4/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-07T21:51:20+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">깃허브 블로그 커스텀하기 - 깃허브 블로그 구글에 검색 되게 하기</title><link href="http://localhost:4000/custom-blog/Custom_GitBlog4/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 구글에 검색 되게 하기" /><published>2023-05-07T00:00:00+09:00</published><updated>2023-05-07T00:00:00+09:00</updated><id>http://localhost:4000/custom-blog/Custom_GitBlog4</id><content type="html" xml:base="http://localhost:4000/custom-blog/Custom_GitBlog4/"><![CDATA[<p><br /></p>
 
 <div align="center">
 
@@ -71,9 +71,96 @@
 <img width="650" alt="스크린샷 2023-05-07 오후 7 22 40" src="https://user-images.githubusercontent.com/131740570/236671921-3110ebbf-51ca-4a07-ad0c-63c528910614.png" class="align-center" /></p>
   </li>
   <li>
-    <p>반영 되기까지 시간이 소요되니 좀 기다려 주세요!</p>
+    <p>반영 되기까지 시간이 소요됩니다.<br />
+저는 이틀 정도 소요됐는데, 다른 분들은 최대 한달까지도 걸린다는 것 같아요🤨</p>
   </li>
-</ul>]]></content><author><name>Byeong hwi</name></author><category term="Custom-Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 커스텀, 쉽게 정리했습니다. 블로그를 구글에 노출시키기]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀하기 - 블로그 폰트 크기, 페이지 너비 조절하기</title><link href="http://localhost:4000/custom-blog/Custom_GitBlog3/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 블로그 폰트 크기, 페이지 너비 조절하기" /><published>2023-05-03T00:00:00+09:00</published><updated>2023-05-03T00:00:00+09:00</updated><id>http://localhost:4000/custom-blog/Custom_GitBlog3</id><content type="html" xml:base="http://localhost:4000/custom-blog/Custom_GitBlog3/"><![CDATA[<p><br /></p>
+</ul>]]></content><author><name>Byeong hwi</name></author><category term="Custom-Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 커스텀, 쉽게 정리했습니다. 블로그를 구글에 노출시키기]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)</title><link href="http://localhost:4000/custom-blog/Custom_GitBlog5/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)" /><published>2023-05-07T00:00:00+09:00</published><updated>2023-05-07T00:00:00+09:00</updated><id>http://localhost:4000/custom-blog/Custom_GitBlog5</id><content type="html" xml:base="http://localhost:4000/custom-blog/Custom_GitBlog5/"><![CDATA[<p><br /></p>
+
+<div align="center">
+
+
+❗️커스텀 포스팅은 필자의 시행착오와 독학을 통해 작성되었습니다.❗️<br /> 틀린 부분이나 좀 더 쉬운 방법이 있다면 댓글 부탁드려요. 다양한 피드백 환영입니다😃
+
+
+</div>
+
+<p><br /><br /></p>
+
+<h1 id="1️⃣-utterance-설치하기">1️⃣ utterance 설치하기</h1>
+<ul>
+  <li>요즘 핫(hot)한 댓글 플랫폼이에요!</li>
+  <li><code class="language-plaintext highlighter-rouge">disqus</code>도 많은 분들이 자주 이용하지만 저는 무겁게 느껴져서 선택하지 않았습니다.</li>
+</ul>
+
+<h2 id="1-플랫폼으로-이동-및-설치">1. 플랫폼으로 이동 및 설치</h2>
+<ul>
+  <li><a href="https://github.com/apps/utterances">✅ utterances 클릭하면 바로 이동</a> 링크로 접속해 주세요!</li>
+  <li><code class="language-plaintext highlighter-rouge">INSTALL</code>을 눌러 설치해 줍니다.</li>
+  <li><code class="language-plaintext highlighter-rouge">Only select repositories</code>를 선택해 주세요!
+<img width="550" alt="스크린샷 2023-05-07 오후 9 01 04" src="https://user-images.githubusercontent.com/131740570/236676149-697ec4e8-0075-4389-b7b1-5071e0023f66.png" class="align-center" />
+    <ul>
+      <li>저는 모든 저장소에 댓글 플랫폼이 필요 없기에 <code class="language-plaintext highlighter-rouge">Only select repositories</code>를 선택했습니다.</li>
+      <li>혹시라도 모든 저장소에 댓글 플랫폼이 설치되길 원하시는 분들은 <code class="language-plaintext highlighter-rouge">All repositories</code>를 선택해 주세요.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="2-저장소와-매핑-설정">2. 저장소와 매핑 설정</h2>
+<ul>
+  <li>다음 페이지로 이동하게 되면
+<img width="550" alt="스크린샷 2023-05-07 오후 9 06 51" src="https://user-images.githubusercontent.com/131740570/236676476-e6361311-bb84-4948-8498-3b264bc2a92b.png" class="align-center" />
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">repo</code>에는 <strong>소유자/저장소 이름</strong>을 입력해 주세요!<br />EX) testerHWI/testerHWI.github.io</li>
+      <li><code class="language-plaintext highlighter-rouge">Issue title contains page pathname</code>을 선택해 주세요!<br /></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="3-테마-설정">3. 테마 설정</h2>
+<ul>
+  <li>테마를 설정해 주세요!
+<img width="550" alt="스크린샷 2023-05-07 오후 9 14 31" src="https://user-images.githubusercontent.com/131740570/236676858-f24637e4-88c0-4a3e-8f1c-84c653bfad8d.png" class="align-center" />
+    <ul>
+      <li>저의 경우에는 블로그가 화이트 톤이라 <code class="language-plaintext highlighter-rouge">GitHub Light</code>로 설정했어요!</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Enable Utterances</code>에 있는 코드를 기억해 주세요!</li>
+</ul>
+
+<h2 id="4-_configyml-설정하기">4. _config.yml 설정하기</h2>
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">_config.yml</code> 파일로 이동해 줍니다.</p>
+  </li>
+  <li>
+    <p>저장소 경로를 설정해 주세요!
+<img width="550" alt="스크린샷 2023-05-07 오후 9 19 53" src="https://user-images.githubusercontent.com/131740570/236677311-4d87a36a-9ec8-4ebc-b322-34d42dc185fa.png" class="align-center" /></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Enable Utterances</code>의 코드 값을 그대로 입력해 줍니다.
+<img width="550" alt="스크린샷 2023-05-07 오후 9 20 12" src="https://user-images.githubusercontent.com/131740570/236677363-83798604-230b-4a7f-9e0f-d3c29fa33b7c.png" class="align-center" /></p>
+  </li>
+  <li>
+    <p>마지막으로 깃허브에 <code class="language-plaintext highlighter-rouge">Push</code>해주면 끝입니다.</p>
+  </li>
+</ul>
+
+<h1 id="2️⃣-주의사항-및-크기-조정">2️⃣ 주의사항 및 크기 조정</h1>
+
+<h2 id="1-주의사항">1. 주의사항</h2>
+<ul>
+  <li>블로그 포스팅을 할 때 반드시! <code class="language-plaintext highlighter-rouge">comments:TRUE</code>로 해주세요! (사진 참고)
+<img width="550" alt="스크린샷 2023-05-07 오후 9 35 25" src="https://user-images.githubusercontent.com/131740570/236677987-97bace13-b633-41cc-a028-fd837248c85c.png" class="align-center" /></li>
+</ul>
+
+<h2 id="2-크기-조정하기">2. 크기 조정하기</h2>
+<ul>
+  <li>다음 코드를 추가해 주세요! (아무 곳에나 추가하시면 됩니다.)</li>
+  <li>경로는 <code class="language-plaintext highlighter-rouge">_sass/minimal-mistakes/_page.scss</code>입니다.
+<script src="https://gist.github.com/0530hwi/96e883a36fcb467f6849b18173a47f97.js"></script></li>
+</ul>]]></content><author><name>Byeong hwi</name></author><category term="Custom-Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><summary type="html"><![CDATA[깃허브 블로그 커스텀, 쉽게 정리했습니다. 블로그에 댓글 기능 추가하기]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀하기 - 블로그 폰트 크기, 페이지 너비 조절하기</title><link href="http://localhost:4000/custom-blog/Custom_GitBlog3/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 블로그 폰트 크기, 페이지 너비 조절하기" /><published>2023-05-03T00:00:00+09:00</published><updated>2023-05-03T00:00:00+09:00</updated><id>http://localhost:4000/custom-blog/Custom_GitBlog3</id><content type="html" xml:base="http://localhost:4000/custom-blog/Custom_GitBlog3/"><![CDATA[<p><br /></p>
 
 <div align="center">
 
@@ -641,118 +728,7 @@ author:
   <li>서버를 구동하기 위해 <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>를 입력했다. <br /></li>
 </ol>
 
-<p><strong>🎉이상으로 깃허브 블로그 만들기 과정을 종료합니다! 깃허브 블로그 커스텀에서 뵙겠습니다!</strong></p>]]></content><author><name>Byeong hwi</name></author><category term="Making-Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 관리하는 방법을 쉽게 정리했습니다]]></summary></entry><entry><title type="html">초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치</title><link href="http://localhost:4000/making-blog/Making_GitBlog2/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T00:00:00+09:00</updated><id>http://localhost:4000/making-blog/Making_GitBlog2</id><content type="html" xml:base="http://localhost:4000/making-blog/Making_GitBlog2/"><![CDATA[<p><br /></p>
-
-<p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
-
-<p><br /></p>
-
-<h1 id="rbenv-패키지-설치하기">rbenv 패키지 설치하기</h1>
-<ul>
-  <li>rbenv란?
-    <ul>
-      <li>MacOS는 기본적으로 <code class="language-plaintext highlighter-rouge">ruby</code>가 설치되어 있습니다. <br /> 따라서 <code class="language-plaintext highlighter-rouge">ruby</code>는 OS의 영향을 받고, 다양한 버전을 독립적으로 관리하기가 쉽지 않습니다.</li>
-      <li>이럴 때 독립적으로 <code class="language-plaintext highlighter-rouge">ruby</code>의 버전 관리를 도와주는 것이 <code class="language-plaintext highlighter-rouge">rbenv</code>입니다.</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="1️⃣-1단계">1️⃣ 1단계</h2>
-<p>자, 그럼 rbenv 패키지를 설치해봅시다.</p>
-<ul>
-  <li><a href="https://formulae.brew.sh/formula/rbenv">rbenv 설치 바로가기</a> <br />
-홈페이지에는 rbenv에 대한 정보가 담겨 있어요.<br />
-홈페이지를 참고해서 설치해도 되고, 저를 따라오셔도 됩니다.</li>
-</ul>
-
-<p><strong>❗️못할 것 같다는 생각은 잊어버리고, 터미널을 켜줍니다!</strong>
-그리고 다음 명령어들을 쭉 입력해주세요</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>rbenv ruby-build 
-rbenv verions <span class="c"># 설치가 완료되면 버전을 확인해보기</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-<p><img src="https://user-images.githubusercontent.com/86516594/234170701-11947ad0-5317-4d74-a966-1cf3e1671092.png" alt="image" /></p>
-
-<p>위와 같은 이미지가 뜬다면 성공입니다. 
-아까 설명한 <strong>OS의 ruby</strong>를 사용하고 있다는 말이에요!</p>
-
-<h2 id="2️⃣-2단계">2️⃣ 2단계</h2>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="rouge-code"><pre>ruby <span class="nb">install</span> <span class="nt">-l</span> <span class="c">#설치가 가능한 ruby 버전을 확인해보기</span>
-ruby <span class="nb">install </span>3.2.2 <span class="c"># 3.2.2 버전 설치하기</span>
-rbenv global 3.2.2 <span class="c"># 3.2.2 버전으로 설정하기</span>
-rbenv versions 
-</pre></td></tr></tbody></table></code></pre></div></div>
-<p><img width="320" alt="image" src="https://user-images.githubusercontent.com/86516594/234173522-003a0b86-b68b-425c-8f17-ed9d1dc4454e.png" /></p>
-
-<p>위와 같은 이미지가 뜬다면 성공입니다.</p>
-
-<h2 id="️필독️-에러-build-failed-macos-1301-using-ruby-build-20230330-대처">❗️필독❗️ 에러: BUILD FAILED (macOS 13.0.1 using ruby-build 20230330) 대처</h2>
-<ul>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">ruby install 3.2.2</code>를 입력하고 설치하는 과정에서 <br /> <code class="language-plaintext highlighter-rouge">BUILD FAILED (macOS 13.0.1 using ruby-build 20230330)</code> 이라는 에러가 발생할 수 있어요.</p>
-  </li>
-  <li>이럴 때는 다음과 같이 터미널에 입력해 주세요.<br />
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>readline openssl
-<span class="c"># 설치가 끝나면 차례대로 입력해 주세요</span>
-brew <span class="nb">install </span>libyaml
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-  </li>
-  <li>오류가 발생하는 이유를 여러가지 의심해 볼 수 있어요
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">ruby-build</code>를 설치하는 과정에서 <code class="language-plaintext highlighter-rouge">homebrew</code>의 패키지인 <code class="language-plaintext highlighter-rouge">readline openssl</code>, <code class="language-plaintext highlighter-rouge">libyaml</code> 를 사용한다.</li>
-      <li>brew를 처음하는 사용자는 위의 패키지가 설치되어 있지 않다.</li>
-    </ul>
-  </li>
-</ul>
-
-<p>✅ <strong>참고</strong>: <a href="https://github.com/rbenv/ruby-build/issues/1691">BUILD FAILED 에러 발생 이유</a></p>
-
-<h2 id="3️⃣-3단계">3️⃣ 3단계</h2>
-<ul>
-  <li><a href="https://0530hwi.github.io/making%20blog/Making_GitBlog1/#에러-발생-zsh-command-not-found-brew">지난 번</a> homebrew 에러 발생과 마찬가지로 <code class="language-plaintext highlighter-rouge">vi ~/.zshrc</code>에 진입해 경로를 설정해줘야 해요.</li>
-</ul>
-
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">vi</code> 편집기 진입
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>vi ~/.zshrc
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-  </li>
-  <li>
-    <p>알파벳 “i”를 눌러 <strong>insert</strong> 모드에 진입합니다.<br /> 모드가 바뀐 것은 터미널 하단에서 확인할 수 있어요.</p>
-  </li>
-  <li>다음 명령어를 그대로 추가해 줍니다.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre><span class="o">[[</span> <span class="nt">-d</span> ~/.rbenv  <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
-     <span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.rbenv/bin:</span><span class="nv">$PATH</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
-     <span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>rbenv init -<span class="si">)</span><span class="s2">"</span>
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-  </li>
-  <li>ESC를 누르고 <code class="language-plaintext highlighter-rouge">:wq</code>를 입력한 후에 빠져나오면 돼요
-    <ul>
-      <li>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">:wq</code>는 저장 후 종료입니다. 이외에 <code class="language-plaintext highlighter-rouge">:q</code>는 종료, <code class="language-plaintext highlighter-rouge">:!q</code>는 강제 종료 등 여러 가지 명령어가 있어요</li>
-    </ul>
-  </li>
-  <li>적용까지 해주기
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">source</span> ~/.zshrc
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-    <p>터미널을 재실행해도 <code class="language-plaintext highlighter-rouge">system ruby</code>가 아닌 독립적인 <code class="language-plaintext highlighter-rouge">ruby 버전</code>을 적용합니다.</p>
-  </li>
-</ol>
-
-<p>저는 <code class="language-plaintext highlighter-rouge">BUILD FAILED</code> 에러 해결해 보겠다고 4~5시간 구글링했는데, <br />여러분은 꼭 이 글을 통해 쉽게 해결했으면 좋겠습니다! 다음 파트에서 뵙겠습니다😅</p>]]></content><author><name>Byeong hwi</name></author><category term="Making-Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)]]></summary></entry><entry><title type="html">초보를 위한 깃허브 블로그 만들기(3). github.io 만들기</title><link href="http://localhost:4000/making-blog/Making_GitBlog3/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(3). github.io 만들기" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T00:00:00+09:00</updated><id>http://localhost:4000/making-blog/Making_GitBlog3</id><content type="html" xml:base="http://localhost:4000/making-blog/Making_GitBlog3/"><![CDATA[<p><br /></p>
+<p><strong>🎉이상으로 깃허브 블로그 만들기 과정을 종료합니다! 깃허브 블로그 커스텀에서 뵙겠습니다!</strong></p>]]></content><author><name>Byeong hwi</name></author><category term="Making-Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 관리하는 방법을 쉽게 정리했습니다]]></summary></entry><entry><title type="html">초보를 위한 깃허브 블로그 만들기(3). github.io 만들기</title><link href="http://localhost:4000/making-blog/Making_GitBlog3/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(3). github.io 만들기" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T00:00:00+09:00</updated><id>http://localhost:4000/making-blog/Making_GitBlog3</id><content type="html" xml:base="http://localhost:4000/making-blog/Making_GitBlog3/"><![CDATA[<p><br /></p>
 
 <p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
 
@@ -928,7 +904,118 @@ git push origin main
 
 <ul>
   <li><strong>앞으로 터미널에 깃 작업 관련 비밀번호를 입력할 때는 토큰을 입력하면 됩니다.</strong></li>
-</ul>]]></content><author><name>Byeong hwi</name></author><category term="Making-Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)]]></summary></entry><entry><title type="html">초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치</title><link href="http://localhost:4000/making-blog/Making_GitBlog1/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치" /><published>2023-04-23T00:00:00+09:00</published><updated>2023-04-23T00:00:00+09:00</updated><id>http://localhost:4000/making-blog/Making_GitBlog1</id><content type="html" xml:base="http://localhost:4000/making-blog/Making_GitBlog1/"><![CDATA[<p><br /></p>
+</ul>]]></content><author><name>Byeong hwi</name></author><category term="Making-Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)]]></summary></entry><entry><title type="html">초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치</title><link href="http://localhost:4000/making-blog/Making_GitBlog2/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T00:00:00+09:00</updated><id>http://localhost:4000/making-blog/Making_GitBlog2</id><content type="html" xml:base="http://localhost:4000/making-blog/Making_GitBlog2/"><![CDATA[<p><br /></p>
+
+<p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
+
+<p><br /></p>
+
+<h1 id="rbenv-패키지-설치하기">rbenv 패키지 설치하기</h1>
+<ul>
+  <li>rbenv란?
+    <ul>
+      <li>MacOS는 기본적으로 <code class="language-plaintext highlighter-rouge">ruby</code>가 설치되어 있습니다. <br /> 따라서 <code class="language-plaintext highlighter-rouge">ruby</code>는 OS의 영향을 받고, 다양한 버전을 독립적으로 관리하기가 쉽지 않습니다.</li>
+      <li>이럴 때 독립적으로 <code class="language-plaintext highlighter-rouge">ruby</code>의 버전 관리를 도와주는 것이 <code class="language-plaintext highlighter-rouge">rbenv</code>입니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="1️⃣-1단계">1️⃣ 1단계</h2>
+<p>자, 그럼 rbenv 패키지를 설치해봅시다.</p>
+<ul>
+  <li><a href="https://formulae.brew.sh/formula/rbenv">rbenv 설치 바로가기</a> <br />
+홈페이지에는 rbenv에 대한 정보가 담겨 있어요.<br />
+홈페이지를 참고해서 설치해도 되고, 저를 따라오셔도 됩니다.</li>
+</ul>
+
+<p><strong>❗️못할 것 같다는 생각은 잊어버리고, 터미널을 켜줍니다!</strong>
+그리고 다음 명령어들을 쭉 입력해주세요</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>rbenv ruby-build 
+rbenv verions <span class="c"># 설치가 완료되면 버전을 확인해보기</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/86516594/234170701-11947ad0-5317-4d74-a966-1cf3e1671092.png" alt="image" /></p>
+
+<p>위와 같은 이미지가 뜬다면 성공입니다. 
+아까 설명한 <strong>OS의 ruby</strong>를 사용하고 있다는 말이에요!</p>
+
+<h2 id="2️⃣-2단계">2️⃣ 2단계</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>ruby <span class="nb">install</span> <span class="nt">-l</span> <span class="c">#설치가 가능한 ruby 버전을 확인해보기</span>
+ruby <span class="nb">install </span>3.2.2 <span class="c"># 3.2.2 버전 설치하기</span>
+rbenv global 3.2.2 <span class="c"># 3.2.2 버전으로 설정하기</span>
+rbenv versions 
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><img width="320" alt="image" src="https://user-images.githubusercontent.com/86516594/234173522-003a0b86-b68b-425c-8f17-ed9d1dc4454e.png" /></p>
+
+<p>위와 같은 이미지가 뜬다면 성공입니다.</p>
+
+<h2 id="️필독️-에러-build-failed-macos-1301-using-ruby-build-20230330-대처">❗️필독❗️ 에러: BUILD FAILED (macOS 13.0.1 using ruby-build 20230330) 대처</h2>
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">ruby install 3.2.2</code>를 입력하고 설치하는 과정에서 <br /> <code class="language-plaintext highlighter-rouge">BUILD FAILED (macOS 13.0.1 using ruby-build 20230330)</code> 이라는 에러가 발생할 수 있어요.</p>
+  </li>
+  <li>이럴 때는 다음과 같이 터미널에 입력해 주세요.<br />
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>readline openssl
+<span class="c"># 설치가 끝나면 차례대로 입력해 주세요</span>
+brew <span class="nb">install </span>libyaml
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>오류가 발생하는 이유를 여러가지 의심해 볼 수 있어요
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">ruby-build</code>를 설치하는 과정에서 <code class="language-plaintext highlighter-rouge">homebrew</code>의 패키지인 <code class="language-plaintext highlighter-rouge">readline openssl</code>, <code class="language-plaintext highlighter-rouge">libyaml</code> 를 사용한다.</li>
+      <li>brew를 처음하는 사용자는 위의 패키지가 설치되어 있지 않다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>✅ <strong>참고</strong>: <a href="https://github.com/rbenv/ruby-build/issues/1691">BUILD FAILED 에러 발생 이유</a></p>
+
+<h2 id="3️⃣-3단계">3️⃣ 3단계</h2>
+<ul>
+  <li><a href="https://0530hwi.github.io/making%20blog/Making_GitBlog1/#에러-발생-zsh-command-not-found-brew">지난 번</a> homebrew 에러 발생과 마찬가지로 <code class="language-plaintext highlighter-rouge">vi ~/.zshrc</code>에 진입해 경로를 설정해줘야 해요.</li>
+</ul>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">vi</code> 편집기 진입
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>vi ~/.zshrc
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>알파벳 “i”를 눌러 <strong>insert</strong> 모드에 진입합니다.<br /> 모드가 바뀐 것은 터미널 하단에서 확인할 수 있어요.</p>
+  </li>
+  <li>다음 명령어를 그대로 추가해 줍니다.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="o">[[</span> <span class="nt">-d</span> ~/.rbenv  <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+     <span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.rbenv/bin:</span><span class="nv">$PATH</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+     <span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>rbenv init -<span class="si">)</span><span class="s2">"</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>ESC를 누르고 <code class="language-plaintext highlighter-rouge">:wq</code>를 입력한 후에 빠져나오면 돼요
+    <ul>
+      <li>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">:wq</code>는 저장 후 종료입니다. 이외에 <code class="language-plaintext highlighter-rouge">:q</code>는 종료, <code class="language-plaintext highlighter-rouge">:!q</code>는 강제 종료 등 여러 가지 명령어가 있어요</li>
+    </ul>
+  </li>
+  <li>적용까지 해주기
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">source</span> ~/.zshrc
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>터미널을 재실행해도 <code class="language-plaintext highlighter-rouge">system ruby</code>가 아닌 독립적인 <code class="language-plaintext highlighter-rouge">ruby 버전</code>을 적용합니다.</p>
+  </li>
+</ol>
+
+<p>저는 <code class="language-plaintext highlighter-rouge">BUILD FAILED</code> 에러 해결해 보겠다고 4~5시간 구글링했는데, <br />여러분은 꼭 이 글을 통해 쉽게 해결했으면 좋겠습니다! 다음 파트에서 뵙겠습니다😅</p>]]></content><author><name>Byeong hwi</name></author><category term="Making-Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)]]></summary></entry><entry><title type="html">초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치</title><link href="http://localhost:4000/making-blog/Making_GitBlog1/" rel="alternate" type="text/html" title="초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치" /><published>2023-04-23T00:00:00+09:00</published><updated>2023-04-23T00:00:00+09:00</updated><id>http://localhost:4000/making-blog/Making_GitBlog1</id><content type="html" xml:base="http://localhost:4000/making-blog/Making_GitBlog1/"><![CDATA[<p><br /></p>
 
 <p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
 
