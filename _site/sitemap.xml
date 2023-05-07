@@ -4,7 +4,7 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
-        <loc>http://localhost:4000/custom%20blog/Custom_GitBlog3/</loc>
+        <loc>http://localhost:4000/custom-blog/Custom_GitBlog3/</loc>
         
         <lastmod>2023-05-03T00:00:00+09:00</lastmod>
         
@@ -20,7 +20,7 @@
     </url>
     
     <url>
-        <loc>http://localhost:4000/custom%20blog/Custom_GitBlog2/</loc>
+        <loc>http://localhost:4000/custom-blog/Custom_GitBlog2/</loc>
         
         <lastmod>2023-05-03T00:00:00+09:00</lastmod>
         
@@ -36,7 +36,7 @@
     </url>
     
     <url>
-        <loc>http://localhost:4000/custom%20blog/Custom_GitBlog1/</loc>
+        <loc>http://localhost:4000/custom-blog/Custom_GitBlog1/</loc>
         
         <lastmod>2023-04-28T00:00:00+09:00</lastmod>
         
@@ -52,7 +52,7 @@
     </url>
     
     <url>
-        <loc>http://localhost:4000/making%20blog/Making_GitBlog4/</loc>
+        <loc>http://localhost:4000/making-blog/Making_GitBlog4/</loc>
         
         <lastmod>2023-04-27T00:00:00+09:00</lastmod>
         
@@ -68,7 +68,7 @@
     </url>
     
     <url>
-        <loc>http://localhost:4000/making%20blog/Making_GitBlog3/</loc>
+        <loc>http://localhost:4000/making-blog/Making_GitBlog3/</loc>
         
         <lastmod>2023-04-25T00:00:00+09:00</lastmod>
         
@@ -84,7 +84,7 @@
     </url>
     
     <url>
-        <loc>http://localhost:4000/making%20blog/Making_GitBlog2/</loc>
+        <loc>http://localhost:4000/making-blog/Making_GitBlog2/</loc>
         
         <lastmod>2023-04-25T00:00:00+09:00</lastmod>
         
@@ -100,7 +100,7 @@
     </url>
     
     <url>
-        <loc>http://localhost:4000/making%20blog/Making_GitBlog1/</loc>
+        <loc>http://localhost:4000/making-blog/Making_GitBlog1/</loc>
         
         <lastmod>2023-04-23T00:00:00+09:00</lastmod>
         

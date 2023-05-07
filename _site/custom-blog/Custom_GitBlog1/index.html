@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치 - 쉽게 정리한 블로그</title>
-<meta name="description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
+<!-- begin _includes/seo.html --><title>깃허브 블로그 커스텀하기 - 테마 설정, 기본적인 설정 등 - 쉽게 정리한 블로그</title>
+<meta name="description" content="깃허브 블로그 커스텀, 쉽게 정리했습니다. ‘_config_yml’파일 정복하기">
 
 
   <meta name="author" content="Byeong hwi">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="쉽게 정리한 블로그">
-<meta property="og:title" content="초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치">
-<meta property="og:url" content="http://localhost:4000/making%20blog/Making_GitBlog1/">
+<meta property="og:title" content="깃허브 블로그 커스텀하기 - 테마 설정, 기본적인 설정 등">
+<meta property="og:url" content="http://localhost:4000/custom-blog/Custom_GitBlog1/">
 
 
-  <meta property="og:description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
+  <meta property="og:description" content="깃허브 블로그 커스텀, 쉽게 정리했습니다. ‘_config_yml’파일 정복하기">
 
 
 
@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-04-23T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-04-28T00:00:00+09:00">
 
 
 
@@ -47,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/making%20blog/Making_GitBlog1/">
+<link rel="canonical" href="http://localhost:4000/custom-blog/Custom_GitBlog1/">
 
 
 
@@ -335,16 +335,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치">
-    <meta itemprop="description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
-    <meta itemprop="datePublished" content="2023-04-23T00:00:00+09:00">
+    <meta itemprop="headline" content="깃허브 블로그 커스텀하기 - 테마 설정, 기본적인 설정 등">
+    <meta itemprop="description" content="깃허브 블로그 커스텀, 쉽게 정리했습니다. ‘_config_yml’파일 정복하기">
+    <meta itemprop="datePublished" content="2023-04-28T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/making%20blog/Making_GitBlog1/" class="u-url" itemprop="url">초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치
+            <a href="http://localhost:4000/custom-blog/Custom_GitBlog1/" class="u-url" itemprop="url">깃허브 블로그 커스텀하기 - 테마 설정, 기본적인 설정 등
 </a>
           </h1>
           
@@ -358,116 +358,151 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#homebrew-설치하기">HomeBrew 설치하기</a><ul><li><a href="#1️⃣-1단계">1️⃣ 1단계</a></li><li><a href="#2️⃣-2단계">2️⃣ 2단계</a></li></ul></li><li><a href="#에러-발생-zsh-command-not-found-brew">에러 발생 zsh: command not found: brew</a><ul><li><a href="#1️⃣-해결-1단계">1️⃣ 해결 1단계</a></li><li><a href="#2️⃣-해결-2단계">2️⃣ 해결 2단계</a></li></ul></li><li><a href="#homebrew-삭제하기">Homebrew 삭제하기</a></li></ul>
+              <ul class="toc__menu"><li><a href="#1️⃣-_configyml-파일-파헤치기">1️⃣ _config.yml 파일 파헤치기</a><ul><li><a href="#site-setting-부분">Site setting 부분</a></li><li><a href="#site-author">Site Author</a></li><li><a href="#site-footer">Site Footer</a><ul><li><a href="#follow-feed-지우기">FOLLOW: FEED 지우기</a></li></ul></li></ul></li></ul>
 
             </nav>
           </aside>
         
         <p><br /></p>
 
-<p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
+<div align="center">
 
-<p><br /></p>
 
-<h1 id="homebrew-설치하기">HomeBrew 설치하기</h1>
+❗️커스텀 포스팅은 필자의 시행착오와 독학을 통해 작성되었습니다.❗️<br /> 틀린 부분이나 좀 더 쉬운 방법이 있다면 댓글 부탁드려요. 다양한 피드백 환영입니다😃
+
+
+</div>
+
+<p><br /><br /></p>
+
+<h1 id="1️⃣-_configyml-파일-파헤치기">1️⃣ _config.yml 파일 파헤치기</h1>
 <ul>
-  <li>HomeBrew란?
-    <ul>
-      <li>HomeBrew는 MacOS의 패키지 관리자예요</li>
-      <li>Apple, Linux에서 제공하지 않는 패키지를 관리할 수 있어요.</li>
-    </ul>
-  </li>
+  <li>가장 기본적인 설정을 하는 파일이에요.</li>
+  <li>파일의 위치는 <strong>블로그 폴더의 루트 폴더</strong>입니다.</li>
 </ul>
 
-<h2 id="1️⃣-1단계">1️⃣ 1단계</h2>
-<p>자, 그럼 이제 설치해봅시다.</p>
+<h2 id="site-setting-부분">Site setting 부분</h2>
 <ul>
-  <li><a href="https://brew.sh/index_ko">HomeBrew 바로가기</a> <br />
-홈페이지의 안내에 따라 설치해도 되고, 터미널에 다음 명령어를 입력해도 돼요.</li>
+  <li>따로 주석을 달아놓을게요, 제 블로그와 비교해보세요!</li>
 </ul>
-
-<p>✅ <strong>참고</strong>: 터미널은 <strong>Command + Spacebar</strong> 실행 후, Terminal 입력 후에 바로 실행할 수 있어요!</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="c"># Site Settings</span>
+locale                   : <span class="s2">"ko-KR"</span> <span class="c"># 블로그의 기본 언어를 설정합니다. ex)영어: en-US</span>
+title                    : <span class="s2">"쉽게 정리한 블로그"</span> <span class="c"># 사이트 탭에 나타나는 블로그 이름입니다.</span>
+title_separator          : <span class="s2">"-"</span>
+subtitle                 : <span class="s2">"Let's do our best!"</span> <span class="c"># 블로그 제목 아래에 표시되는 부분입니다.</span>
+name                     : <span class="s2">"Byeong hwi"</span> <span class="c"># 블로그 가장 하단 부분 @2023 {name} Powered by 부분</span>
+description              : <span class="s2">""</span> <span class="c"># 어느 부분인지 모르겠네요</span>
+url                      : <span class="s2">"https://0530hwi.github.io"</span> <span class="c"># 블로그의 주소를 나타냅니다. 여러분의 주소를 입력해주세요.</span>
+baseurl                  : <span class="c"># 블로그 접속 오류가 발생(fallback)했을 때 연결되는 서브 주소입니다.</span>
+repository               : <span class="s2">"0530hwi/0530hwi.github.io"</span> <span class="c"># 깃허브 저장소입니다. </span>
+teaser                   : <span class="c"># fallback의 경우 연결되는 이미지입니다. 경로는  "/assets/images/.png" </span>
+logo                     : <span class="s2">"/assets/images/notebook.png"</span> <span class="c"># 제목 옆에 있는 로고 이미지입니다. </span>
+masthead_title           : <span class="s2">"쉽게 정리한 블로그: An easy notebook"</span> <span class="c"># 블로그 제목을 나타냅니다. 로고 옆에 있는 제목이에요</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
+<p>✅ <strong>참고</strong>: 이미지 경로는 <code class="language-plaintext highlighter-rouge">/assets/</code>폴더를 활용해야 합니다. <code class="language-plaintext highlighter-rouge">images</code> 폴더가 없이 그대로 사용하셔도 무방합니다.<br />
+사진 파일은 png, jpg, jpeg 등 모두 상관없습니다.</p>
 
-<h2 id="2️⃣-2단계">2️⃣ 2단계</h2>
-<p>설치가 완료되었다면, <code class="language-plaintext highlighter-rouge">brew help</code>, <code class="language-plaintext highlighter-rouge">brew -v</code> 같은 명령어를 통해 HomeBrew가 잘 작동되는지 확인해 봐요.</p>
+<h2 id="site-author">Site Author</h2>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">brew help</code>를 입력했을 때 <br />
-<img width="356" alt="스크린샷 2023-04-24 오후 8 30 41" src="https://user-images.githubusercontent.com/86516594/233985857-b61ebefc-9fb3-4c00-9cdc-52198d213c69.png" /></li>
+  <li>이 부분은 블로그 왼쪽 부분의 영역입니다.</li>
 </ul>
 
-<p>정상적으로 작동됩니다!</p>
-
-<p>자, 이제 터미널을 끄고 재실행해 봅시다.</p>
-
-<p><br /></p>
-
-<h1 id="에러-발생-zsh-command-not-found-brew">에러 발생 zsh: command not found: brew</h1>
-<ul>
-  <li>터미널을 재시작한 후 <code class="language-plaintext highlighter-rouge">brew help</code>를 입력했지만 다음과 같은 에러가 발생했습니다! <br />
-<img width="208" alt="image" src="https://user-images.githubusercontent.com/86516594/233987600-5a7a3959-3e01-4242-ab7d-c7583e8c7e1b.png" /></li>
-</ul>
-
-<h2 id="1️⃣-해결-1단계">1️⃣ 해결 1단계</h2>
-<p>이럴 때는 터미널에 다음과 같이 입력해 주면 돼요<br /></p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">eval</span> <span class="si">$(</span>/opt/homebrew/bin/brew shellenv<span class="si">)</span>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="rouge-code"><pre><span class="c"># Site Author</span>
+author:
+  name             : <span class="s2">"Byeong hwi"</span> <span class="c"># 블로그 왼쪽에 나타나는 이름입니다.</span>
+  avatar           : <span class="s2">"/assets/images/bear.png"</span> <span class="c"># 이름 위 사진입니다. 경로는 /assets/images/.png로 설정 가능합니다.</span>
+  bio              : <span class="s2">"어려운 내용, 쉽게 정리해보겠습니다 :)"</span> <span class="c"># 소개란입니다. </span>
+  location         : <span class="s2">"Republic of Korea"</span> <span class="c"># 위치를 나타내줍니다. </span>
+  email            :
+  links:
+    - label: <span class="s2">"Email"</span>
+      icon: <span class="s2">"fas fa-fw fa-envelope-square"</span>
+      url: mailto:0530hwi@gmail.com <span class="c">#mailto:를 입력해야 메일 쓰기로 바로 연결됩니다.</span>
+    - label: <span class="s2">"Website"</span>
+      icon: <span class="s2">"fas fa-fw fa-link"</span>
+      <span class="c"># url: "https://your-website.com" # 이 부분을 주석처리하면 블로그에서 생략됩니다.</span>
+    - label: <span class="s2">"Twitter"</span>
+      icon: <span class="s2">"fab fa-fw fa-twitter-square"</span>
+      <span class="c"># url: "https://twitter.com/" # 이 부분을 주석처리하면 블로그에서 생략됩니다.</span>
+    - label: <span class="s2">"Facebook"</span>
+      icon: <span class="s2">"fab fa-fw fa-facebook-square"</span>
+      <span class="c"># url: "https://facebook.com/" # 이 부분을 주석처리하면 블로그에서 생략됩니다.</span>
+    - label: <span class="s2">"GitHub"</span>
+      icon: <span class="s2">"fab fa-fw fa-github"</span>
+      url: <span class="s2">"https://github.com/0530hwi"</span>
+    - label: <span class="s2">"Instagram"</span>
+      icon: <span class="s2">"fab fa-fw fa-instagram"</span>
+      url: <span class="s2">"https://instagram.com/hwiping_"</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
-<p>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">eval</code> 명령어는 “<code class="language-plaintext highlighter-rouge">$</code>뒤 경로에 대한 인자를 받아 현재 터미널에서 실행하라”라는 의미예요.</p>
 
-<p>그런데, 터미널을 재시작할 때마다 저런 명령어를 입력하는 것은 너무 귀찮아요<br />
-그래서 우리는 다음과 같은 작업을 해줘야 돼요.</p>
+<h2 id="site-footer">Site Footer</h2>
+<ul>
+  <li>다음은 <code class="language-plaintext highlighter-rouge">Site Footer</code> 영역입니다.</li>
+  <li>이 영역은 블로그 하단 부분에 해당됩니다.</li>
+  <li>이 부분은 블로그 프로필(왼쪽 영역)과 동일한 부분이 많아서 저같은 경우 <strong>모두 주석 처리</strong>했습니다.</li>
+</ul>
 
-<h2 id="2️⃣-해결-2단계">2️⃣ 해결 2단계</h2>
+<p><img width="425" alt="스크린샷 2023-04-28 오후 6 36 28" src="https://user-images.githubusercontent.com/86516594/235113455-312006d5-09a1-47c3-ad90-53eb48d49f26.png" class="align-center" /></p>
 
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">vi</code> 편집기 진입
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>vi ~/.zshrc
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-    <p>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">echo $SHELL</code>을 통해 현재 사용되는 편집기가 무엇인지 알아야 해요.
-저는 <code class="language-plaintext highlighter-rouge">zsh</code>를 사용하고 있지만, <code class="language-plaintext highlighter-rouge">bash</code>의 경우에는 <code class="language-plaintext highlighter-rouge">vi ~/.bashrc</code>가 됩니다.</p>
+<ul>
+  <li>개인적으로 저는 빨간 영역의 부분을 지우고 싶더라구요! <br /> 저와 같이 하시려면 다음을 참고해주세요!
+    <h3 id="follow-feed-지우기">FOLLOW: FEED 지우기</h3>
+    <ol>
+      <li>먼저 폴더 <code class="language-plaintext highlighter-rouge">_includes</code>로 이동합니다.</li>
+      <li><code class="language-plaintext highlighter-rouge">footer_html</code></li>
+      <li>아래의 코드 부분을 <strong>제외한 나머지 부분을 모두 주석 처리</strong>
+<img width="610" alt="스크린샷 2023-04-28 오후 6 57 03" src="https://user-images.githubusercontent.com/86516594/235117681-bed715d0-6f85-48bc-9711-15431c86de61.png" class="align-center" /></li>
+    </ol>
   </li>
-  <li>
-    <p>알파벳 “i”를 눌러 <strong>insert</strong> 모드에 진입합니다.<br />
-모드가 바뀐 것은 터미널 하단에서 확인할 수 있어요.</p>
-  </li>
-  <li>다음 명령어를 그대로 추가해 줍니다.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">eval</span> <span class="si">$(</span>/opt/homebrew/bin/brew shellenv<span class="si">)</span>
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-    <p><img width="294" alt="image" src="https://user-images.githubusercontent.com/86516594/233991199-545d0b97-db40-4b17-8679-73c44afbc6e8.png" /></p>
-  </li>
-  <li>ESC를 누르고 <code class="language-plaintext highlighter-rouge">:wq</code>를 입력한 후에 빠져나오면 돼요
-    <ul>
-      <li>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">:wq</code>는 저장 후 종료입니다. 이외에 <code class="language-plaintext highlighter-rouge">:q</code>는 종료, <code class="language-plaintext highlighter-rouge">:!q</code>는 강제 종료 등 여러 가지 명령어가 있어요</li>
-    </ul>
-  </li>
-  <li>터미널을 재부팅 후 <code class="language-plaintext highlighter-rouge">brew help</code>를 입력하면 brew가 정상적으로 실행됩니다!</li>
-</ol>
+</ul>
 
-<h1 id="homebrew-삭제하기">Homebrew 삭제하기</h1>
-<p>혹시라도 에러가 발생한다면, <strong>Homebrew</strong>를 삭제한 후 다시 설치하는 것을 권장합니다.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"page__footer-copyright"</span><span class="o">&gt;</span>&amp;copy<span class="p">;</span> 2023 Byeong hwi. Powered by &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"https://jekyllrb.com"</span> <span class="nv">rel</span><span class="o">=</span><span class="s2">"nofollow"</span><span class="o">&gt;</span>Jekyll&lt;/a&gt; &amp;amp<span class="p">;</span> &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"https://mademistakes.com/work/minimal-mistakes-jekyll-theme/"</span> <span class="nv">rel</span><span class="o">=</span><span class="s2">"nofollow"</span><span class="o">&gt;</span>Minimal Mistakes&lt;/a&gt;.&lt;/div&gt;
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<ol>
-  <li>터미널에 입력해 주세요.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh<span class="si">)</span><span class="s2">"</span>
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-    <p>입력 후에 <strong>Y</strong>를 입력해 삭제해 주세요!</p>
-  </li>
-  <li>다음 <code class="language-plaintext highlighter-rouge">/usr/local</code> 폴더에서 HomeBrew 폴더를 삭제해 줍니다.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">rm</span> <span class="nt">-rf</span> Homebrew/
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-  </li>
-</ol>
+<p>✅ <strong>참고</strong>: html 블록 주석처리는 vscode에서 <code class="language-plaintext highlighter-rouge">shift + option + a</code> 간편하게 할 수 있습니다. <br /> 위의 코드는 Powered by ~ 부분입니다. 이 부분을 주석 처리하면 저작권 문제가 발생할 수 있습니다.</p>
 
-<p>Homebrew를 설치했다면 절반은 성공입니다. 다음 파트에서 뵙겠습니다😄</p>
 
         
       </section>
@@ -513,7 +548,7 @@
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#making-blog" class="page__taxonomy-item p-category" rel="tag">Making Blog</a>
+      <a href="/categories/#custom-blog" class="page__taxonomy-item p-category" rel="tag">Custom-Blog</a>
     
     </span>
   </p>
@@ -521,7 +556,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-23T00:00:00+09:00">April 23, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-28T00:00:00+09:00">April 28, 2023</time></p>
 
       </footer>
 
@@ -530,10 +565,11 @@
       
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">이전</a>
+      <a href="/making-blog/Making_GitBlog4/" class="pagination--pager" title="초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기
+">이전</a>
     
     
-      <a href="/making%20blog/Making_GitBlog2/" class="pagination--pager" title="초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치
+      <a href="/custom-blog/Custom_GitBlog2/" class="pagination--pager" title="깃허브 블로그 커스텀하기 - 블로그 폰트 변경하기
 ">다음</a>
     
   </nav>

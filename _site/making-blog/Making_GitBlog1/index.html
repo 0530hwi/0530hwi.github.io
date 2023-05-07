@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>초보를 위한 깃허브 블로그 만들기(3). github.io 만들기 - 쉽게 정리한 블로그</title>
+<!-- begin _includes/seo.html --><title>초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치 - 쉽게 정리한 블로그</title>
 <meta name="description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="쉽게 정리한 블로그">
-<meta property="og:title" content="초보를 위한 깃허브 블로그 만들기(3). github.io 만들기">
-<meta property="og:url" content="http://localhost:4000/making%20blog/Making_GitBlog3/">
+<meta property="og:title" content="초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치">
+<meta property="og:url" content="http://localhost:4000/making-blog/Making_GitBlog1/">
 
 
   <meta property="og:description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-04-25T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-04-23T00:00:00+09:00">
 
 
 
@@ -47,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/making%20blog/Making_GitBlog3/">
+<link rel="canonical" href="http://localhost:4000/making-blog/Making_GitBlog1/">
 
 
 
@@ -335,16 +335,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="초보를 위한 깃허브 블로그 만들기(3). github.io 만들기">
+    <meta itemprop="headline" content="초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치">
     <meta itemprop="description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
-    <meta itemprop="datePublished" content="2023-04-25T00:00:00+09:00">
+    <meta itemprop="datePublished" content="2023-04-23T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/making%20blog/Making_GitBlog3/" class="u-url" itemprop="url">초보를 위한 깃허브 블로그 만들기(3). github.io 만들기
+            <a href="http://localhost:4000/making-blog/Making_GitBlog1/" class="u-url" itemprop="url">초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치
 </a>
           </h1>
           
@@ -358,7 +358,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#git-패키지-설치하기">git 패키지 설치하기</a></li><li><a href="#github-블로그-만들기">Github 블로그 만들기</a><ul><li><a href="#1️⃣-1단계-저장소-만들기">1️⃣ 1단계: 저장소 만들기</a></li><li><a href="#2️⃣-2단계-로컬에-clone하기">2️⃣ 2단계: 로컬에 clone하기</a></li><li><a href="#3️⃣-3단계-minimal-mistakes-가져오기">3️⃣ 3단계: minimal-mistakes 가져오기</a></li><li><a href="#4️⃣-4단계-로컬-서버-열어보기">4️⃣ 4단계: 로컬 서버 열어보기!</a></li></ul></li><li><a href="#️중요️-비밀번호에-토큰을-입력해야-해요">❗️중요❗️: 비밀번호에 토큰을 입력해야 해요</a><ul><li><a href="#토큰-발급받기">토큰 발급받기</a></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#homebrew-설치하기">HomeBrew 설치하기</a><ul><li><a href="#1️⃣-1단계">1️⃣ 1단계</a></li><li><a href="#2️⃣-2단계">2️⃣ 2단계</a></li></ul></li><li><a href="#에러-발생-zsh-command-not-found-brew">에러 발생 zsh: command not found: brew</a><ul><li><a href="#1️⃣-해결-1단계">1️⃣ 해결 1단계</a></li><li><a href="#2️⃣-해결-2단계">2️⃣ 해결 2단계</a></li></ul></li><li><a href="#homebrew-삭제하기">Homebrew 삭제하기</a></li></ul>
 
             </nav>
           </aside>
@@ -369,178 +369,105 @@
 
 <p><br /></p>
 
-<p><strong>정말 거의 다 왔어요! 이제는 본격적으로 git을 만져봅시다!</strong></p>
-
-<h1 id="git-패키지-설치하기">git 패키지 설치하기</h1>
+<h1 id="homebrew-설치하기">HomeBrew 설치하기</h1>
 <ul>
-  <li>우리는 앞서 Homebrew를 설치했기 때문에<br />정말 간단하게 MacOS에 <code class="language-plaintext highlighter-rouge">git</code>을 설치할 수 있어요.</li>
+  <li>HomeBrew란?
+    <ul>
+      <li>HomeBrew는 MacOS의 패키지 관리자예요</li>
+      <li>Apple, Linux에서 제공하지 않는 패키지를 관리할 수 있어요.</li>
+    </ul>
+  </li>
 </ul>
+
+<h2 id="1️⃣-1단계">1️⃣ 1단계</h2>
+<p>자, 그럼 이제 설치해봅시다.</p>
+<ul>
+  <li><a href="https://brew.sh/index_ko">HomeBrew 바로가기</a> <br />
+홈페이지의 안내에 따라 설치해도 되고, 터미널에 다음 명령어를 입력해도 돼요.</li>
+</ul>
+
+<p>✅ <strong>참고</strong>: 터미널은 <strong>Command + Spacebar</strong> 실행 후, Terminal 입력 후에 바로 실행할 수 있어요!</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>git
-
-git <span class="nt">-v</span> <span class="c"># 설치된 버전 확인하기</span>
+</pre></td><td class="rouge-code"><pre>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
-<p><br /><br /><br /></p>
-<h1 id="github-블로그-만들기">Github 블로그 만들기</h1>
-<p>자, 이제 본격적으로 블로그를 만들어 봐요!</p>
 
-<h2 id="1️⃣-1단계-저장소-만들기">1️⃣ 1단계: 저장소 만들기</h2>
-<ol>
-  <li>새로운 저장소를 만들어야 해요!
-<img width="600" alt="스크린샷 2023-04-25 오후 2 35 47" src="https://user-images.githubusercontent.com/131740570/234184696-2fc079e5-69db-4e01-b47d-76bad4d4466e.png" class="align-center" />
-    <ul>
-      <li>Repositories로 이동 후에 New를 눌러주세요!<br /></li>
-    </ul>
-  </li>
-  <li>Repository name과 Add a README file을 설정해 주세요!
-<img width="600" alt="스크린샷 2023-04-25 오후 2 39 35" src="https://user-images.githubusercontent.com/131740570/234185028-a0c3e56f-ab16-4f3f-ae65-ea874892a145.png" class="align-center" /></li>
-</ol>
-
-<h2 id="2️⃣-2단계-로컬에-clone하기">2️⃣ 2단계: 로컬에 clone하기</h2>
+<h2 id="2️⃣-2단계">2️⃣ 2단계</h2>
+<p>설치가 완료되었다면, <code class="language-plaintext highlighter-rouge">brew help</code>, <code class="language-plaintext highlighter-rouge">brew -v</code> 같은 명령어를 통해 HomeBrew가 잘 작동되는지 확인해 봐요.</p>
 
 <ul>
-  <li>❓ ‘로컬에 clone 하기가 뭐야’라고 생각할 수 있어요
-    <ul>
-      <li>사용자 컴퓨터에 깃허브 저장소를 가지고 오는 의미랍니다.</li>
-    </ul>
-  </li>
+  <li><code class="language-plaintext highlighter-rouge">brew help</code>를 입력했을 때 <br />
+<img width="356" alt="스크린샷 2023-04-24 오후 8 30 41" src="https://user-images.githubusercontent.com/86516594/233985857-b61ebefc-9fb3-4c00-9cdc-52198d213c69.png" /></li>
 </ul>
 
-<ol>
-  <li>
-    <p>저장소로 이동 후에 저장소 링크를 복사해 줄게요
-<img width="600" alt="스크린샷 2023-04-25 오후 2 49 28" src="https://user-images.githubusercontent.com/131740570/234185785-d6d1c198-4d25-412e-8615-3c4acb711385.png" class="align-center" /></p>
-  </li>
-  <li>다음 바탕화면에 폴더를 하나 만들어 줄게요
-    <ul>
-      <li>저는 <code class="language-plaintext highlighter-rouge">github_blog</code>라고 만들었습니다.</li>
-    </ul>
-  </li>
-  <li>터미널로 이동할게요. 코드 참고해 주세요!
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre><span class="nb">cd </span>Desktop/github_blog <span class="c">#github_blog 폴더로 이동하기.</span>
-git clone 아까 복사했던 주소 <span class="c">#</span>
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-    <ul>
-      <li>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">cd desktop</code>을 하는 이유는 MacOS 바탕화면의 경로이기 때문이에요.</li>
-    </ul>
-  </li>
-</ol>
+<p>정상적으로 작동됩니다!</p>
 
-<h2 id="3️⃣-3단계-minimal-mistakes-가져오기">3️⃣ 3단계: minimal-mistakes 가져오기</h2>
-<ol>
-  <li>
-    <p><a href="https://github.com/mmistakes/minimal-mistakes">minimal-mistakes</a>로 이동합니다!</p>
-  </li>
-  <li>경로 이동하기<br />
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre><span class="nb">cd </span>desktop
-<span class="nb">cd </span>github_blog
-<span class="nb">cd </span>testerHWI.github.io <span class="c"># clone한 경로로 이동해야 해요!</span>
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-  </li>
-  <li>minimal-mistakes clone 하기<br />
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>git clone https://github.com/mmistakes/minimal-mistakes.git
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-  </li>
-  <li>클론이 완료되면 폴더 옮겨주기
-<img width="600" alt="스크린샷 2023-04-25 오후 5 09 57" src="https://user-images.githubusercontent.com/131740570/234222143-db721a77-e04c-47c3-a106-adefa455ac70.png" class="align-center" /></li>
-</ol>
+<p>자, 이제 터미널을 끄고 재실행해 봅시다.</p>
 
+<p><br /></p>
+
+<h1 id="에러-발생-zsh-command-not-found-brew">에러 발생 zsh: command not found: brew</h1>
 <ul>
-  <li>저 같은 경우 모든 파일을 <strong>command + a</strong>로 전채 선택 후에, <strong>option + command + x</strong>로 옮겨줍니다!
-    <ul>
-      <li>윈도우에서 <strong>잘라내기</strong>라고 생각하면 편해요!</li>
-    </ul>
-  </li>
+  <li>터미널을 재시작한 후 <code class="language-plaintext highlighter-rouge">brew help</code>를 입력했지만 다음과 같은 에러가 발생했습니다! <br />
+<img width="208" alt="image" src="https://user-images.githubusercontent.com/86516594/233987600-5a7a3959-3e01-4242-ab7d-c7583e8c7e1b.png" /></li>
 </ul>
 
-<h2 id="4️⃣-4단계-로컬-서버-열어보기">4️⃣ 4단계: 로컬 서버 열어보기!</h2>
-<p>✅ <strong>참고</strong>: 현재 경로는 <code class="language-plaintext highlighter-rouge">testerHWI.github.io</code> 입니다!</p>
-
+<h2 id="1️⃣-해결-1단계">1️⃣ 해결 1단계</h2>
+<p>이럴 때는 터미널에 다음과 같이 입력해 주면 돼요<br /></p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="rouge-code"><pre>bundle <span class="nb">install
-</span>gem <span class="nb">install </span>jekyll bundler
-
-<span class="c"># you don't have to write permission 에러가 난다면 다음 코드를 입력해주세요</span>
-<span class="nb">source</span> ~/.zshrc
-gem <span class="nb">install </span>jekyll bundler <span class="c"># 에러 시에 다시 입력하는 거예요!</span>
+</pre></td><td class="rouge-code"><pre><span class="nb">eval</span> <span class="si">$(</span>/opt/homebrew/bin/brew shellenv<span class="si">)</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
+<p>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">eval</code> 명령어는 “<code class="language-plaintext highlighter-rouge">$</code>뒤 경로에 대한 인자를 받아 현재 터미널에서 실행하라”라는 의미예요.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="rouge-code"><pre><span class="c"># 다음 코드는 로컬에서 작업한 파일을 깃에 푸시 하는 과정이에요!</span>
-<span class="c"># 로컬 -&gt; 깃허브로 파일을 옮기는 작업입니다.</span>
-git add <span class="k">*</span> 
-git commit <span class="nt">-m</span> <span class="s2">"Making Blog"</span> <span class="c"># 커밋 메시지 작성</span>
-git push origin main 
-<span class="c"># 이 과정에서 아이디랑 비밀번호를 입력해야 해요.</span>
-<span class="c"># !중요! 챕터를 참고해 주세요.</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+<p>그런데, 터미널을 재시작할 때마다 저런 명령어를 입력하는 것은 너무 귀찮아요<br />
+그래서 우리는 다음과 같은 작업을 해줘야 돼요.</p>
 
-<p>이제 마지막 단계입니다!</p>
-
-<p><code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>로 서버를 열어줍니다!<br />
-✅ <strong>참고</strong>: 위의 코드를 입력 후에 <code class="language-plaintext highlighter-rouge">.jekyll-cache</code>, <code class="language-plaintext highlighter-rouge">Gemfile.lock</code>파일이 생성이 되어야 합니다.</p>
-
-<p>이제 터미널에 표시된 <strong>Server Address</strong>를 인터넷 주소창에 입력해 보세요! <br />
-여러분의 멋진 블로그가 만들어졌을 거예요!😄<br /><br /></p>
-
-<hr />
-<h1 id="️중요️-비밀번호에-토큰을-입력해야-해요">❗️중요❗️: 비밀번호에 토큰을 입력해야 해요</h1>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">clone</code>, <code class="language-plaintext highlighter-rouge">push</code> 등 처음 작업하시는 분들은 토큰을 발급받아야 합니다.
-    <h2 id="토큰-발급받기">토큰 발급받기</h2>
-  </li>
-</ul>
+<h2 id="2️⃣-해결-2단계">2️⃣ 해결 2단계</h2>
 
 <ol>
-  <li>
-    <p>setting 누르기
-<img width="248" height="350" alt="스크린샷 2023-04-25 오후 3 43 04" src="https://user-images.githubusercontent.com/131740570/234195172-ee3a83b3-e79e-45dc-b23e-90f51e86e4ff.png" class="align-center" /></p>
+  <li><code class="language-plaintext highlighter-rouge">vi</code> 편집기 진입
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>vi ~/.zshrc
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">echo $SHELL</code>을 통해 현재 사용되는 편집기가 무엇인지 알아야 해요.
+저는 <code class="language-plaintext highlighter-rouge">zsh</code>를 사용하고 있지만, <code class="language-plaintext highlighter-rouge">bash</code>의 경우에는 <code class="language-plaintext highlighter-rouge">vi ~/.bashrc</code>가 됩니다.</p>
   </li>
   <li>
-    <p><strong>가장 아래에 있는</strong> Developer setting을 눌러주세요
-<img width="248" alt="스크린샷 2023-04-25 오후 3 45 18" src="https://user-images.githubusercontent.com/131740570/234195758-a93ea1c1-bf5f-4c33-9a42-379b1e8a0fd5.png" class="align-center" /></p>
+    <p>알파벳 “i”를 눌러 <strong>insert</strong> 모드에 진입합니다.<br />
+모드가 바뀐 것은 터미널 하단에서 확인할 수 있어요.</p>
   </li>
-  <li>
-    <p>Tokens -&gt; Generate new token을 눌러 주세요!
-<img width="600" alt="스크린샷 2023-04-25 오후 4 26 14" src="https://user-images.githubusercontent.com/131740570/234204784-64adbed5-396a-47e1-a3f3-1744d0bd5f5f.png" class="align-center" /></p>
+  <li>다음 명령어를 그대로 추가해 줍니다.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">eval</span> <span class="si">$(</span>/opt/homebrew/bin/brew shellenv<span class="si">)</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p><img width="294" alt="image" src="https://user-images.githubusercontent.com/86516594/233991199-545d0b97-db40-4b17-8679-73c44afbc6e8.png" /></p>
   </li>
-  <li>
-    <p>Note와,Expiration(만료 기간), Select scopes를 선택해 주세요!
-<img width="600" alt="스크린샷 2023-04-25 오후 4 28 30" src="https://user-images.githubusercontent.com/131740570/234205304-f59e0250-96a7-4eb7-9198-09c04787ab24.png" class="align-center" /></p>
+  <li>ESC를 누르고 <code class="language-plaintext highlighter-rouge">:wq</code>를 입력한 후에 빠져나오면 돼요
+    <ul>
+      <li>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">:wq</code>는 저장 후 종료입니다. 이외에 <code class="language-plaintext highlighter-rouge">:q</code>는 종료, <code class="language-plaintext highlighter-rouge">:!q</code>는 강제 종료 등 여러 가지 명령어가 있어요</li>
+    </ul>
+  </li>
+  <li>터미널을 재부팅 후 <code class="language-plaintext highlighter-rouge">brew help</code>를 입력하면 brew가 정상적으로 실행됩니다!</li>
+</ol>
 
-    <p>저 같은 경우, git push, clone 등의 작업만 하기 위해 <code class="language-plaintext highlighter-rouge">repo</code>만 선택했어요!<br />
- 하단에 Generate token을 눌러 주세요</p>
+<h1 id="homebrew-삭제하기">Homebrew 삭제하기</h1>
+<p>혹시라도 에러가 발생한다면, <strong>Homebrew</strong>를 삭제한 후 다시 설치하는 것을 권장합니다.</p>
+
+<ol>
+  <li>터미널에 입력해 주세요.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh<span class="si">)</span><span class="s2">"</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>입력 후에 <strong>Y</strong>를 입력해 삭제해 주세요!</p>
   </li>
-  <li>
-    <p>토큰을 복사해 안전한 곳에 백업해놓으면 끝!
-<img width="600" alt="스크린샷 2023-04-25 오후 4 31 10" src="https://user-images.githubusercontent.com/131740570/234205978-8c822f8e-3088-4084-8df1-019b4cfcf58a.png" class="align-center" /></p>
+  <li>다음 <code class="language-plaintext highlighter-rouge">/usr/local</code> 폴더에서 HomeBrew 폴더를 삭제해 줍니다.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">rm</span> <span class="nt">-rf</span> Homebrew/
+</pre></td></tr></tbody></table></code></pre></div>    </div>
   </li>
 </ol>
 
-<ul>
-  <li><strong>앞으로 터미널에 깃 작업 관련 비밀번호를 입력할 때는 토큰을 입력하면 됩니다.</strong></li>
-</ul>
-
+<p>Homebrew를 설치했다면 절반은 성공입니다. 다음 파트에서 뵙겠습니다😄</p>
 
         
       </section>
@@ -586,7 +513,7 @@ git push origin main
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#making-blog" class="page__taxonomy-item p-category" rel="tag">Making Blog</a>
+      <a href="/categories/#making-blog" class="page__taxonomy-item p-category" rel="tag">Making-Blog</a>
     
     </span>
   </p>
@@ -594,7 +521,7 @@ git push origin main
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-25T00:00:00+09:00">April 25, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-23T00:00:00+09:00">April 23, 2023</time></p>
 
       </footer>
 
@@ -603,11 +530,10 @@ git push origin main
       
   <nav class="pagination">
     
-      <a href="/making%20blog/Making_GitBlog2/" class="pagination--pager" title="초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치
-">이전</a>
+      <a href="#" class="pagination--pager disabled">이전</a>
     
     
-      <a href="/making%20blog/Making_GitBlog4/" class="pagination--pager" title="초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기
+      <a href="/making-blog/Making_GitBlog2/" class="pagination--pager" title="초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치
 ">다음</a>
     
   </nav>

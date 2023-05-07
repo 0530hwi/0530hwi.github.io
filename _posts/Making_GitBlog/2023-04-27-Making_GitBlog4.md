@@ -3,7 +3,7 @@ title: "초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 �
 excerpt: "깃허브 블로그 관리하는 방법을 쉽게 정리했습니다"
 
 categories:
-    - Making Blog
+    - Making-Blog
 tags:
     - [Blog, Git, Github, Jekyll, Brew, Ruby, rbenv]
 

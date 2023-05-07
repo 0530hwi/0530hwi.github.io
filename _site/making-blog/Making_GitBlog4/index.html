@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치 - 쉽게 정리한 블로그</title>
-<meta name="description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
+<!-- begin _includes/seo.html --><title>초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기 - 쉽게 정리한 블로그</title>
+<meta name="description" content="깃허브 블로그 관리하는 방법을 쉽게 정리했습니다">
 
 
   <meta name="author" content="Byeong hwi">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="쉽게 정리한 블로그">
-<meta property="og:title" content="초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치">
-<meta property="og:url" content="http://localhost:4000/making%20blog/Making_GitBlog2/">
+<meta property="og:title" content="초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기">
+<meta property="og:url" content="http://localhost:4000/making-blog/Making_GitBlog4/">
 
 
-  <meta property="og:description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
+  <meta property="og:description" content="깃허브 블로그 관리하는 방법을 쉽게 정리했습니다">
 
 
 
@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-04-25T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-04-27T00:00:00+09:00">
 
 
 
@@ -47,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/making%20blog/Making_GitBlog2/">
+<link rel="canonical" href="http://localhost:4000/making-blog/Making_GitBlog4/">
 
 
 
@@ -335,16 +335,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치">
-    <meta itemprop="description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
-    <meta itemprop="datePublished" content="2023-04-25T00:00:00+09:00">
+    <meta itemprop="headline" content="초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기">
+    <meta itemprop="description" content="깃허브 블로그 관리하는 방법을 쉽게 정리했습니다">
+    <meta itemprop="datePublished" content="2023-04-27T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/making%20blog/Making_GitBlog2/" class="u-url" itemprop="url">초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치
+            <a href="http://localhost:4000/making-blog/Making_GitBlog4/" class="u-url" itemprop="url">초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기
 </a>
           </h1>
           
@@ -358,123 +358,110 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#rbenv-패키지-설치하기">rbenv 패키지 설치하기</a><ul><li><a href="#1️⃣-1단계">1️⃣ 1단계</a></li><li><a href="#2️⃣-2단계">2️⃣ 2단계</a></li><li><a href="#️필독️-에러-build-failed-macos-1301-using-ruby-build-20230330-대처">❗️필독❗️ 에러: BUILD FAILED (macOS 13.0.1 using ruby-build 20230330) 대처</a></li><li><a href="#3️⃣-3단계">3️⃣ 3단계</a></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#1️⃣-visual-studio-code-설치하기">1️⃣ Visual Studio Code 설치하기</a><ul><li><a href="#한국어-패키지-설정하기">한국어 패키지 설정하기</a></li></ul></li><li><a href="#2️⃣-github와-vscode-연결하기">2️⃣ Github와 VScode 연결하기</a><ul><li><a href="#️주의-계정-일치-확인하기">❗️주의: 계정 일치 확인하기</a></li></ul></li><li><a href="#지금까지의-과정-총정리">지금까지의 과정 총정리</a></li></ul>
 
             </nav>
           </aside>
         
         <p><br /></p>
 
-<p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
+<p>❗️모든 설치 과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
 
 <p><br /></p>
 
-<h1 id="rbenv-패키지-설치하기">rbenv 패키지 설치하기</h1>
-<ul>
-  <li>rbenv란?
-    <ul>
-      <li>MacOS는 기본적으로 <code class="language-plaintext highlighter-rouge">ruby</code>가 설치되어 있습니다. <br /> 따라서 <code class="language-plaintext highlighter-rouge">ruby</code>는 OS의 영향을 받고, 다양한 버전을 독립적으로 관리하기가 쉽지 않습니다.</li>
-      <li>이럴 때 독립적으로 <code class="language-plaintext highlighter-rouge">ruby</code>의 버전 관리를 도와주는 것이 <code class="language-plaintext highlighter-rouge">rbenv</code>입니다.</li>
-    </ul>
-  </li>
-</ul>
+<p>안녕하세요! 깃허브 블로그는 잘 설치되었나요? <br />
+이번에는 Visual Studio Code로 깃허브 블로그를 아주 간편하게 관리하는 방법을 공유합니다.<br /></p>
 
-<h2 id="1️⃣-1단계">1️⃣ 1단계</h2>
-<p>자, 그럼 rbenv 패키지를 설치해봅시다.</p>
-<ul>
-  <li><a href="https://formulae.brew.sh/formula/rbenv">rbenv 설치 바로가기</a> <br />
-홈페이지에는 rbenv에 대한 정보가 담겨 있어요.<br />
-홈페이지를 참고해서 설치해도 되고, 저를 따라오셔도 됩니다.</li>
-</ul>
-
-<p><strong>❗️못할 것 같다는 생각은 잊어버리고, 터미널을 켜줍니다!</strong>
-그리고 다음 명령어들을 쭉 입력해주세요</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>rbenv ruby-build 
-rbenv verions <span class="c"># 설치가 완료되면 버전을 확인해보기</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-<p><img src="https://user-images.githubusercontent.com/86516594/234170701-11947ad0-5317-4d74-a966-1cf3e1671092.png" alt="image" /></p>
-
-<p>위와 같은 이미지가 뜬다면 성공입니다. 
-아까 설명한 <strong>OS의 ruby</strong>를 사용하고 있다는 말이에요!</p>
-
-<h2 id="2️⃣-2단계">2️⃣ 2단계</h2>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="rouge-code"><pre>ruby <span class="nb">install</span> <span class="nt">-l</span> <span class="c">#설치가 가능한 ruby 버전을 확인해보기</span>
-ruby <span class="nb">install </span>3.2.2 <span class="c"># 3.2.2 버전 설치하기</span>
-rbenv global 3.2.2 <span class="c"># 3.2.2 버전으로 설정하기</span>
-rbenv versions 
-</pre></td></tr></tbody></table></code></pre></div></div>
-<p><img width="320" alt="image" src="https://user-images.githubusercontent.com/86516594/234173522-003a0b86-b68b-425c-8f17-ed9d1dc4454e.png" /></p>
-
-<p>위와 같은 이미지가 뜬다면 성공입니다.</p>
-
-<h2 id="️필독️-에러-build-failed-macos-1301-using-ruby-build-20230330-대처">❗️필독❗️ 에러: BUILD FAILED (macOS 13.0.1 using ruby-build 20230330) 대처</h2>
-<ul>
+<h1 id="1️⃣-visual-studio-code-설치하기">1️⃣ Visual Studio Code 설치하기</h1>
+<ol>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">ruby install 3.2.2</code>를 입력하고 설치하는 과정에서 <br /> <code class="language-plaintext highlighter-rouge">BUILD FAILED (macOS 13.0.1 using ruby-build 20230330)</code> 이라는 에러가 발생할 수 있어요.</p>
+    <p><a href="https://code.visualstudio.com/Download">Visual Sutdio Code Download Link</a>로 이동해 주세요!</p>
   </li>
-  <li>이럴 때는 다음과 같이 터미널에 입력해 주세요.<br />
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>readline openssl
-<span class="c"># 설치가 끝나면 차례대로 입력해 주세요</span>
-brew <span class="nb">install </span>libyaml
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-  </li>
-  <li>오류가 발생하는 이유를 여러가지 의심해 볼 수 있어요
+  <li><strong>Mac</strong>을 선택해 주세요!
     <ul>
-      <li><code class="language-plaintext highlighter-rouge">ruby-build</code>를 설치하는 과정에서 <code class="language-plaintext highlighter-rouge">homebrew</code>의 패키지인 <code class="language-plaintext highlighter-rouge">readline openssl</code>, <code class="language-plaintext highlighter-rouge">libyaml</code> 를 사용한다.</li>
-      <li>brew를 처음하는 사용자는 위의 패키지가 설치되어 있지 않다.</li>
+      <li>설치하는 과정에서 특별한 건 없습니다. 쭉쭉 넘어가 주세요!</li>
     </ul>
   </li>
-</ul>
+  <li>설치가 완료되었다면 아래와 같은 화면이 뜹니다.
+<img width="600" alt="스크린샷 2023-04-27 오후 6 00 49" src="https://user-images.githubusercontent.com/86516594/234813734-fad5187e-4266-4f8b-a3a8-d4cba8f680e6.png" class="align-center" /></li>
+</ol>
 
-<p>✅ <strong>참고</strong>: <a href="https://github.com/rbenv/ruby-build/issues/1691">BUILD FAILED 에러 발생 이유</a></p>
-
-<h2 id="3️⃣-3단계">3️⃣ 3단계</h2>
+<h2 id="한국어-패키지-설정하기">한국어 패키지 설정하기</h2>
 <ul>
-  <li><a href="https://0530hwi.github.io/making%20blog/Making_GitBlog1/#에러-발생-zsh-command-not-found-brew">지난 번</a> homebrew 에러 발생과 마찬가지로 <code class="language-plaintext highlighter-rouge">vi ~/.zshrc</code>에 진입해 경로를 설정해줘야 해요.</li>
+  <li>저는 한국어 패키지가 설치가 되어있습니다. 영어 버전을 원하시는 분들은 건너뛰셔도 돼요!
+<img width="600" alt="스크린샷 2023-04-27 오후 6 05 54" src="https://user-images.githubusercontent.com/86516594/234815186-0a20346b-fe28-4787-bdd1-e83e61bc9d17.png" class="align-center" /></li>
 </ul>
 
 <ol>
-  <li><code class="language-plaintext highlighter-rouge">vi</code> 편집기 진입
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>vi ~/.zshrc
-</pre></td></tr></tbody></table></code></pre></div>    </div>
+  <li>왼쪽 <strong>확장(Shift + Command + X)</strong>을 눌러 줍니다.</li>
+  <li><strong>Korean Language Pack</strong>을 검색 후 설치해 줍니다.</li>
+</ol>
+
+<p><br /><br /></p>
+
+<h1 id="2️⃣-github와-vscode-연결하기">2️⃣ Github와 VScode 연결하기</h1>
+
+<ol>
+  <li>
+    <p>VScode를 실행합니다.</p>
   </li>
   <li>
-    <p>알파벳 “i”를 눌러 <strong>insert</strong> 모드에 진입합니다.<br /> 모드가 바뀐 것은 터미널 하단에서 확인할 수 있어요.</p>
+    <p><strong>열기</strong>를 눌러 줍니다.
+<img width="400" alt="스크린샷 2023-04-27 오후 6 56 25" src="https://user-images.githubusercontent.com/86516594/234828505-d2464273-629d-4133-8309-e3a9fd814355.png" class="align-center" /></p>
   </li>
-  <li>다음 명령어를 그대로 추가해 줍니다.
+  <li>
+    <p>전에 만들어 두었던 깃허브 폴더를 선택해 주세요!
+<img width="400" alt="스크린샷 2023-04-27 오후 6 58 18" src="https://user-images.githubusercontent.com/86516594/234828987-a6b4e271-0447-46cb-8a04-754ce14dfc25.png" class="align-center" /></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">control + shift + ₩</code>를 눌러 터미널을 열어 주세요!
+<img width="400" alt="스크린샷 2023-04-27 오후 6 27 56" src="https://user-images.githubusercontent.com/86516594/234829475-0ecdb1ee-b8a8-426d-b436-37866c5558a2.png" class="align-center" /></p>
+  </li>
+  <li>github에 push가 잘 되는지 확인해 볼까요?
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="rouge-code"><pre><span class="o">[[</span> <span class="nt">-d</span> ~/.rbenv  <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
-     <span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.rbenv/bin:</span><span class="nv">$PATH</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
-     <span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>rbenv init -<span class="si">)</span><span class="s2">"</span>
+</pre></td><td class="rouge-code"><pre> git add <span class="k">*</span>
+ git commit <span class="nt">-m</span> <span class="s2">"Update Blog"</span> <span class="c">#원하는 커밋 메세지 작성</span>
+ git push origin main
 </pre></td></tr></tbody></table></code></pre></div>    </div>
-  </li>
-  <li>ESC를 누르고 <code class="language-plaintext highlighter-rouge">:wq</code>를 입력한 후에 빠져나오면 돼요
     <ul>
-      <li>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">:wq</code>는 저장 후 종료입니다. 이외에 <code class="language-plaintext highlighter-rouge">:q</code>는 종료, <code class="language-plaintext highlighter-rouge">:!q</code>는 강제 종료 등 여러 가지 명령어가 있어요</li>
+      <li>❗️이 과정에서 계정과 비밀번호가 필요할 수 있습니다. 비밀번호에는 반드시 <strong>토큰</strong>을 입력해 주셔야 합니다. <br />
+<a href="https://0530hwi.github.io/making%20blog/Making_GitBlog3/#%EF%B8%8F중요%EF%B8%8F-비밀번호에-토큰을-입력해야-해요">토큰 발급 바로가기</a></li>
     </ul>
   </li>
-  <li>적용까지 해주기
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">source</span> ~/.zshrc
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-    <p>터미널을 재실행해도 <code class="language-plaintext highlighter-rouge">system ruby</code>가 아닌 독립적인 <code class="language-plaintext highlighter-rouge">ruby 버전</code>을 적용합니다.</p>
-  </li>
+  <li>이제 vscode 터미널로도 로컬 서버를 열 수 있습니다!<br />
+<code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>를 vscode 터미널에 입력 후, 여러분의 멋진 블로그를 확인해 보세요!</li>
 </ol>
 
-<p>저는 <code class="language-plaintext highlighter-rouge">BUILD FAILED</code> 에러 해결해 보겠다고 4~5시간 구글링했는데, <br />여러분은 꼭 이 글을 통해 쉽게 해결했으면 좋겠습니다! 다음 파트에서 뵙겠습니다😅</p>
+<hr />
+<p>✅ <strong>참고</strong>:<br /> 저는 127.0.0.1:4000 이라는 주소로 로컬 서버를 들어갈 수 있는데요. <br />이 서버는 깃에 푸시하기 전에 최종적으로 검토해보는 단계입니다. <br />따라서, <strong>여러분의 변경사항을 로컬 서버를 통해 먼저 확인할 수 있는 장점</strong>이 있습니다. <br />
+또 깃에 업로드 후 블로그가 업데이트 되는 딜레이 시간(약 3분)이 있습니다. <br />로컬 서버를 이용하면 이러한 딜레이를 상쇄할 수 있기 때문에 로컬 서버를 이용하는 것이 블로그 작업에 매우 효율적입니다.</p>
+
+<hr />
+
+<h2 id="️주의-계정-일치-확인하기">❗️주의: 계정 일치 확인하기</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git remote -v</code> 명령어를 통해 여러분의 계정과 일치하는지 확인해 주세요!</li>
+  <li>만약 일치하지 않는다면 다음 과정을 진행하면 됩니다.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>  git remote add origin <span class="o">(</span>저장소 주소<span class="o">)</span> <span class="c">#깃허브 블로그 저장소</span>
+  git remote <span class="nt">-v</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ul>
+
+<h1 id="지금까지의-과정-총정리">지금까지의 과정 총정리</h1>
+<ol>
+  <li>Mac에서 여러가지 패키지를 편하게 관리하기 위해 <code class="language-plaintext highlighter-rouge">Homebrew</code>를 설치했다</li>
+  <li><code class="language-plaintext highlighter-rouge">ruby</code>를 독립적으로 이용하기 위해 <code class="language-plaintext highlighter-rouge">rbenv</code>패키지를 설치했다</li>
+  <li>로컬에서 깃허브 레파지토리를 관리하기 위해 <code class="language-plaintext highlighter-rouge">git</code>을 설치했다</li>
+  <li>루비 개발 환경을 갖추기 위해 <code class="language-plaintext highlighter-rouge">gem install jekyll bundler</code>를 통해 설치했다.</li>
+  <li>서버를 구동하기 위해 <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>를 입력했다. <br /></li>
+</ol>
+
+<p><strong>🎉이상으로 깃허브 블로그 만들기 과정을 종료합니다! 깃허브 블로그 커스텀에서 뵙겠습니다!</strong></p>
 
         
       </section>
@@ -520,7 +507,7 @@ brew <span class="nb">install </span>libyaml
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#making-blog" class="page__taxonomy-item p-category" rel="tag">Making Blog</a>
+      <a href="/categories/#making-blog" class="page__taxonomy-item p-category" rel="tag">Making-Blog</a>
     
     </span>
   </p>
@@ -528,7 +515,7 @@ brew <span class="nb">install </span>libyaml
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-25T00:00:00+09:00">April 25, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-27T00:00:00+09:00">April 27, 2023</time></p>
 
       </footer>
 
@@ -537,11 +524,11 @@ brew <span class="nb">install </span>libyaml
       
   <nav class="pagination">
     
-      <a href="/making%20blog/Making_GitBlog1/" class="pagination--pager" title="초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치
+      <a href="/making-blog/Making_GitBlog3/" class="pagination--pager" title="초보를 위한 깃허브 블로그 만들기(3). github.io 만들기
 ">이전</a>
     
     
-      <a href="/making%20blog/Making_GitBlog3/" class="pagination--pager" title="초보를 위한 깃허브 블로그 만들기(3). github.io 만들기
+      <a href="/custom-blog/Custom_GitBlog1/" class="pagination--pager" title="깃허브 블로그 커스텀하기 - 테마 설정, 기본적인 설정 등
 ">다음</a>
     
   </nav>
