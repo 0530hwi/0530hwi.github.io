@@ -3,7 +3,7 @@ title: "깃허브 블로그 커스텀하기 - 블로그 폰트 크기, 페이지
 excerpt: "깃허브 블로그 커스텀, 쉽게 정리했습니다. 깃허브 블로그 폰트 크기 조절, 블로그 너비 조절"
 
 categories:
-    - Custom_Blog
+    - Custom Blog
 tags:
     - [Blog, Git, Github, Jekyll, Brew, Ruby, rbenv]
 
