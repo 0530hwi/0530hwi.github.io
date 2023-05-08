@@ -15,12 +15,12 @@ sidebar-category:
   - title: "Github Blog"
     children:
       - title: "블로그 만들기"
-        url: "/making_blog"
-        category: "Making_Blog"
+        url: "/making blog"
+        category: "Making Blog"
 
       - title: "블로그 커스텀"
-        url: "/custom_blog"
-        category: "Custom_Blog"
+        url: "/custom blog"
+        category: "Custom Blog"
 
   - title: "Marchine Learning"
     children:
