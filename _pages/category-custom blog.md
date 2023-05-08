@@ -1,7 +1,7 @@
 ---
 title: "깃허브 블로그 커스텀 정복하기"
 layout: archive
-permalink: /custom_blog
+permalink: /custom blog
 author_profile: true
 sidebar:
     nav: "sidebar-category"
