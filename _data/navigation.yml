@@ -27,3 +27,8 @@ sidebar-category:
       - title: "회귀 분석"
         url: "/regression"
         category: "Regression"
+  - title: "Programming"
+    children: 
+      - title: "SQL"
+        url: "/SQL"
+        category: "SQL"
