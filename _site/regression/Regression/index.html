@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치 - 쉽게 정리한 블로그</title>
-<meta name="description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
+<!-- begin _includes/seo.html --><title>회귀분석 A to Z - 쉽게 정리한 블로그</title>
+<meta name="description" content="회귀분석(Linear Regression) 처음부터 끝까지 파헤치기">
 
 
   <meta name="author" content="Byeong hwi">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="쉽게 정리한 블로그">
-<meta property="og:title" content="초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치">
-<meta property="og:url" content="http://localhost:4000/making%20blog/Making_GitBlog1/">
+<meta property="og:title" content="회귀분석 A to Z">
+<meta property="og:url" content="http://localhost:4000/regression/Regression/">
 
 
-  <meta property="og:description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
+  <meta property="og:description" content="회귀분석(Linear Regression) 처음부터 끝까지 파헤치기">
 
 
 
@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-04-23T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-05-17T00:00:00+09:00">
 
 
 
@@ -47,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/making%20blog/Making_GitBlog1/">
+<link rel="canonical" href="http://localhost:4000/regression/Regression/">
 
 
 
@@ -355,16 +355,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치">
-    <meta itemprop="description" content="깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)">
-    <meta itemprop="datePublished" content="2023-04-23T00:00:00+09:00">
+    <meta itemprop="headline" content="회귀분석 A to Z">
+    <meta itemprop="description" content="회귀분석(Linear Regression) 처음부터 끝까지 파헤치기">
+    <meta itemprop="datePublished" content="2023-05-17T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/making%20blog/Making_GitBlog1/" class="u-url" itemprop="url">초보를 위한 깃허브 블로그 만들기(1). Homebrew 설치
+            <a href="http://localhost:4000/regression/Regression/" class="u-url" itemprop="url">회귀분석 A to Z
 </a>
           </h1>
           
@@ -378,116 +378,36 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#homebrew-설치하기">HomeBrew 설치하기</a><ul><li><a href="#1️⃣-1단계">1️⃣ 1단계</a></li><li><a href="#2️⃣-2단계">2️⃣ 2단계</a></li></ul></li><li><a href="#에러-발생-zsh-command-not-found-brew">에러 발생 zsh: command not found: brew</a><ul><li><a href="#1️⃣-해결-1단계">1️⃣ 해결 1단계</a></li><li><a href="#2️⃣-해결-2단계">2️⃣ 해결 2단계</a></li></ul></li><li><a href="#homebrew-삭제하기">Homebrew 삭제하기</a></li></ul>
+              <ul class="toc__menu"><li><a href="#-회귀분석">🚩 회귀분석</a><ul><li><a href="#1-회귀분석이란">1. 회귀분석이란?</a></li></ul></li></ul>
 
             </nav>
           </aside>
         
         <p><br /></p>
 
-<p>❗️모든 설치과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
+<p>❗️이 글은 <strong>지속적</strong>으로 업데이트합니다.<br />
+첫번째 업데이트: 2023-05-17❗️</p>
 
 <p><br /></p>
 
-<h1 id="homebrew-설치하기">HomeBrew 설치하기</h1>
+<h1 id="-회귀분석">🚩 회귀분석</h1>
+
+<h2 id="1-회귀분석이란">1. 회귀분석이란?</h2>
+
 <ul>
-  <li>HomeBrew란?
+  <li>회귀분석(Regression Analysis): 변수들 사이의 <strong>함수적 관계</strong><sup><a href="#footnote_1">1</a></sup>를 탐색하는 방법입니다.
     <ul>
-      <li>HomeBrew는 MacOS의 패키지 관리자예요</li>
-      <li>Apple, Linux에서 제공하지 않는 패키지를 관리할 수 있어요.</li>
+      <li>EX) 지리적 특성(역세권, 교통의 편리함, 인구수)에 따른 부동산 가격<br />
+  여기서는 <strong>지리적 특성이(설명변수: X), 부동산 가격(종속변수: Y)</strong>가 되겠네요!</li>
     </ul>
   </li>
 </ul>
 
-<h2 id="1️⃣-1단계">1️⃣ 1단계</h2>
-<p>자, 그럼 이제 설치해봅시다.</p>
-<ul>
-  <li><a href="https://brew.sh/index_ko">HomeBrew 바로가기</a> <br />
-홈페이지의 안내에 따라 설치해도 되고, 터미널에 다음 명령어를 입력해도 돼요.</li>
-</ul>
+\[Y = \beta_{0} + \beta_{1}X_{1}+ \beta_{2}X_{2}+ \cdots + \beta_{p}X_{p}\]
 
-<p>✅ <strong>참고</strong>: 터미널은 <strong>Command + Spacebar</strong> 실행 후, Terminal 입력 후에 바로 실행할 수 있어요!</p>
+<hr />
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<h2 id="2️⃣-2단계">2️⃣ 2단계</h2>
-<p>설치가 완료되었다면, <code class="language-plaintext highlighter-rouge">brew help</code>, <code class="language-plaintext highlighter-rouge">brew -v</code> 같은 명령어를 통해 HomeBrew가 잘 작동되는지 확인해 봐요.</p>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">brew help</code>를 입력했을 때 <br />
-<img width="356" alt="스크린샷 2023-04-24 오후 8 30 41" src="https://user-images.githubusercontent.com/86516594/233985857-b61ebefc-9fb3-4c00-9cdc-52198d213c69.png" /></li>
-</ul>
-
-<p>정상적으로 작동됩니다!</p>
-
-<p>자, 이제 터미널을 끄고 재실행해 봅시다.</p>
-
-<p><br /></p>
-
-<h1 id="에러-발생-zsh-command-not-found-brew">에러 발생 zsh: command not found: brew</h1>
-<ul>
-  <li>터미널을 재시작한 후 <code class="language-plaintext highlighter-rouge">brew help</code>를 입력했지만 다음과 같은 에러가 발생했습니다! <br />
-<img width="208" alt="image" src="https://user-images.githubusercontent.com/86516594/233987600-5a7a3959-3e01-4242-ab7d-c7583e8c7e1b.png" /></li>
-</ul>
-
-<h2 id="1️⃣-해결-1단계">1️⃣ 해결 1단계</h2>
-<p>이럴 때는 터미널에 다음과 같이 입력해 주면 돼요<br /></p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">eval</span> <span class="si">$(</span>/opt/homebrew/bin/brew shellenv<span class="si">)</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-<p>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">eval</code> 명령어는 “<code class="language-plaintext highlighter-rouge">$</code>뒤 경로에 대한 인자를 받아 현재 터미널에서 실행하라”라는 의미예요.</p>
-
-<p>그런데, 터미널을 재시작할 때마다 저런 명령어를 입력하는 것은 너무 귀찮아요<br />
-그래서 우리는 다음과 같은 작업을 해줘야 돼요.</p>
-
-<h2 id="2️⃣-해결-2단계">2️⃣ 해결 2단계</h2>
-
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">vi</code> 편집기 진입
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>vi ~/.zshrc
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-    <p>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">echo $SHELL</code>을 통해 현재 사용되는 편집기가 무엇인지 알아야 해요.
-저는 <code class="language-plaintext highlighter-rouge">zsh</code>를 사용하고 있지만, <code class="language-plaintext highlighter-rouge">bash</code>의 경우에는 <code class="language-plaintext highlighter-rouge">vi ~/.bashrc</code>가 됩니다.</p>
-  </li>
-  <li>
-    <p>알파벳 “i”를 눌러 <strong>insert</strong> 모드에 진입합니다.<br />
-모드가 바뀐 것은 터미널 하단에서 확인할 수 있어요.</p>
-  </li>
-  <li>다음 명령어를 그대로 추가해 줍니다.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">eval</span> <span class="si">$(</span>/opt/homebrew/bin/brew shellenv<span class="si">)</span>
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-    <p><img width="294" alt="image" src="https://user-images.githubusercontent.com/86516594/233991199-545d0b97-db40-4b17-8679-73c44afbc6e8.png" /></p>
-  </li>
-  <li>ESC를 누르고 <code class="language-plaintext highlighter-rouge">:wq</code>를 입력한 후에 빠져나오면 돼요
-    <ul>
-      <li>✅ <strong>참고</strong>: <code class="language-plaintext highlighter-rouge">:wq</code>는 저장 후 종료입니다. 이외에 <code class="language-plaintext highlighter-rouge">:q</code>는 종료, <code class="language-plaintext highlighter-rouge">:!q</code>는 강제 종료 등 여러 가지 명령어가 있어요</li>
-    </ul>
-  </li>
-  <li>터미널을 재부팅 후 <code class="language-plaintext highlighter-rouge">brew help</code>를 입력하면 brew가 정상적으로 실행됩니다!</li>
-</ol>
-
-<h1 id="homebrew-삭제하기">Homebrew 삭제하기</h1>
-<p>혹시라도 에러가 발생한다면, <strong>Homebrew</strong>를 삭제한 후 다시 설치하는 것을 권장합니다.</p>
-
-<ol>
-  <li>터미널에 입력해 주세요.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh<span class="si">)</span><span class="s2">"</span>
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-    <p>입력 후에 <strong>Y</strong>를 입력해 삭제해 주세요!</p>
-  </li>
-  <li>다음 <code class="language-plaintext highlighter-rouge">/usr/local</code> 폴더에서 HomeBrew 폴더를 삭제해 줍니다.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">rm</span> <span class="nt">-rf</span> Homebrew/
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-  </li>
-</ol>
-
-<p>Homebrew를 설치했다면 절반은 성공입니다. 다음 파트에서 뵙겠습니다😄</p>
+<p><a name="footnote_1">[1]</a>: Input이 있을 때 Output이 있는 관계</p>
 
         
       </section>
@@ -504,19 +424,9 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#blog" class="page__taxonomy-item p-category" rel="tag">Blog</a><span class="sep">, </span>
+      <a href="/tags/#regression" class="page__taxonomy-item p-category" rel="tag">Regression</a><span class="sep">, </span>
     
-      <a href="/tags/#brew" class="page__taxonomy-item p-category" rel="tag">Brew</a><span class="sep">, </span>
-    
-      <a href="/tags/#git" class="page__taxonomy-item p-category" rel="tag">Git</a><span class="sep">, </span>
-    
-      <a href="/tags/#github" class="page__taxonomy-item p-category" rel="tag">Github</a><span class="sep">, </span>
-    
-      <a href="/tags/#jekyll" class="page__taxonomy-item p-category" rel="tag">Jekyll</a><span class="sep">, </span>
-    
-      <a href="/tags/#rbenv" class="page__taxonomy-item p-category" rel="tag">rbenv</a><span class="sep">, </span>
-    
-      <a href="/tags/#ruby" class="page__taxonomy-item p-category" rel="tag">Ruby</a>
+      <a href="/tags/#statistics" class="page__taxonomy-item p-category" rel="tag">Statistics</a>
     
     </span>
   </p>
@@ -533,7 +443,7 @@
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#making-blog" class="page__taxonomy-item p-category" rel="tag">Making Blog</a>
+      <a href="/categories/#regression" class="page__taxonomy-item p-category" rel="tag">Regression</a>
     
     </span>
   </p>
@@ -541,7 +451,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-23T00:00:00+09:00">April 23, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-05-17T00:00:00+09:00">May 17, 2023</time></p>
 
       </footer>
 
@@ -550,11 +460,11 @@
       
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">이전</a>
+      <a href="/custom%20blog/Custom_GitBlog5/" class="pagination--pager" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)
+">이전</a>
     
     
-      <a href="/making%20blog/Making_GitBlog2/" class="pagination--pager" title="초보를 위한 깃허브 블로그 만들기(2). rbenv 패키지 설치
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 

@@ -1,80 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-15T14:47:25+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">깃허브 블로그 커스텀하기 - 깃허브 블로그 구글에 검색 되게 하기</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog4/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 구글에 검색 되게 하기" /><published>2023-05-07T00:00:00+09:00</published><updated>2023-05-07T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog4</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog4/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-17T12:46:14+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">회귀분석 A to Z</title><link href="http://localhost:4000/regression/Regression/" rel="alternate" type="text/html" title="회귀분석 A to Z" /><published>2023-05-17T00:00:00+09:00</published><updated>2023-05-17T00:00:00+09:00</updated><id>http://localhost:4000/regression/Regression</id><content type="html" xml:base="http://localhost:4000/regression/Regression/"><![CDATA[<p><br /></p>
 
-<div align="center">
+<p>❗️이 글은 <strong>지속적</strong>으로 업데이트합니다.<br />
+첫번째 업데이트: 2023-05-17❗️</p>
 
+<p><br /></p>
 
-❗️커스텀 포스팅은 필자의 시행착오와 독학을 통해 작성되었습니다.❗️<br /> 틀린 부분이나 좀 더 쉬운 방법이 있다면 댓글 부탁드려요. 다양한 피드백 환영입니다😃
+<h1 id="-회귀분석">🚩 회귀분석</h1>
 
+<h2 id="1-회귀분석이란">1. 회귀분석이란?</h2>
 
-</div>
-
-<p><br /><br /></p>
-
-<p>안녕하세요! 이번 포스팅은 <strong>내 블로그를 구글에 검색이 되게끔 하는 방법</strong>입니다.<br />
-어렵지 않으니 차근차근 같이 해봐요! 참고로 구글 계정이 반드시 필요합니다.</p>
-
-<h1 id="1️⃣--sitemapxml-파일-업로드">1️⃣  sitemap.xml 파일 업로드</h1>
 <ul>
-  <li>블로그 폴더에 직접 만들어 주셔야 합니다.</li>
-  <li>파일의 위치는 <code class="language-plaintext highlighter-rouge">_config.yml</code>이 있는 곳에 만들어 주세요!</li>
-  <li>다음 코드를 복붙해 주시면 됩니다!</li>
+  <li>회귀분석(Regression Analysis): 변수들 사이의 <strong>함수적 관계</strong><sup><a href="#footnote_1">1</a></sup>를 탐색하는 방법입니다.
+    <ul>
+      <li>EX) 지리적 특성(역세권, 교통의 편리함, 인구수)에 따른 부동산 가격<br />
+  여기서는 <strong>지리적 특성이(설명변수: X), 부동산 가격(종속변수: Y)</strong>가 되겠네요!</li>
+    </ul>
+  </li>
 </ul>
 
-<script src="https://gist.github.com/0530hwi/a3027fc8c6bb7131e35c555740d1fcb7.js"></script>
+\[Y = \beta_{0} + \beta_{1}X_{1}+ \beta_{2}X_{2}+ \cdots + \beta_{p}X_{p}\]
 
-<ul>
-  <li>파일을 업로드 한다음 깃허브에 <code class="language-plaintext highlighter-rouge">push</code>하는 작업이 필요합니다.</li>
-  <li>다음, 확인 작업으로 여러분의 링크를 주소창에 입력해 보세요!<br /> <code class="language-plaintext highlighter-rouge">Ex) 0530hwi.github.io/sitemap.xml</code></li>
-</ul>
+<hr />
 
-<h1 id="2️⃣-robotstxt-파일-업로드">2️⃣ robots.txt 파일 업로드</h1>
-<ul>
-  <li>블로그 폴더에 직접 만들어 주셔야 합니다.</li>
-  <li>마찬가지로 <code class="language-plaintext highlighter-rouge">_config.yml</code>이 있는 곳에 만들어 주세요!</li>
-  <li>다음 코드를 복붙해 주시면 됩니다.</li>
-</ul>
-
-<script src="https://gist.github.com/0530hwi/42b6d3f8ecd6148ca0d96de77af91cdc.js"></script>
-
-<h1 id="3️⃣-google-search-console">3️⃣ Google Search Console</h1>
-<ul>
-  <li>
-    <p><a href="https://search.google.com/search-console/about">Google Search Console</a>로 이동해 줍니다.</p>
-  </li>
-  <li>
-    <p><strong>URL 접두어</strong>를 선택해 주세요.
-<img width="650" alt="스크린샷 2023-05-07 오후 7 04 25" src="https://user-images.githubusercontent.com/86516594/236671114-38b6539c-11d6-4911-ac2d-e2e7a8d96418.png" class="align-center" /></p>
-  </li>
-  <li>
-    <p>여러분의 블로그 URL을 입력합니다.</p>
-  </li>
-  <li>
-    <p>다음 html 파일을 다운로드 받아 주세요.
-<img width="650" alt="스크린샷 2023-05-07 오후 7 09 23" src="https://user-images.githubusercontent.com/86516594/236671277-924fc1c0-b5cb-45b7-acf7-1ed91c22ee78.png" class="align-center" /></p>
-  </li>
-  <li>
-    <p>이전에 했던 작업처럼 <strong><code class="language-plaintext highlighter-rouge">_config.yml</code>에 있는 위치에 업로드</strong>를 해주세요!</p>
-  </li>
-  <li>
-    <p>그런 다음 깃허브에 <code class="language-plaintext highlighter-rouge">push</code>해주세요! (깃허브에 직접 업로드 하셨다면 건너 뛰셔도 됩니다.)</p>
-  </li>
-  <li>
-    <p>확인 버튼을 눌러주시면 다음과 같은 화면이 나옵니다.
-<img width="650" alt="스크린샷 2023-05-07 오후 7 15 18" src="https://user-images.githubusercontent.com/131740570/236671576-f778a6dd-13a8-4177-9da8-cfa6a22fd18a.png" class="align-center" /></p>
-  </li>
-  <li>
-    <p>다음 좌측에 있는 <code class="language-plaintext highlighter-rouge">sitemap.xml</code>을 클릭 후 <code class="language-plaintext highlighter-rouge">https://testerhwi.github.io/sitemap.xml</code>을 입력 후 <strong>제출</strong>을 눌러 주세요!
-<img width="650" alt="스크린샷 2023-05-07 오후 7 18 17" src="https://user-images.githubusercontent.com/131740570/236671655-b4e0ef0e-2ba5-431a-99eb-a80b1e29c252.png" class="align-center" /></p>
-  </li>
-  <li>
-    <p>이렇게 되면 완성입니다🎉
-<img width="650" alt="스크린샷 2023-05-07 오후 7 22 40" src="https://user-images.githubusercontent.com/131740570/236671921-3110ebbf-51ca-4a07-ad0c-63c528910614.png" class="align-center" /></p>
-  </li>
-  <li>
-    <p>반영 되기까지 시간이 소요됩니다.<br />
-저는 이틀 정도 소요됐는데, 다른 분들은 최대 한달까지도 걸린다는 것 같아요🤨</p>
-  </li>
-</ul>]]></content><author><name>Byeong hwi</name></author><category term="Custom Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 커스텀, 쉽게 정리했습니다. 블로그를 구글에 노출시키기]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog5/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)" /><published>2023-05-07T00:00:00+09:00</published><updated>2023-05-07T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog5</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog5/"><![CDATA[<p><br /></p>
+<p><a name="footnote_1">[1]</a>: Input이 있을 때 Output이 있는 관계</p>]]></content><author><name>Byeong hwi</name></author><category term="Regression" /><category term="Regression" /><category term="Statistics" /><summary type="html"><![CDATA[회귀분석(Linear Regression) 처음부터 끝까지 파헤치기]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog5/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)" /><published>2023-05-07T00:00:00+09:00</published><updated>2023-05-07T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog5</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog5/"><![CDATA[<p><br /></p>
 
 <div align="center">
 
@@ -173,7 +121,83 @@
 <ul>
   <li><a href="https://ansohxxn.github.io/blog/utterances/">ansohxxn님의 블로그 포스트</a></li>
   <li><a href="https://baek.dev/post/4/">baek님의 블로그 포스트</a></li>
-</ul>]]></content><author><name>Byeong hwi</name></author><category term="Custom Blog" /><category term="Blog" /><category term="Utterances" /><category term="Minimal-Mistakes" /><summary type="html"><![CDATA[깃허브 블로그 커스텀, 쉽게 정리했습니다. 블로그에 댓글 기능 추가하기]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀하기 - 블로그 폰트 크기, 페이지 너비 조절하기</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog3/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 블로그 폰트 크기, 페이지 너비 조절하기" /><published>2023-05-03T00:00:00+09:00</published><updated>2023-05-03T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog3</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog3/"><![CDATA[<p><br /></p>
+</ul>]]></content><author><name>Byeong hwi</name></author><category term="Custom Blog" /><category term="Blog" /><category term="Utterances" /><category term="Minimal-Mistakes" /><summary type="html"><![CDATA[깃허브 블로그 커스텀, 쉽게 정리했습니다. 블로그에 댓글 기능 추가하기]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀하기 - 깃허브 블로그 구글에 검색 되게 하기</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog4/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 구글에 검색 되게 하기" /><published>2023-05-07T00:00:00+09:00</published><updated>2023-05-07T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog4</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog4/"><![CDATA[<p><br /></p>
+
+<div align="center">
+
+
+❗️커스텀 포스팅은 필자의 시행착오와 독학을 통해 작성되었습니다.❗️<br /> 틀린 부분이나 좀 더 쉬운 방법이 있다면 댓글 부탁드려요. 다양한 피드백 환영입니다😃
+
+
+</div>
+
+<p><br /><br /></p>
+
+<p>안녕하세요! 이번 포스팅은 <strong>내 블로그를 구글에 검색이 되게끔 하는 방법</strong>입니다.<br />
+어렵지 않으니 차근차근 같이 해봐요! 참고로 구글 계정이 반드시 필요합니다.</p>
+
+<h1 id="1️⃣--sitemapxml-파일-업로드">1️⃣  sitemap.xml 파일 업로드</h1>
+<ul>
+  <li>블로그 폴더에 직접 만들어 주셔야 합니다.</li>
+  <li>파일의 위치는 <code class="language-plaintext highlighter-rouge">_config.yml</code>이 있는 곳에 만들어 주세요!</li>
+  <li>다음 코드를 복붙해 주시면 됩니다!</li>
+</ul>
+
+<script src="https://gist.github.com/0530hwi/a3027fc8c6bb7131e35c555740d1fcb7.js"></script>
+
+<ul>
+  <li>파일을 업로드 한다음 깃허브에 <code class="language-plaintext highlighter-rouge">push</code>하는 작업이 필요합니다.</li>
+  <li>다음, 확인 작업으로 여러분의 링크를 주소창에 입력해 보세요!<br /> <code class="language-plaintext highlighter-rouge">Ex) 0530hwi.github.io/sitemap.xml</code></li>
+</ul>
+
+<h1 id="2️⃣-robotstxt-파일-업로드">2️⃣ robots.txt 파일 업로드</h1>
+<ul>
+  <li>블로그 폴더에 직접 만들어 주셔야 합니다.</li>
+  <li>마찬가지로 <code class="language-plaintext highlighter-rouge">_config.yml</code>이 있는 곳에 만들어 주세요!</li>
+  <li>다음 코드를 복붙해 주시면 됩니다.</li>
+</ul>
+
+<script src="https://gist.github.com/0530hwi/42b6d3f8ecd6148ca0d96de77af91cdc.js"></script>
+
+<h1 id="3️⃣-google-search-console">3️⃣ Google Search Console</h1>
+<ul>
+  <li>
+    <p><a href="https://search.google.com/search-console/about">Google Search Console</a>로 이동해 줍니다.</p>
+  </li>
+  <li>
+    <p><strong>URL 접두어</strong>를 선택해 주세요.
+<img width="650" alt="스크린샷 2023-05-07 오후 7 04 25" src="https://user-images.githubusercontent.com/86516594/236671114-38b6539c-11d6-4911-ac2d-e2e7a8d96418.png" class="align-center" /></p>
+  </li>
+  <li>
+    <p>여러분의 블로그 URL을 입력합니다.</p>
+  </li>
+  <li>
+    <p>다음 html 파일을 다운로드 받아 주세요.
+<img width="650" alt="스크린샷 2023-05-07 오후 7 09 23" src="https://user-images.githubusercontent.com/86516594/236671277-924fc1c0-b5cb-45b7-acf7-1ed91c22ee78.png" class="align-center" /></p>
+  </li>
+  <li>
+    <p>이전에 했던 작업처럼 <strong><code class="language-plaintext highlighter-rouge">_config.yml</code>에 있는 위치에 업로드</strong>를 해주세요!</p>
+  </li>
+  <li>
+    <p>그런 다음 깃허브에 <code class="language-plaintext highlighter-rouge">push</code>해주세요! (깃허브에 직접 업로드 하셨다면 건너 뛰셔도 됩니다.)</p>
+  </li>
+  <li>
+    <p>확인 버튼을 눌러주시면 다음과 같은 화면이 나옵니다.
+<img width="650" alt="스크린샷 2023-05-07 오후 7 15 18" src="https://user-images.githubusercontent.com/131740570/236671576-f778a6dd-13a8-4177-9da8-cfa6a22fd18a.png" class="align-center" /></p>
+  </li>
+  <li>
+    <p>다음 좌측에 있는 <code class="language-plaintext highlighter-rouge">sitemap.xml</code>을 클릭 후 <code class="language-plaintext highlighter-rouge">https://testerhwi.github.io/sitemap.xml</code>을 입력 후 <strong>제출</strong>을 눌러 주세요!
+<img width="650" alt="스크린샷 2023-05-07 오후 7 18 17" src="https://user-images.githubusercontent.com/131740570/236671655-b4e0ef0e-2ba5-431a-99eb-a80b1e29c252.png" class="align-center" /></p>
+  </li>
+  <li>
+    <p>이렇게 되면 완성입니다🎉
+<img width="650" alt="스크린샷 2023-05-07 오후 7 22 40" src="https://user-images.githubusercontent.com/131740570/236671921-3110ebbf-51ca-4a07-ad0c-63c528910614.png" class="align-center" /></p>
+  </li>
+  <li>
+    <p>반영 되기까지 시간이 소요됩니다.<br />
+저는 이틀 정도 소요됐는데, 다른 분들은 최대 한달까지도 걸린다는 것 같아요🤨</p>
+  </li>
+</ul>]]></content><author><name>Byeong hwi</name></author><category term="Custom Blog" /><category term="Blog" /><category term="Git" /><category term="Github" /><category term="Jekyll" /><category term="Brew" /><category term="Ruby" /><category term="rbenv" /><summary type="html"><![CDATA[깃허브 블로그 커스텀, 쉽게 정리했습니다. 블로그를 구글에 노출시키기]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀하기 - 블로그 폰트 크기, 페이지 너비 조절하기</title><link href="http://localhost:4000/custom%20blog/Custom_GitBlog3/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 블로그 폰트 크기, 페이지 너비 조절하기" /><published>2023-05-03T00:00:00+09:00</published><updated>2023-05-03T00:00:00+09:00</updated><id>http://localhost:4000/custom%20blog/Custom_GitBlog3</id><content type="html" xml:base="http://localhost:4000/custom%20blog/Custom_GitBlog3/"><![CDATA[<p><br /></p>
 
 <div align="center">
 
