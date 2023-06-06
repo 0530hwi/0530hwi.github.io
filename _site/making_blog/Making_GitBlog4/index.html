@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes) - 쉽게 정리한 블로그</title>
-<meta name="description" content="깃허브 블로그 커스텀, 쉽게 정리했습니다. 블로그에 댓글 기능 추가하기">
+<!-- begin _includes/seo.html --><title>초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기 - 쉽게 정리한 블로그</title>
+<meta name="description" content="깃허브 블로그 관리하는 방법을 쉽게 정리했습니다">
 
 
   <meta name="author" content="Byeong hwi">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="쉽게 정리한 블로그">
-<meta property="og:title" content="깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)">
-<meta property="og:url" content="http://localhost:4000/custom%20blog/Custom_GitBlog5/">
+<meta property="og:title" content="초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기">
+<meta property="og:url" content="http://localhost:4000/making_blog/Making_GitBlog4/">
 
 
-  <meta property="og:description" content="깃허브 블로그 커스텀, 쉽게 정리했습니다. 블로그에 댓글 기능 추가하기">
+  <meta property="og:description" content="깃허브 블로그 관리하는 방법을 쉽게 정리했습니다">
 
 
 
@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-05-07T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-04-27T00:00:00+09:00">
 
 
 
@@ -47,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/custom%20blog/Custom_GitBlog5/">
+<link rel="canonical" href="http://localhost:4000/making_blog/Making_GitBlog4/">
 
 
 
@@ -295,14 +295,14 @@
           
           
 
-            <li><a href="/making%20blog">블로그 만들기(4)</a></li>
+            <li><a href="/making%20blog">블로그 만들기(0)</a></li>
           
           
           
           
           
 
-            <li><a href="/custom%20blog">블로그 커스텀(5)</a></li>
+            <li><a href="/custom%20blog">블로그 커스텀(0)</a></li>
           
         </ul>
         
@@ -355,16 +355,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)">
-    <meta itemprop="description" content="깃허브 블로그 커스텀, 쉽게 정리했습니다. 블로그에 댓글 기능 추가하기">
-    <meta itemprop="datePublished" content="2023-05-07T00:00:00+09:00">
+    <meta itemprop="headline" content="초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기">
+    <meta itemprop="description" content="깃허브 블로그 관리하는 방법을 쉽게 정리했습니다">
+    <meta itemprop="datePublished" content="2023-04-27T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/custom%20blog/Custom_GitBlog5/" class="u-url" itemprop="url">깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)
+            <a href="http://localhost:4000/making_blog/Making_GitBlog4/" class="u-url" itemprop="url">초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기
 </a>
           </h1>
           
@@ -378,111 +378,110 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#1️⃣-utterance-설치하기">1️⃣ utterance 설치하기</a><ul><li><a href="#1-플랫폼으로-이동-및-설치">1. 플랫폼으로 이동 및 설치</a></li><li><a href="#2-저장소와-매핑-설정">2. 저장소와 매핑 설정</a></li><li><a href="#3-테마-설정">3. 테마 설정</a></li><li><a href="#4-_configyml-설정하기">4. _config.yml 설정하기</a></li></ul></li><li><a href="#2️⃣-주의사항-및-크기-조정">2️⃣ 주의사항 및 크기 조정</a><ul><li><a href="#1-주의사항">1. 주의사항</a></li><li><a href="#2-크기-조정하기">2. 크기 조정하기</a></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#1️⃣-visual-studio-code-설치하기">1️⃣ Visual Studio Code 설치하기</a><ul><li><a href="#한국어-패키지-설정하기">한국어 패키지 설정하기</a></li></ul></li><li><a href="#2️⃣-github와-vscode-연결하기">2️⃣ Github와 VScode 연결하기</a><ul><li><a href="#️주의-계정-일치-확인하기">❗️주의: 계정 일치 확인하기</a></li></ul></li><li><a href="#지금까지의-과정-총정리">지금까지의 과정 총정리</a></li></ul>
 
             </nav>
           </aside>
         
         <p><br /></p>
 
-<div align="center">
-
-
-❗️커스텀 포스팅은 필자의 시행착오와 독학을 통해 작성되었습니다.❗️<br /> 틀린 부분이나 좀 더 쉬운 방법이 있다면 댓글 부탁드려요. 다양한 피드백 환영입니다😃
-
-
-</div>
-
-<p><br /><br /></p>
-
-<h1 id="1️⃣-utterance-설치하기">1️⃣ utterance 설치하기</h1>
-<ul>
-  <li>요즘 핫(hot)한 댓글 플랫폼이에요!</li>
-  <li><code class="language-plaintext highlighter-rouge">disqus</code>도 많은 분들이 자주 이용하지만 저는 무겁게 느껴져서 선택하지 않았습니다.</li>
-</ul>
-
-<h2 id="1-플랫폼으로-이동-및-설치">1. 플랫폼으로 이동 및 설치</h2>
-<ul>
-  <li><a href="https://github.com/apps/utterances">✅ utterances 클릭하면 바로 이동</a> 링크로 접속해 주세요!</li>
-  <li><code class="language-plaintext highlighter-rouge">INSTALL</code>을 눌러 설치해 줍니다.</li>
-  <li><code class="language-plaintext highlighter-rouge">Only select repositories</code>를 선택해 주세요!
-<img width="550" alt="스크린샷 2023-05-07 오후 9 01 04" src="https://user-images.githubusercontent.com/131740570/236676149-697ec4e8-0075-4389-b7b1-5071e0023f66.png" class="align-center" />
-    <ul>
-      <li>저는 모든 저장소에 댓글 플랫폼이 필요 없기에 <code class="language-plaintext highlighter-rouge">Only select repositories</code>를 선택했습니다.</li>
-      <li>혹시라도 모든 저장소에 댓글 플랫폼이 설치되길 원하시는 분들은 <code class="language-plaintext highlighter-rouge">All repositories</code>를 선택해 주세요.</li>
-    </ul>
-  </li>
-</ul>
+<p>❗️모든 설치 과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
 
 <p><br /></p>
 
-<h2 id="2-저장소와-매핑-설정">2. 저장소와 매핑 설정</h2>
-<ul>
-  <li>다음 페이지로 이동하게 되면
-<img width="550" alt="스크린샷 2023-05-07 오후 9 06 51" src="https://user-images.githubusercontent.com/131740570/236676476-e6361311-bb84-4948-8498-3b264bc2a92b.png" class="align-center" />
+<p>안녕하세요! 깃허브 블로그는 잘 설치되었나요? <br />
+이번에는 Visual Studio Code로 깃허브 블로그를 아주 간편하게 관리하는 방법을 공유합니다.<br /></p>
+
+<h1 id="1️⃣-visual-studio-code-설치하기">1️⃣ Visual Studio Code 설치하기</h1>
+<ol>
+  <li>
+    <p><a href="https://code.visualstudio.com/Download">Visual Sutdio Code Download Link</a>로 이동해 주세요!</p>
+  </li>
+  <li><strong>Mac</strong>을 선택해 주세요!
     <ul>
-      <li><code class="language-plaintext highlighter-rouge">repo</code>에는 <strong>소유자/저장소 이름</strong>을 입력해 주세요!<br />EX) testerHWI/testerHWI.github.io</li>
-      <li><code class="language-plaintext highlighter-rouge">Issue title contains page pathname</code>을 선택해 주세요!<br /></li>
+      <li>설치하는 과정에서 특별한 건 없습니다. 쭉쭉 넘어가 주세요!</li>
     </ul>
   </li>
-</ul>
+  <li>설치가 완료되었다면 아래와 같은 화면이 뜹니다.
+<img width="600" alt="스크린샷 2023-04-27 오후 6 00 49" src="https://user-images.githubusercontent.com/86516594/234813734-fad5187e-4266-4f8b-a3a8-d4cba8f680e6.png" class="align-center" /></li>
+</ol>
 
-<h2 id="3-테마-설정">3. 테마 설정</h2>
+<h2 id="한국어-패키지-설정하기">한국어 패키지 설정하기</h2>
 <ul>
-  <li>테마를 설정해 주세요!
-<img width="550" alt="스크린샷 2023-05-07 오후 9 14 31" src="https://user-images.githubusercontent.com/131740570/236676858-f24637e4-88c0-4a3e-8f1c-84c653bfad8d.png" class="align-center" />
-    <ul>
-      <li>저의 경우에는 블로그가 화이트 톤이라 <code class="language-plaintext highlighter-rouge">GitHub Light</code>로 설정했어요!</li>
-    </ul>
-  </li>
-  <li><code class="language-plaintext highlighter-rouge">Enable Utterances</code>에 있는 코드를 기억해 주세요!</li>
+  <li>저는 한국어 패키지가 설치가 되어있습니다. 영어 버전을 원하시는 분들은 건너뛰셔도 돼요!
+<img width="600" alt="스크린샷 2023-04-27 오후 6 05 54" src="https://user-images.githubusercontent.com/86516594/234815186-0a20346b-fe28-4787-bdd1-e83e61bc9d17.png" class="align-center" /></li>
 </ul>
 
-<h2 id="4-_configyml-설정하기">4. _config.yml 설정하기</h2>
-<ul>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">_config.yml</code> 파일로 이동해 줍니다.</p>
-  </li>
-  <li>
-    <p>저장소 경로를 설정해 주세요!
-<img width="550" alt="스크린샷 2023-05-07 오후 9 19 53" src="https://user-images.githubusercontent.com/131740570/236677311-4d87a36a-9ec8-4ebc-b322-34d42dc185fa.png" class="align-center" /></p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">Enable Utterances</code>의 코드 값을 그대로 입력해 줍니다.
-<img width="550" alt="스크린샷 2023-05-07 오후 9 20 12" src="https://user-images.githubusercontent.com/131740570/236677363-83798604-230b-4a7f-9e0f-d3c29fa33b7c.png" class="align-center" /></p>
-  </li>
-  <li>
-    <p>마지막으로 깃허브에 <code class="language-plaintext highlighter-rouge">Push</code>해주면 끝입니다.</p>
-  </li>
-</ul>
-
-<h1 id="2️⃣-주의사항-및-크기-조정">2️⃣ 주의사항 및 크기 조정</h1>
-
-<h2 id="1-주의사항">1. 주의사항</h2>
-<ul>
-  <li>블로그 포스팅을 할 때 반드시! <code class="language-plaintext highlighter-rouge">comments:TRUE</code>로 해주세요! (사진 참고)
-<img width="550" alt="스크린샷 2023-05-07 오후 9 35 25" src="https://user-images.githubusercontent.com/131740570/236677987-97bace13-b633-41cc-a028-fd837248c85c.png" class="align-center" /></li>
-</ul>
-
-<h2 id="2-크기-조정하기">2. 크기 조정하기</h2>
-<ul>
-  <li>다음 코드를 추가해 주세요! (아무 곳에나 추가하시면 됩니다.)</li>
-  <li>
-    <p>경로는 <code class="language-plaintext highlighter-rouge">_sass/minimal-mistakes/_page.scss</code>입니다.
-<script src="https://gist.github.com/0530hwi/96e883a36fcb467f6849b18173a47f97.js"></script></p>
-  </li>
-  <li>단 본인이 설정한 블로그 너비에 맞춰 조정되니 참고해 주세요! 원하는 값으로 조정 가능합니다.</li>
-</ul>
+<ol>
+  <li>왼쪽 <strong>확장(Shift + Command + X)</strong>을 눌러 줍니다.</li>
+  <li><strong>Korean Language Pack</strong>을 검색 후 설치해 줍니다.</li>
+</ol>
 
 <p><br /><br /></p>
 
+<h1 id="2️⃣-github와-vscode-연결하기">2️⃣ Github와 VScode 연결하기</h1>
+
+<ol>
+  <li>
+    <p>VScode를 실행합니다.</p>
+  </li>
+  <li>
+    <p><strong>열기</strong>를 눌러 줍니다.
+<img width="400" alt="스크린샷 2023-04-27 오후 6 56 25" src="https://user-images.githubusercontent.com/86516594/234828505-d2464273-629d-4133-8309-e3a9fd814355.png" class="align-center" /></p>
+  </li>
+  <li>
+    <p>전에 만들어 두었던 깃허브 폴더를 선택해 주세요!
+<img width="400" alt="스크린샷 2023-04-27 오후 6 58 18" src="https://user-images.githubusercontent.com/86516594/234828987-a6b4e271-0447-46cb-8a04-754ce14dfc25.png" class="align-center" /></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">control + shift + ₩</code>를 눌러 터미널을 열어 주세요!
+<img width="400" alt="스크린샷 2023-04-27 오후 6 27 56" src="https://user-images.githubusercontent.com/86516594/234829475-0ecdb1ee-b8a8-426d-b436-37866c5558a2.png" class="align-center" /></p>
+  </li>
+  <li>github에 push가 잘 되는지 확인해 볼까요?
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre> git add <span class="k">*</span>
+ git commit <span class="nt">-m</span> <span class="s2">"Update Blog"</span> <span class="c">#원하는 커밋 메세지 작성</span>
+ git push origin main
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <ul>
+      <li>❗️이 과정에서 계정과 비밀번호가 필요할 수 있습니다. 비밀번호에는 반드시 <strong>토큰</strong>을 입력해 주셔야 합니다. <br />
+<a href="https://0530hwi.github.io/making%20blog/Making_GitBlog3/#%EF%B8%8F중요%EF%B8%8F-비밀번호에-토큰을-입력해야-해요">토큰 발급 바로가기</a></li>
+    </ul>
+  </li>
+  <li>이제 vscode 터미널로도 로컬 서버를 열 수 있습니다!<br />
+<code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>를 vscode 터미널에 입력 후, 여러분의 멋진 블로그를 확인해 보세요!</li>
+</ol>
+
+<hr />
+<p>✅ <strong>참고</strong>:<br /> 저는 127.0.0.1:4000 이라는 주소로 로컬 서버를 들어갈 수 있는데요. <br />이 서버는 깃에 푸시하기 전에 최종적으로 검토해보는 단계입니다. <br />따라서, <strong>여러분의 변경사항을 로컬 서버를 통해 먼저 확인할 수 있는 장점</strong>이 있습니다. <br />
+또 깃에 업로드 후 블로그가 업데이트 되는 딜레이 시간(약 3분)이 있습니다. <br />로컬 서버를 이용하면 이러한 딜레이를 상쇄할 수 있기 때문에 로컬 서버를 이용하는 것이 블로그 작업에 매우 효율적입니다.</p>
+
 <hr />
 
-<p>이 포스팅은 다음 블로그를 참고해서 작성되었습니다.</p>
+<h2 id="️주의-계정-일치-확인하기">❗️주의: 계정 일치 확인하기</h2>
 <ul>
-  <li><a href="https://ansohxxn.github.io/blog/utterances/">ansohxxn님의 블로그 포스트</a></li>
-  <li><a href="https://baek.dev/post/4/">baek님의 블로그 포스트</a></li>
+  <li><code class="language-plaintext highlighter-rouge">git remote -v</code> 명령어를 통해 여러분의 계정과 일치하는지 확인해 주세요!</li>
+  <li>만약 일치하지 않는다면 다음 과정을 진행하면 됩니다.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>  git remote add origin <span class="o">(</span>저장소 주소<span class="o">)</span> <span class="c">#깃허브 블로그 저장소</span>
+  git remote <span class="nt">-v</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
 </ul>
+
+<h1 id="지금까지의-과정-총정리">지금까지의 과정 총정리</h1>
+<ol>
+  <li>Mac에서 여러가지 패키지를 편하게 관리하기 위해 <code class="language-plaintext highlighter-rouge">Homebrew</code>를 설치했다</li>
+  <li><code class="language-plaintext highlighter-rouge">ruby</code>를 독립적으로 이용하기 위해 <code class="language-plaintext highlighter-rouge">rbenv</code>패키지를 설치했다</li>
+  <li>로컬에서 깃허브 레파지토리를 관리하기 위해 <code class="language-plaintext highlighter-rouge">git</code>을 설치했다</li>
+  <li>루비 개발 환경을 갖추기 위해 <code class="language-plaintext highlighter-rouge">gem install jekyll bundler</code>를 통해 설치했다.</li>
+  <li>서버를 구동하기 위해 <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>를 입력했다. <br /></li>
+</ol>
+
+<p><strong>🎉이상으로 깃허브 블로그 만들기 과정을 종료합니다! 깃허브 블로그 커스텀에서 뵙겠습니다!</strong></p>
 
         
       </section>
@@ -501,9 +500,17 @@
     
       <a href="/tags/#blog" class="page__taxonomy-item p-category" rel="tag">Blog</a><span class="sep">, </span>
     
-      <a href="/tags/#minimal-mistakes" class="page__taxonomy-item p-category" rel="tag">Minimal-Mistakes</a><span class="sep">, </span>
+      <a href="/tags/#brew" class="page__taxonomy-item p-category" rel="tag">Brew</a><span class="sep">, </span>
     
-      <a href="/tags/#utterances" class="page__taxonomy-item p-category" rel="tag">Utterances</a>
+      <a href="/tags/#git" class="page__taxonomy-item p-category" rel="tag">Git</a><span class="sep">, </span>
+    
+      <a href="/tags/#github" class="page__taxonomy-item p-category" rel="tag">Github</a><span class="sep">, </span>
+    
+      <a href="/tags/#jekyll" class="page__taxonomy-item p-category" rel="tag">Jekyll</a><span class="sep">, </span>
+    
+      <a href="/tags/#rbenv" class="page__taxonomy-item p-category" rel="tag">rbenv</a><span class="sep">, </span>
+    
+      <a href="/tags/#ruby" class="page__taxonomy-item p-category" rel="tag">Ruby</a>
     
     </span>
   </p>
@@ -520,7 +527,7 @@
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#custom-blog" class="page__taxonomy-item p-category" rel="tag">Custom Blog</a>
+      <a href="/categories/#making-blog" class="page__taxonomy-item p-category" rel="tag">Making_Blog</a>
     
     </span>
   </p>
@@ -528,7 +535,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-05-07T00:00:00+09:00">May 7, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-27T00:00:00+09:00">April 27, 2023</time></p>
 
       </footer>
 
@@ -537,11 +544,11 @@
       
   <nav class="pagination">
     
-      <a href="/custom%20blog/Custom_GitBlog4/" class="pagination--pager" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 구글에 검색 되게 하기
+      <a href="/making_blog/Making_GitBlog3/" class="pagination--pager" title="초보를 위한 깃허브 블로그 만들기(3). github.io 만들기
 ">이전</a>
     
     
-      <a href="/regression/Regression/" class="pagination--pager" title="회귀분석 A to Z
+      <a href="/custom_blog/Custom_GitBlog1/" class="pagination--pager" title="깃허브 블로그 커스텀하기 - 테마 설정, 기본적인 설정 등
 ">다음</a>
     
   </nav>

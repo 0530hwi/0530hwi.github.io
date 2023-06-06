@@ -3,7 +3,7 @@ title: "초보를 위한 깃허브 블로그 만들기(3). github.io 만들기"
 excerpt: "깃허브 블로그 만들기, 정말 쉽게 정리했습니다. (에러 시 문제 해결 방법)"
 
 categories:
-    - Making Blog
+    - Making_Blog
 tags:
     - [Blog, Git, Github, Jekyll, Brew, Ruby, rbenv]
 

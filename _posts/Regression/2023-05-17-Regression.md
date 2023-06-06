@@ -29,8 +29,16 @@ comments: true
 * 회귀분석(Regression Analysis): 변수들 사이의 **함수적 관계**<sup>[1](#footnote_1)</sup>를 탐색하는 방법입니다.
     * EX) 지리적 특성(역세권, 교통의 편리함, 인구수)에 따른 부동산 가격<br>
     여기서는 **지리적 특성이(설명변수: X), 부동산 가격(종속변수: Y)**가 되겠네요!
+<br><Br>
 
-$$Y = \beta_{0} + \beta_{1}X_{1}+ \beta_{2}X_{2}+ \cdots + \beta_{p}X_{p}$$
+* 식으로 나타내면 다음과 같습니다.<br>
+
+
+$$Y = \beta_{0} + \beta_{1}X_{1}+ \beta_{2}X_{2}+ \cdots + \beta_{p}X_{p} + \epsilon$$
+
+* $\beta_{0}, \beta_{1}, \beta_{2}, \beta_{p}$: 회귀모수(Regression Parameter), 계수(Coefficient)
+* $X_1, X_2, X_p$: 독립변수(Independent Variable), 공변량(Covariate), 회귀변수(Regressor), 요인(Factor), 매개변수(Carrier)
+* $\epsilon$: 확률오차(Random error)
 
 
 
