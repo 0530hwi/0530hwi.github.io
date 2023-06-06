@@ -22,11 +22,11 @@ sidebar-category:
         url: "/custom_blog"
         category: "Custom_Blog"
 
-  - title: "Marchine Learning"
+  - title: "Statistics"
     children:
-      - title: "회귀 분석"
-        url: "/regression"
-        category: "Regression"
+      - title: "기초 통계"
+        url: "/basic_statistics"
+        category: "Statistics"
   - title: "Programming"
     children: 
       - title: "SQL"

@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기 - 쉽게 정리한 블로그</title>
-<meta name="description" content="깃허브 블로그 관리하는 방법을 쉽게 정리했습니다">
+<!-- begin _includes/seo.html --><title>통계학이란, 기초 통계 용어 정리 - 쉽게 정리한 블로그</title>
+<meta name="description" content="통계학의 기초 개념을 쉽고 빠르게 익혀보자!">
 
 
   <meta name="author" content="Byeong hwi">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="쉽게 정리한 블로그">
-<meta property="og:title" content="초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기">
-<meta property="og:url" content="http://localhost:4000/making_blog/Making_GitBlog4/">
+<meta property="og:title" content="통계학이란, 기초 통계 용어 정리">
+<meta property="og:url" content="http://localhost:4000/statistics/Basic_statistics1/">
 
 
-  <meta property="og:description" content="깃허브 블로그 관리하는 방법을 쉽게 정리했습니다">
+  <meta property="og:description" content="통계학의 기초 개념을 쉽고 빠르게 익혀보자!">
 
 
 
@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-04-27T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-06-06T00:00:00+09:00">
 
 
 
@@ -47,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/making_blog/Making_GitBlog4/">
+<link rel="canonical" href="http://localhost:4000/statistics/Basic_statistics1/">
 
 
 
@@ -355,16 +355,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기">
-    <meta itemprop="description" content="깃허브 블로그 관리하는 방법을 쉽게 정리했습니다">
-    <meta itemprop="datePublished" content="2023-04-27T00:00:00+09:00">
+    <meta itemprop="headline" content="통계학이란, 기초 통계 용어 정리">
+    <meta itemprop="description" content="통계학의 기초 개념을 쉽고 빠르게 익혀보자!">
+    <meta itemprop="datePublished" content="2023-06-06T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/making_blog/Making_GitBlog4/" class="u-url" itemprop="url">초보를 위한 깃허브 블로그 만들기(4). vscode로 블로그 관리하기
+            <a href="http://localhost:4000/statistics/Basic_statistics1/" class="u-url" itemprop="url">통계학이란, 기초 통계 용어 정리
 </a>
           </h1>
           
@@ -378,110 +378,116 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#1️⃣-visual-studio-code-설치하기">1️⃣ Visual Studio Code 설치하기</a><ul><li><a href="#한국어-패키지-설정하기">한국어 패키지 설정하기</a></li></ul></li><li><a href="#2️⃣-github와-vscode-연결하기">2️⃣ Github와 VScode 연결하기</a><ul><li><a href="#️주의-계정-일치-확인하기">❗️주의: 계정 일치 확인하기</a></li></ul></li><li><a href="#지금까지의-과정-총정리">지금까지의 과정 총정리</a></li></ul>
+              <ul class="toc__menu"><li><a href="#-통계학이란">📍 통계학이란?</a></li><li><a href="#-기본적인-통계-용어">📍 기본적인 통계 용어</a><ul><li><a href="#모집단">모집단</a></li><li><a href="#표본집단">표본집단</a></li></ul></li><li><a href="#-참고사항">📍 참고사항</a></li></ul>
 
             </nav>
           </aside>
         
-        <p><br /></p>
-
-<p>❗️모든 설치 과정은 <strong>MacOS Ventura(M1 Mac)</strong> 환경에서 진행됩니다 ❗️</p>
-
-<p><br /></p>
-
-<p>안녕하세요! 깃허브 블로그는 잘 설치되었나요? <br />
-이번에는 Visual Studio Code로 깃허브 블로그를 아주 간편하게 관리하는 방법을 공유합니다.<br /></p>
-
-<h1 id="1️⃣-visual-studio-code-설치하기">1️⃣ Visual Studio Code 설치하기</h1>
-<ol>
-  <li>
-    <p><a href="https://code.visualstudio.com/Download">Visual Sutdio Code Download Link</a>로 이동해 주세요!</p>
-  </li>
-  <li><strong>Mac</strong>을 선택해 주세요!
-    <ul>
-      <li>설치하는 과정에서 특별한 건 없습니다. 쭉쭉 넘어가 주세요!</li>
-    </ul>
-  </li>
-  <li>설치가 완료되었다면 아래와 같은 화면이 뜹니다.
-<img width="600" alt="스크린샷 2023-04-27 오후 6 00 49" src="https://user-images.githubusercontent.com/86516594/234813734-fad5187e-4266-4f8b-a3a8-d4cba8f680e6.png" class="align-center" /></li>
-</ol>
-
-<h2 id="한국어-패키지-설정하기">한국어 패키지 설정하기</h2>
+        <p><br /><br /><br /></p>
+<h1 id="-통계학이란">📍 통계학이란?</h1>
 <ul>
-  <li>저는 한국어 패키지가 설치가 되어있습니다. 영어 버전을 원하시는 분들은 건너뛰셔도 돼요!
-<img width="600" alt="스크린샷 2023-04-27 오후 6 05 54" src="https://user-images.githubusercontent.com/86516594/234815186-0a20346b-fe28-4787-bdd1-e83e61bc9d17.png" class="align-center" /></li>
+  <li>통계학은 데이터를 <strong>수집, 분석, 요약, 추론</strong> 하는 학문입니다.</li>
+  <li>표본을 추출해서 모집단을 추론하는 학문이 바로 통계학입니다.</li>
+  <li>우리나라 20~30대 남성의 평균 키를 추정해야 할 때 <strong>모든 20~30대 남성에 대한 키 데이터를 얻기</strong>는 힘듭니다.<br /></li>
+  <li>2,000 ~ 3,000명의 키 데이터를 얻고 <strong>모든 20~30대 남성에 대한 키 데이터를 맞추는 것</strong>이 통계의 기본 원리!</li>
 </ul>
-
-<ol>
-  <li>왼쪽 <strong>확장(Shift + Command + X)</strong>을 눌러 줍니다.</li>
-  <li><strong>Korean Language Pack</strong>을 검색 후 설치해 줍니다.</li>
-</ol>
 
 <p><br /><br /></p>
+<h1 id="-기본적인-통계-용어">📍 기본적인 통계 용어</h1>
 
-<h1 id="2️⃣-github와-vscode-연결하기">2️⃣ Github와 VScode 연결하기</h1>
+<h2 id="모집단">모집단</h2>
 
-<ol>
-  <li>
-    <p>VScode를 실행합니다.</p>
-  </li>
-  <li>
-    <p><strong>열기</strong>를 눌러 줍니다.
-<img width="400" alt="스크린샷 2023-04-27 오후 6 56 25" src="https://user-images.githubusercontent.com/86516594/234828505-d2464273-629d-4133-8309-e3a9fd814355.png" class="align-center" /></p>
-  </li>
-  <li>
-    <p>전에 만들어 두었던 깃허브 폴더를 선택해 주세요!
-<img width="400" alt="스크린샷 2023-04-27 오후 6 58 18" src="https://user-images.githubusercontent.com/86516594/234828987-a6b4e271-0447-46cb-8a04-754ce14dfc25.png" class="align-center" /></p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">control + shift + ₩</code>를 눌러 터미널을 열어 주세요!
-<img width="400" alt="스크린샷 2023-04-27 오후 6 27 56" src="https://user-images.githubusercontent.com/86516594/234829475-0ecdb1ee-b8a8-426d-b436-37866c5558a2.png" class="align-center" /></p>
-  </li>
-  <li>github에 push가 잘 되는지 확인해 볼까요?
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre> git add <span class="k">*</span>
- git commit <span class="nt">-m</span> <span class="s2">"Update Blog"</span> <span class="c">#원하는 커밋 메세지 작성</span>
- git push origin main
-</pre></td></tr></tbody></table></code></pre></div>    </div>
-    <ul>
-      <li>❗️이 과정에서 계정과 비밀번호가 필요할 수 있습니다. 비밀번호에는 반드시 <strong>토큰</strong>을 입력해 주셔야 합니다. <br />
-<a href="https://0530hwi.github.io/making%20blog/Making_GitBlog3/#%EF%B8%8F중요%EF%B8%8F-비밀번호에-토큰을-입력해야-해요">토큰 발급 바로가기</a></li>
-    </ul>
-  </li>
-  <li>이제 vscode 터미널로도 로컬 서버를 열 수 있습니다!<br />
-<code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>를 vscode 터미널에 입력 후, 여러분의 멋진 블로그를 확인해 보세요!</li>
-</ol>
-
-<hr />
-<p>✅ <strong>참고</strong>:<br /> 저는 127.0.0.1:4000 이라는 주소로 로컬 서버를 들어갈 수 있는데요. <br />이 서버는 깃에 푸시하기 전에 최종적으로 검토해보는 단계입니다. <br />따라서, <strong>여러분의 변경사항을 로컬 서버를 통해 먼저 확인할 수 있는 장점</strong>이 있습니다. <br />
-또 깃에 업로드 후 블로그가 업데이트 되는 딜레이 시간(약 3분)이 있습니다. <br />로컬 서버를 이용하면 이러한 딜레이를 상쇄할 수 있기 때문에 로컬 서버를 이용하는 것이 블로그 작업에 매우 효율적입니다.</p>
-
-<hr />
-
-<h2 id="️주의-계정-일치-확인하기">❗️주의: 계정 일치 확인하기</h2>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">git remote -v</code> 명령어를 통해 여러분의 계정과 일치하는지 확인해 주세요!</li>
-  <li>만약 일치하지 않는다면 다음 과정을 진행하면 됩니다.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre>  git remote add origin <span class="o">(</span>저장소 주소<span class="o">)</span> <span class="c">#깃허브 블로그 저장소</span>
-  git remote <span class="nt">-v</span>
-</pre></td></tr></tbody></table></code></pre></div>    </div>
+  <li>모집단 (Population)
+    <ul>
+      <li>통계학에서 연구자의 관심에 되는 집단</li>
+    </ul>
   </li>
 </ul>
 
-<h1 id="지금까지의-과정-총정리">지금까지의 과정 총정리</h1>
-<ol>
-  <li>Mac에서 여러가지 패키지를 편하게 관리하기 위해 <code class="language-plaintext highlighter-rouge">Homebrew</code>를 설치했다</li>
-  <li><code class="language-plaintext highlighter-rouge">ruby</code>를 독립적으로 이용하기 위해 <code class="language-plaintext highlighter-rouge">rbenv</code>패키지를 설치했다</li>
-  <li>로컬에서 깃허브 레파지토리를 관리하기 위해 <code class="language-plaintext highlighter-rouge">git</code>을 설치했다</li>
-  <li>루비 개발 환경을 갖추기 위해 <code class="language-plaintext highlighter-rouge">gem install jekyll bundler</code>를 통해 설치했다.</li>
-  <li>서버를 구동하기 위해 <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>를 입력했다. <br /></li>
-</ol>
+<p><br /></p>
+<ul>
+  <li>모수 (Parameter)
+    <ul>
+      <li>모집단에 대한 수치적인 요약</li>
+      <li>EX) 모평균, 모비율, 모분산 … 알 수 없는 값</li>
+    </ul>
+  </li>
+</ul>
 
-<p><strong>🎉이상으로 깃허브 블로그 만들기 과정을 종료합니다! 깃허브 블로그 커스텀에서 뵙겠습니다!</strong></p>
+<p><br /></p>
+<ul>
+  <li>모 평균 (Population Mean)<br />
+$E(X) = \frac{\sum X}{N} = \mu$ <br />
+    <ul>
+      <li>데이터의 값을 모두 더하고 전체 데이터 수로 나눕니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+<ul>
+  <li>모 분산 (Population Variance)<br />
+$Var(X) = E((X-u)^2) = \frac{\sum(X-u)^2}{N} = \sigma^2 $
+    <ul>
+      <li>값을 제곱한 것의 평균 - 평균의 제곱이라고 달달 외웠던 기억이 있네요.</li>
+    </ul>
+  </li>
+  <li>모 표준편차 (Population Standard Deviation)<br />
+    <ul>
+      <li>분산에 루트를 씌운 값
+$\sigma$를 사용합니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="표본집단">표본집단</h2>
+<ul>
+  <li>통계량 (Statistic)
+    <ul>
+      <li>모수를 추정하기 위해 표본을 이용해서 만든 값입니다.</li>
+      <li>표본평균, 표본분산, 표본표준편차 … 연구자가 알 수 있는 값입니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+<ul>
+  <li>표본평균 (Sample Mean)<br />
+$\bar{X} = \frac{\sum{X_i}}{n}$</li>
+</ul>
+
+<p><br /></p>
+<ul>
+  <li>표본분산(Sample Variance)<br />
+$S^2 = \displaystyle\sum_{i=1}^{n}(X_i - \bar{X})^2 * \frac{1}{n-1}$
+    <ul>
+      <li>편차 제곱의 합을 자료의 수로 나눈 값입니다.</li>
+      <li>n-1로 나누는 이유에 대해서는 향후 포스팅하겠습니다!</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+<ul>
+  <li>표본표준편차
+    <ul>
+      <li>표본분산의 제곱근의 형태입니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="-참고사항">📍 참고사항</h1>
+<ul>
+  <li>표본의 통계량을 통해 모집단의 모수를 추정하는 것이 제일 중요합니다.</li>
+  <li>표준편차가 존재하는 이유는 <strong>분산의 과도한 크기를 완화시켜줍니다.</strong>
+    <ul>
+      <li>데이터가 cm인 경우 제곱을 하게 되면 단위에 오류가 생기므로 -&gt; 완화시켜주기!</li>
+    </ul>
+  </li>
+</ul>
 
         
       </section>
@@ -489,33 +495,6 @@
       <footer class="page__meta">
         
         
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/tags/#blog" class="page__taxonomy-item p-category" rel="tag">Blog</a><span class="sep">, </span>
-    
-      <a href="/tags/#brew" class="page__taxonomy-item p-category" rel="tag">Brew</a><span class="sep">, </span>
-    
-      <a href="/tags/#git" class="page__taxonomy-item p-category" rel="tag">Git</a><span class="sep">, </span>
-    
-      <a href="/tags/#github" class="page__taxonomy-item p-category" rel="tag">Github</a><span class="sep">, </span>
-    
-      <a href="/tags/#jekyll" class="page__taxonomy-item p-category" rel="tag">Jekyll</a><span class="sep">, </span>
-    
-      <a href="/tags/#rbenv" class="page__taxonomy-item p-category" rel="tag">rbenv</a><span class="sep">, </span>
-    
-      <a href="/tags/#ruby" class="page__taxonomy-item p-category" rel="tag">Ruby</a>
-    
-    </span>
-  </p>
-
-
 
 
   
@@ -527,7 +506,7 @@
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#making-blog" class="page__taxonomy-item p-category" rel="tag">Making_Blog</a>
+      <a href="/categories/#statistics" class="page__taxonomy-item p-category" rel="tag">Statistics</a>
     
     </span>
   </p>
@@ -535,7 +514,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-27T00:00:00+09:00">April 27, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-06-06T00:00:00+09:00">June 6, 2023</time></p>
 
       </footer>
 
@@ -544,12 +523,11 @@
       
   <nav class="pagination">
     
-      <a href="/making_blog/Making_GitBlog3/" class="pagination--pager" title="초보를 위한 깃허브 블로그 만들기(3). github.io 만들기
+      <a href="/custom_blog/Custom_GitBlog5/" class="pagination--pager" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)
 ">이전</a>
     
     
-      <a href="/custom_blog/Custom_GitBlog1/" class="pagination--pager" title="깃허브 블로그 커스텀하기 - 테마 설정, 기본적인 설정 등
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 

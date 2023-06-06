@@ -9,24 +9,22 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>회귀분석 A to Z - 쉽게 정리한 블로그</title>
-<meta name="description" content="회귀분석(Linear Regression) 처음부터 끝까지 파헤치기">
+<!-- begin _includes/seo.html --><title>통계학 쉽고 빠르게 정복해보기 - 쉽게 정리한 블로그</title>
+<meta name="description" content="">
 
 
   <meta name="author" content="Byeong hwi">
   
-  <meta property="article:author" content="Byeong hwi">
-  
 
 
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="쉽게 정리한 블로그">
-<meta property="og:title" content="회귀분석 A to Z">
-<meta property="og:url" content="http://localhost:4000/regression/Regression/">
+<meta property="og:title" content="통계학 쉽고 빠르게 정복해보기">
+<meta property="og:url" content="http://localhost:4000/basic_statistics">
 
 
-  <meta property="og:description" content="회귀분석(Linear Regression) 처음부터 끝까지 파헤치기">
+  <meta property="og:description" content="">
 
 
 
@@ -36,8 +34,6 @@
 
 
 
-  <meta property="article:published_time" content="2023-05-17T00:00:00+09:00">
-
 
 
 
@@ -47,7 +43,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/regression/Regression/">
+<link rel="canonical" href="http://localhost:4000/basic_statistics">
 
 
 
@@ -99,7 +95,7 @@
     
   </head>
 
-  <body class="layout--single">
+  <body class="layout--archive">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -143,8 +139,6 @@
 
     <div class="initial-content">
       
-
-
 
 
 
@@ -310,7 +304,7 @@
     
       <li>
         
-          <span class="nav__sub-title">Marchine Learning</span>
+          <span class="nav__sub-title">Statistics</span>
         
 
         
@@ -321,7 +315,7 @@
           
           
 
-            <li><a href="/regression">회귀 분석(1)</a></li>
+            <li><a href="/basic_statistics" class="active">기초 통계(1)</a></li>
           
         </ul>
         
@@ -354,137 +348,35 @@
 
 
 
-  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="회귀분석 A to Z">
-    <meta itemprop="description" content="회귀분석(Linear Regression) 처음부터 끝까지 파헤치기">
-    <meta itemprop="datePublished" content="2023-05-17T00:00:00+09:00">
+  <div class="archive">
     
+      <h1 id="page-title" class="page__title">통계학 쉽고 빠르게 정복해보기</h1>
+    
+    <!-- 공백이 포함되어 있는 카테고리 이름의 경우 site.categories.['a b c'] 이런식으로! -->
 
-    <div class="page__inner-wrap">
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <header>
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/regression/Regression/" class="u-url" itemprop="url">회귀분석 A to Z
+        <a href="/statistics/Basic_statistics1/" rel="permalink">통계학이란, 기초 통계 용어 정리
 </a>
-          </h1>
-          
-
-
-        </header>
       
-
-      <section class="page__content e-content" itemprop="text">
-        
-          <aside class="sidebar__right sticky">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#-회귀분석">🚩 회귀분석</a><ul><li><a href="#1-회귀분석이란">1. 회귀분석이란?</a></li></ul></li></ul>
-
-            </nav>
-          </aside>
-        
-        <p><br /></p>
-
-<p>❗️이 글은 <strong>지속적</strong>으로 업데이트합니다.<br />
-첫번째 업데이트: 2023-05-17❗️</p>
-
-<p><br /></p>
-
-<h1 id="-회귀분석">🚩 회귀분석</h1>
-
-<h2 id="1-회귀분석이란">1. 회귀분석이란?</h2>
-
-<ul>
-  <li>회귀분석(Regression Analysis): 변수들 사이의 <strong>함수적 관계</strong><sup><a href="#footnote_1">1</a></sup>를 탐색하는 방법입니다.
-    <ul>
-      <li>EX) 지리적 특성(역세권, 교통의 편리함, 인구수)에 따른 부동산 가격<br />
-  여기서는 <strong>지리적 특성이(설명변수: X), 부동산 가격(종속변수: Y)</strong>가 되겠네요!
-<br /><br /></li>
-    </ul>
-  </li>
-  <li>식으로 나타내면 다음과 같습니다.<br /></li>
-</ul>
-
-\[Y = \beta_{0} + \beta_{1}X_{1}+ \beta_{2}X_{2}+ \cdots + \beta_{p}X_{p} + \epsilon\]
-
-<ul>
-  <li>$\beta_{0}, \beta_{1}, \beta_{2}, \beta_{p}$: 회귀모수(Regression Parameter), 계수(Coefficient)</li>
-  <li>$X_1, X_2, X_p$: 독립변수(Independent Variable), 공변량(Covariate), 회귀변수(Regressor), 요인(Factor), 매개변수(Carrier)</li>
-  <li>$\epsilon$: 확률오차(Random error)</li>
-</ul>
-
-<hr />
-
-<p><a name="footnote_1">[1]</a>: Input이 있을 때 Output이 있는 관계</p>
-
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
-    <span itemprop="keywords">
+    </h2>
     
-      <a href="/tags/#regression" class="page__taxonomy-item p-category" rel="tag">Regression</a><span class="sep">, </span>
-    
-      <a href="/tags/#statistics" class="page__taxonomy-item p-category" rel="tag">Statistics</a>
-    
-    </span>
-  </p>
 
-
-
-
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/categories/#regression" class="page__taxonomy-item p-category" rel="tag">Regression</a>
-    
-    </span>
-  </p>
-
-
-        
-
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-05-17T00:00:00+09:00">May 17, 2023</time></p>
-
-      </footer>
-
-      
-
-      
-  <nav class="pagination">
-    
-      <a href="/custom_blog/Custom_GitBlog5/" class="pagination--pager" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)
-">이전</a>
-    
-    
-      <a href="#" class="pagination--pager disabled">다음</a>
-    
-  </nav>
-
-    </div>
 
     
+    <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 06 2023</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">통계학의 기초 개념을 쉽고 빠르게 익혀보자!
+</p>
   </article>
-
-  
-  
 </div>
 
+
+  </div>
+</div>
     </div>
 
     
@@ -534,29 +426,6 @@
 <script src="/assets/js/lunr/lunr-en.js"></script>
 
 
-
-
-    <script>
-  'use strict';
-
-  (function() {
-    var commentContainer = document.querySelector('#utterances-comments');
-
-    if (!commentContainer) {
-      return;
-    }
-
-    var script = document.createElement('script');
-    script.setAttribute('src', 'https://utteranc.es/client.js');
-    script.setAttribute('repo', '0530hwi/0530hwi.github.io');
-    script.setAttribute('issue-term', 'pathname');
-    script.setAttribute('theme', 'github-light');
-    script.setAttribute('crossorigin', 'anonymous');
-
-    commentContainer.appendChild(script);
-  })();
-</script>
-  
 
 
 

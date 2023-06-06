@@ -1,36 +1,108 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-06T21:28:20+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">회귀분석 A to Z</title><link href="http://localhost:4000/regression/Regression/" rel="alternate" type="text/html" title="회귀분석 A to Z" /><published>2023-05-17T00:00:00+09:00</published><updated>2023-05-17T00:00:00+09:00</updated><id>http://localhost:4000/regression/Regression</id><content type="html" xml:base="http://localhost:4000/regression/Regression/"><![CDATA[<p><br /></p>
-
-<p>❗️이 글은 <strong>지속적</strong>으로 업데이트합니다.<br />
-첫번째 업데이트: 2023-05-17❗️</p>
-
-<p><br /></p>
-
-<h1 id="-회귀분석">🚩 회귀분석</h1>
-
-<h2 id="1-회귀분석이란">1. 회귀분석이란?</h2>
-
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-06T22:57:35+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">통계학이란, 기초 통계 용어 정리</title><link href="http://localhost:4000/statistics/Basic_statistics1/" rel="alternate" type="text/html" title="통계학이란, 기초 통계 용어 정리" /><published>2023-06-06T00:00:00+09:00</published><updated>2023-06-06T00:00:00+09:00</updated><id>http://localhost:4000/statistics/Basic_statistics1</id><content type="html" xml:base="http://localhost:4000/statistics/Basic_statistics1/"><![CDATA[<p><br /><br /><br /></p>
+<h1 id="-통계학이란">📍 통계학이란?</h1>
 <ul>
-  <li>회귀분석(Regression Analysis): 변수들 사이의 <strong>함수적 관계</strong><sup><a href="#footnote_1">1</a></sup>를 탐색하는 방법입니다.
-    <ul>
-      <li>EX) 지리적 특성(역세권, 교통의 편리함, 인구수)에 따른 부동산 가격<br />
-  여기서는 <strong>지리적 특성이(설명변수: X), 부동산 가격(종속변수: Y)</strong>가 되겠네요!
-<br /><br /></li>
-    </ul>
-  </li>
-  <li>식으로 나타내면 다음과 같습니다.<br /></li>
+  <li>통계학은 데이터를 <strong>수집, 분석, 요약, 추론</strong> 하는 학문입니다.</li>
+  <li>표본을 추출해서 모집단을 추론하는 학문이 바로 통계학입니다.</li>
+  <li>우리나라 20~30대 남성의 평균 키를 추정해야 할 때 <strong>모든 20~30대 남성에 대한 키 데이터를 얻기</strong>는 힘듭니다.<br /></li>
+  <li>2,000 ~ 3,000명의 키 데이터를 얻고 <strong>모든 20~30대 남성에 대한 키 데이터를 맞추는 것</strong>이 통계의 기본 원리!</li>
 </ul>
 
-\[Y = \beta_{0} + \beta_{1}X_{1}+ \beta_{2}X_{2}+ \cdots + \beta_{p}X_{p} + \epsilon\]
+<p><br /><br /></p>
+<h1 id="-기본적인-통계-용어">📍 기본적인 통계 용어</h1>
+
+<h2 id="모집단">모집단</h2>
 
 <ul>
-  <li>$\beta_{0}, \beta_{1}, \beta_{2}, \beta_{p}$: 회귀모수(Regression Parameter), 계수(Coefficient)</li>
-  <li>$X_1, X_2, X_p$: 독립변수(Independent Variable), 공변량(Covariate), 회귀변수(Regressor), 요인(Factor), 매개변수(Carrier)</li>
-  <li>$\epsilon$: 확률오차(Random error)</li>
+  <li>모집단 (Population)
+    <ul>
+      <li>통계학에서 연구자의 관심에 되는 집단</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+<ul>
+  <li>모수 (Parameter)
+    <ul>
+      <li>모집단에 대한 수치적인 요약</li>
+      <li>EX) 모평균, 모비율, 모분산 … 알 수 없는 값</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+<ul>
+  <li>모 평균 (Population Mean)<br />
+$E(X) = \frac{\sum X}{N} = \mu$ <br />
+    <ul>
+      <li>데이터의 값을 모두 더하고 전체 데이터 수로 나눕니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+<ul>
+  <li>모 분산 (Population Variance)<br />
+$Var(X) = E((X-u)^2) = \frac{\sum(X-u)^2}{N} = \sigma^2 $
+    <ul>
+      <li>값을 제곱한 것의 평균 - 평균의 제곱이라고 달달 외웠던 기억이 있네요.</li>
+    </ul>
+  </li>
+  <li>모 표준편차 (Population Standard Deviation)<br />
+    <ul>
+      <li>분산에 루트를 씌운 값
+$\sigma$를 사용합니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="표본집단">표본집단</h2>
+<ul>
+  <li>통계량 (Statistic)
+    <ul>
+      <li>모수를 추정하기 위해 표본을 이용해서 만든 값입니다.</li>
+      <li>표본평균, 표본분산, 표본표준편차 … 연구자가 알 수 있는 값입니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+<ul>
+  <li>표본평균 (Sample Mean)<br />
+$\bar{X} = \frac{\sum{X_i}}{n}$</li>
+</ul>
+
+<p><br /></p>
+<ul>
+  <li>표본분산(Sample Variance)<br />
+$S^2 = \displaystyle\sum_{i=1}^{n}(X_i - \bar{X})^2 * \frac{1}{n-1}$
+    <ul>
+      <li>편차 제곱의 합을 자료의 수로 나눈 값입니다.</li>
+      <li>n-1로 나누는 이유에 대해서는 향후 포스팅하겠습니다!</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+<ul>
+  <li>표본표준편차
+    <ul>
+      <li>표본분산의 제곱근의 형태입니다.</li>
+    </ul>
+  </li>
 </ul>
 
 <hr />
 
-<p><a name="footnote_1">[1]</a>: Input이 있을 때 Output이 있는 관계</p>]]></content><author><name>Byeong hwi</name></author><category term="Regression" /><category term="Regression" /><category term="Statistics" /><summary type="html"><![CDATA[회귀분석(Linear Regression) 처음부터 끝까지 파헤치기]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)</title><link href="http://localhost:4000/custom_blog/Custom_GitBlog5/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)" /><published>2023-05-07T00:00:00+09:00</published><updated>2023-05-07T00:00:00+09:00</updated><id>http://localhost:4000/custom_blog/Custom_GitBlog5</id><content type="html" xml:base="http://localhost:4000/custom_blog/Custom_GitBlog5/"><![CDATA[<p><br /></p>
+<h1 id="-참고사항">📍 참고사항</h1>
+<ul>
+  <li>표본의 통계량을 통해 모집단의 모수를 추정하는 것이 제일 중요합니다.</li>
+  <li>표준편차가 존재하는 이유는 <strong>분산의 과도한 크기를 완화시켜줍니다.</strong>
+    <ul>
+      <li>데이터가 cm인 경우 제곱을 하게 되면 단위에 오류가 생기므로 -&gt; 완화시켜주기!</li>
+    </ul>
+  </li>
+</ul>]]></content><author><name>Byeong hwi</name></author><category term="Statistics" /><summary type="html"><![CDATA[통계학의 기초 개념을 쉽고 빠르게 익혀보자!]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)</title><link href="http://localhost:4000/custom_blog/Custom_GitBlog5/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)" /><published>2023-05-07T00:00:00+09:00</published><updated>2023-05-07T00:00:00+09:00</updated><id>http://localhost:4000/custom_blog/Custom_GitBlog5</id><content type="html" xml:base="http://localhost:4000/custom_blog/Custom_GitBlog5/"><![CDATA[<p><br /></p>
 
 <div align="center">
 

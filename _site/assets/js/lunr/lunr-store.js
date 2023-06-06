@@ -53,9 +53,9 @@ var store = [{
         "url": "/custom_blog/Custom_GitBlog5/",
         "teaser": null
       },{
-        "title": "회귀분석 A to Z",
-        "excerpt":"    ❗️이 글은 지속적으로 업데이트합니다.  첫번째 업데이트: 2023-05-17❗️       🚩 회귀분석   1. 회귀분석이란?      회귀분석(Regression Analysis): 변수들 사이의 함수적 관계1를 탐색하는 방법입니다.            EX) 지리적 특성(역세권, 교통의 편리함, 인구수)에 따른 부동산 가격    여기서는 지리적 특성이(설명변수: X), 부동산 가격(종속변수: Y)가 되겠네요!              식으로 나타내면 다음과 같습니다.    \\[Y = \\beta_{0} + \\beta_{1}X_{1}+ \\beta_{2}X_{2}+ \\cdots + \\beta_{p}X_{p} + \\epsilon\\]     $\\beta_{0}, \\beta_{1}, \\beta_{2}, \\beta_{p}$: 회귀모수(Regression Parameter), 계수(Coefficient)   $X_1, X_2, X_p$: 독립변수(Independent Variable), 공변량(Covariate), 회귀변수(Regressor), 요인(Factor), 매개변수(Carrier)   $\\epsilon$: 확률오차(Random error)     [1]: Input이 있을 때 Output이 있는 관계  ","categories": ["Regression"],
-        "tags": ["Regression","Statistics"],
-        "url": "/regression/Regression/",
+        "title": "통계학이란, 기초 통계 용어 정리",
+        "excerpt":"     📍 통계학이란?     통계학은 데이터를 수집, 분석, 요약, 추론 하는 학문입니다.   표본을 추출해서 모집단을 추론하는 학문이 바로 통계학입니다.   우리나라 20~30대 남성의 평균 키를 추정해야 할 때 모든 20~30대 남성에 대한 키 데이터를 얻기는 힘듭니다.    2,000 ~ 3,000명의 키 데이터를 얻고 모든 20~30대 남성에 대한 키 데이터를 맞추는 것이 통계의 기본 원리!       📍 기본적인 통계 용어   모집단      모집단 (Population)            통계학에서 연구자의 관심에 되는 집단                 모수 (Parameter)            모집단에 대한 수치적인 요약       EX) 모평균, 모비율, 모분산 … 알 수 없는 값                 모 평균 (Population Mean)  $E(X) = \\frac{\\sum X}{N} = \\mu$              데이터의 값을 모두 더하고 전체 데이터 수로 나눕니다.                 모 분산 (Population Variance)  $Var(X) = E((X-u)^2) = \\frac{\\sum(X-u)^2}{N} = \\sigma^2 $            값을 제곱한 것의 평균 - 평균의 제곱이라고 달달 외웠던 기억이 있네요.           모 표준편차 (Population Standard Deviation)             분산에 루트를 씌운 값 $\\sigma$를 사용합니다.           표본집단     통계량 (Statistic)            모수를 추정하기 위해 표본을 이용해서 만든 값입니다.       표본평균, 표본분산, 표본표준편차 … 연구자가 알 수 있는 값입니다.                 표본평균 (Sample Mean)  $\\bar{X} = \\frac{\\sum{X_i}}{n}$         표본분산(Sample Variance)  $S^2 = \\displaystyle\\sum_{i=1}^{n}(X_i - \\bar{X})^2 * \\frac{1}{n-1}$            편차 제곱의 합을 자료의 수로 나눈 값입니다.       n-1로 나누는 이유에 대해서는 향후 포스팅하겠습니다!                 표본표준편차            표본분산의 제곱근의 형태입니다.             📍 참고사항     표본의 통계량을 통해 모집단의 모수를 추정하는 것이 제일 중요합니다.   표준편차가 존재하는 이유는 분산의 과도한 크기를 완화시켜줍니다.            데이터가 cm인 경우 제곱을 하게 되면 단위에 오류가 생기므로 -&gt; 완화시켜주기!          ","categories": ["Statistics"],
+        "tags": [],
+        "url": "/statistics/Basic_statistics1/",
         "teaser": null
       }]
