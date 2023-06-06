@@ -1,5 +1,5 @@
 ---
-title: "통계학이란, 기초 통계 용어 정리"
+title: "[기초 통계] 통계학이란, 기초 통계 용어 정리"
 excerpt: "통계학의 기초 개념을 쉽고 빠르게 익혀보자!"
 
 categories:
@@ -31,6 +31,8 @@ comments: true
 # 📍 기본적인 통계 용어
 
 ## 모집단
+![sample](https://github.com/0530hwi/0530hwi.github.io/assets/86516594/0f874167-e2b0-496d-8120-0703fcdf9889)
+
 
 * 모집단 (Population)
     - 통계학에서 연구자의 관심에 되는 집단
