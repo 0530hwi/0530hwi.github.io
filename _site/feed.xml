@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-06T22:57:35+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">통계학이란, 기초 통계 용어 정리</title><link href="http://localhost:4000/statistics/Basic_statistics1/" rel="alternate" type="text/html" title="통계학이란, 기초 통계 용어 정리" /><published>2023-06-06T00:00:00+09:00</published><updated>2023-06-06T00:00:00+09:00</updated><id>http://localhost:4000/statistics/Basic_statistics1</id><content type="html" xml:base="http://localhost:4000/statistics/Basic_statistics1/"><![CDATA[<p><br /><br /><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-06T23:18:49+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">통계학이란, 기초 통계 용어 정리</title><link href="http://localhost:4000/statistics/Basic_statistics1/" rel="alternate" type="text/html" title="통계학이란, 기초 통계 용어 정리" /><published>2023-06-06T00:00:00+09:00</published><updated>2023-06-06T00:00:00+09:00</updated><id>http://localhost:4000/statistics/Basic_statistics1</id><content type="html" xml:base="http://localhost:4000/statistics/Basic_statistics1/"><![CDATA[<p><br /><br /><br /></p>
 <h1 id="-통계학이란">📍 통계학이란?</h1>
 <ul>
   <li>통계학은 데이터를 <strong>수집, 분석, 요약, 추론</strong> 하는 학문입니다.</li>
@@ -6,6 +6,12 @@
   <li>우리나라 20~30대 남성의 평균 키를 추정해야 할 때 <strong>모든 20~30대 남성에 대한 키 데이터를 얻기</strong>는 힘듭니다.<br /></li>
   <li>2,000 ~ 3,000명의 키 데이터를 얻고 <strong>모든 20~30대 남성에 대한 키 데이터를 맞추는 것</strong>이 통계의 기본 원리!</li>
 </ul>
+
+<p><strong>다음 통계학은 현대통계학에서 핵심이 되는 분야</strong>입니다.<br /></p>
+<ol>
+  <li>추측통계학 (Inferential Statistics): 자료에 내포되어 있는 정보를 분석하여 불확실한 사실에 대한 추론하는 학문</li>
+  <li>기술통계학 (Descriptive Statistics): 자료를 수집하고 정리하여 도표나 표를 만들고, 자료를 요약하여 대표값이나 변동의 크기 등을 구하는 학문</li>
+</ol>
 
 <p><br /><br /></p>
 <h1 id="-기본적인-통계-용어">📍 기본적인 통계 용어</h1>
@@ -45,12 +51,15 @@ $E(X) = \frac{\sum X}{N} = \mu$ <br />
   <li>모 분산 (Population Variance)<br />
 $Var(X) = E((X-u)^2) = \frac{\sum(X-u)^2}{N} = \sigma^2 $
     <ul>
+      <li>확률변수가 기댓값으로부터 얼마나 떨어진 곳에 위치해있을까?를 의미합니다.</li>
+      <li><strong>데이터가 퍼진 정도</strong>도 의미합니다.</li>
       <li>값을 제곱한 것의 평균 - 평균의 제곱이라고 달달 외웠던 기억이 있네요.</li>
     </ul>
   </li>
   <li>모 표준편차 (Population Standard Deviation)<br />
     <ul>
-      <li>분산에 루트를 씌운 값
+      <li>분산에 루트를 씌운 값</li>
+      <li>표준편차가 존재하는 이유는 분산의 값이 과도하게 펌핑되기 때문입니다.
 $\sigma$를 사용합니다.</li>
     </ul>
   </li>
@@ -78,10 +87,13 @@ $\bar{X} = \frac{\sum{X_i}}{n}$</li>
 $S^2 = \displaystyle\sum_{i=1}^{n}(X_i - \bar{X})^2 * \frac{1}{n-1}$
     <ul>
       <li>편차 제곱의 합을 자료의 수로 나눈 값입니다.</li>
-      <li>n-1로 나누는 이유에 대해서는 향후 포스팅하겠습니다!</li>
     </ul>
   </li>
 </ul>
+
+<p><strong>❓ 왜 $n-1$로 나누는가?</strong><br />
+편차의 합은 일단 0입니다. 따라서 $n$개의 편차 중에서 $(n-1)$개의 편차를 알고 있다고 가정한다면.. <br />나머지 1개는 <strong>알아서 결정</strong>됩니다. 합은 0이니까요! 그래서 $n-1$로 나눠줍니다. <br />
+또 다른 이유가 존재하는데, 향후 심화적인 포스팅으로 정리해보겠습니다.</p>
 
 <p><br /></p>
 <ul>
@@ -99,7 +111,7 @@ $S^2 = \displaystyle\sum_{i=1}^{n}(X_i - \bar{X})^2 * \frac{1}{n-1}$
   <li>표본의 통계량을 통해 모집단의 모수를 추정하는 것이 제일 중요합니다.</li>
   <li>표준편차가 존재하는 이유는 <strong>분산의 과도한 크기를 완화시켜줍니다.</strong>
     <ul>
-      <li>데이터가 cm인 경우 제곱을 하게 되면 단위에 오류가 생기므로 -&gt; 완화시켜주기!</li>
+      <li>데이터가 cm인 경우 제곱을 하게되면 단위의 오류가 발생합니다.<br />단위가 변하면 추측하고자 하는 단위까지 변경되므로 큰 이슈가 발생하겠죠.<br /> 따라서 우리는 이러한 오류를 범하지 않기 위해 표준편차를 사용합니다.</li>
     </ul>
   </li>
 </ul>]]></content><author><name>Byeong hwi</name></author><category term="Statistics" /><summary type="html"><![CDATA[통계학의 기초 개념을 쉽고 빠르게 익혀보자!]]></summary></entry><entry><title type="html">깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)</title><link href="http://localhost:4000/custom_blog/Custom_GitBlog5/" rel="alternate" type="text/html" title="깃허브 블로그 커스텀하기 - 깃허브 블로그 댓글 기능 추가하기(minimal-mistakes)" /><published>2023-05-07T00:00:00+09:00</published><updated>2023-05-07T00:00:00+09:00</updated><id>http://localhost:4000/custom_blog/Custom_GitBlog5</id><content type="html" xml:base="http://localhost:4000/custom_blog/Custom_GitBlog5/"><![CDATA[<p><br /></p>
