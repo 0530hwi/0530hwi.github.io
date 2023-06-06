@@ -42,7 +42,10 @@ $E(X) = \frac{\sum X}{N} = \mu$ <br>
 <br>
 * 모 분산 (Population Variance)<br>
 $Var(X) = E((X-u)^2) = \frac{\sum(X-u)^2}{N} = \sigma^2 $ 
+    - 확률변수가 기댓값으로부터 얼마나 떨어진 곳에 위치해있을까?를 의미합니다.
+    - **데이터가 퍼진 정도**도 의미합니다.
     - 값을 제곱한 것의 평균 - 평균의 제곱이라고 달달 외웠던 기억이 있네요.
+    
 
 * 모 표준편차 (Population Standard Deviation)<br>
     - 분산에 루트를 씌운 값
