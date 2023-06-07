@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-07T01:15:02+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">[기초 통계] 가설검정이란</title><link href="http://localhost:4000/statistics/hypothesis_test/" rel="alternate" type="text/html" title="[기초 통계] 가설검정이란" /><published>2023-06-07T00:00:00+09:00</published><updated>2023-06-07T00:00:00+09:00</updated><id>http://localhost:4000/statistics/hypothesis_test</id><content type="html" xml:base="http://localhost:4000/statistics/hypothesis_test/"><![CDATA[<p><br /><br /><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-07T13:44:28+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">쉽게 정리한 블로그</title><subtitle></subtitle><author><name>Byeong hwi</name></author><entry><title type="html">[기초 통계] 가설검정이란</title><link href="http://localhost:4000/statistics/hypothesis_test/" rel="alternate" type="text/html" title="[기초 통계] 가설검정이란" /><published>2023-06-07T00:00:00+09:00</published><updated>2023-06-07T00:00:00+09:00</updated><id>http://localhost:4000/statistics/hypothesis_test</id><content type="html" xml:base="http://localhost:4000/statistics/hypothesis_test/"><![CDATA[<p><br /><br /><br /></p>
 <h1 id="-가설과-가설검정">📍 가설과 가설검정</h1>
 <p>통계적 검정(Statistical Test) 또는 가설검정(Hypothesis Test): <strong>표본 데이터</strong>를 기반으로<br /> 모집단에 대한 <strong>새로운 주장의 옳고 그름을 추론</strong>하는 과정.</p>
 <ul>
@@ -218,7 +218,7 @@ $S^2 = \displaystyle\sum_{i=1}^{n}(X_i - \bar{X})^2 * \frac{1}{n-1}$
 <ul>
   <li>표본표준편차
     <ul>
-      <li>표본분산의 제곱근의 형태입니다.</li>
+      <li>표본분산의 제곱근 형태입니다.</li>
     </ul>
   </li>
 </ul>
